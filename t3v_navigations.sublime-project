@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "t3v_navigations",
+      "path": "./",
+      "folder_exclude_patterns": [
+        ".Build",
+        ".idea"
+      ],
+      "file_exclude_patterns": [
+        ".keep",
+        "composer.lock"
+      ]
+    }
+  ]
+}

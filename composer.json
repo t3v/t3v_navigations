@@ -1,0 +1,74 @@
+{
+  "name": "t3v/t3v_navigations",
+  "type": "typo3-cms-extension",
+  "description": "The navigations extension of TYPO3Voila.",
+  "authors": [
+    {
+      "name": "Maik Kempe",
+      "email": "mkempe@bitaculous.com",
+      "homepage": "https://bitaculous.com"
+    }
+  ],
+  "keywords": [
+    "CMS",
+    "Extension",
+    "Navigations",
+    "T3v",
+    "TYPO3",
+    "TYPO3voila",
+    "UH LÁLÁ"
+  ],
+  "homepage": "https://t3v.github.io/t3v_navigations/",
+  "support": {
+    "issues": "https://github.com/t3v/t3v_navigations/issues"
+  },
+  "license": "MIT",
+  "config": {
+    "bin-dir": ".Build/bin",
+    "vendor-dir": ".Build/vendor"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "replace": {
+    "t3v_navigations": "self.version",
+    "typo3-ter/t3v_navigations": "self.version"
+  },
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org" }
+  ],
+  "require": {
+    "php": ">= 5.6 < 7.2",
+    "typo3/cms-core": "^7.6 || ^8.7",
+    "t3v/t3v_core": "*"
+  },
+  "require-dev": {
+    "mikey179/vfsStream": "~1.6.5",
+    "namelesscoder/typo3-repository-client": "~1.3.1",
+    "nimut/testing-framework": "~1.1.8",
+    "phpunit/phpunit": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3v\\T3vNavigations\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "T3v\\T3vNavigations\\Tests\\": "Tests",
+      "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests",
+      "TYPO3\\CMS\\Fluid\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/fluid/Tests"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/t3v_navigations ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/t3v_navigations"
+    ]
+  }
+}
