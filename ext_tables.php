@@ -8,13 +8,13 @@ call_user_func(function($namespace, $extkey) {
 
   // --- Overview Navigation Item Model ---
 
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vstage_domain_model_overview_navigation_item', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vstage_domain_model_overview_navigation_item.xlf');
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vstage_domain_model_overview_navigation_item');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vnavigations_domain_model_overview_navigation_item', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vnavigations_domain_model_overview_navigation_item.xlf');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vnavigations_domain_model_overview_navigation_item');
 
   // --- Quick Navigation Item Model ---
 
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vstage_domain_model_quick_navigation_item', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vstage_domain_model_quick_navigation_item.xlf');
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vstage_domain_model_quick_navigation_item');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vnavigations_domain_model_quick_navigation_item', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vnavigations_domain_model_quick_navigation_item.xlf');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vnavigations_domain_model_quick_navigation_item');
 
   // === TypoScript ===
 

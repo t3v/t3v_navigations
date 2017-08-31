@@ -38,6 +38,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_overview_navigation_item (
   KEY t3ver_oid (t3ver_oid,t3ver_wsid)
 );
 
+# Table structure for table `tx_t3vnavigations_domain_model_quick_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_quick_navigation_item (
   uid int(11) NOT NULL auto_increment,
   pid int(11) DEFAULT '0' NOT NULL,
