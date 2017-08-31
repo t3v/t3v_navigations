@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_navigations" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- === Domain === -->
+
+      <!-- Overview Navigation Item Model -->
+
+      <trans-unit id="domain.model.overviewNavigationItem">
+        <source>Overview Navigation Item</source>
+        <target>Übersicht Navigation Menüpunkt</target>
+      </trans-unit>
+
+      <!-- Quick Navigation Item Model -->
+
+      <trans-unit id="domain.model.QuickNavigationItem">
+        <source>Quick Navigation Item</source>
+        <target>Schnell Navigation Menüpunkt</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

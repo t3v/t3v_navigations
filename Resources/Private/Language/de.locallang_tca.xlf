@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_navigations" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- === Models === -->
+
+      <!-- Overview Navigation Item -->
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item">
+        <source>Overview Navigation Item</source>
+        <target>Übersicht Navigation Menüpunkt</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.title">
+        <source>Title</source>
+        <target>Titel</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnail">
+        <source>Thumbnail</source>
+        <target>Vorschaubild</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.link">
+        <source>Link</source>
+        <target>Link</target>
+      </trans-unit>
+
+      <!-- Quick Navigation Item -->
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
+        <source>Quick Navigation Item</source>
+        <target>Schnell Navigation Menüpunkt</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.title">
+        <source>Title</source>
+        <target>Titel</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.link">
+        <source>Link</source>
+        <target>Link</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
