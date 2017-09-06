@@ -5,7 +5,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_overview_navigation_item (
   pid int(11) DEFAULT '0' NOT NULL,
 
   title varchar(255) DEFAULT '' NOT NULL,
-  thumbnail int(11) unsigned DEFAULT '0' NOT NULL,
+  thumbnails int(11) unsigned DEFAULT '0' NOT NULL,
   link varchar(255) DEFAULT '' NOT NULL,
 
   tstamp int(11) unsigned DEFAULT '0' NOT NULL,

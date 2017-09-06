@@ -8,8 +8,8 @@
         <source>Title</source>
       </trans-unit>
 
-      <trans-unit id="thumbnail.description">
-        <source>Thumbnail</source>
+      <trans-unit id="thumbnails.description">
+        <source>Thumbnails</source>
       </trans-unit>
 
       <trans-unit id="link.description">

@@ -9,9 +9,9 @@
         <target>Titel</target>
       </trans-unit>
 
-      <trans-unit id="thumbnail.description">
-        <source>Thumbnail</source>
-        <target>Vorschaubild</target>
+      <trans-unit id="thumbnails.description">
+        <source>Thumbnails</source>
+        <target>Vorschaubilder</target>
       </trans-unit>
 
       <trans-unit id="link.description">

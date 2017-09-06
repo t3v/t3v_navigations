@@ -18,11 +18,13 @@ class OverviewNavigationItem extends AbstractModel {
   protected $title;
 
   /**
-   * The overview navigation item's thumbnail.
+   * The overview navigation item's thumbnails.
    *
-   * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+   * @lazy
+   * @cascade remove
    */
-  protected $thumbnail;
+  protected $thumbnails;
 
   /**
    * The overview navigation item's link.
@@ -30,6 +32,13 @@ class OverviewNavigationItem extends AbstractModel {
    * @var string
    */
   protected $link;
+
+  /**
+   * Constructs a new overview navigation item.
+   */
+  public function __construct() {
+    $this->thumbnails = new ObjectStorage();
+  }
 
   /**
    * Returns the overview navigation item's title.
@@ -51,22 +60,41 @@ class OverviewNavigationItem extends AbstractModel {
   }
 
   /**
-   * Returns the overview navigation item's thumbnail.
+   * Returns all thumbnails belonging to the overview navigation item.
    *
-   * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference The overview navigation item's thumbnail
+   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
    */
-  public function getThumbnail() {
-    return $this->thumbnail;
+  public function getThumbnails() {
+    return $this->thumbnails;
   }
 
   /**
-   * Sets the overview navigation item's thumbnail.
+   * Adds a thumbnail to the overview navigation item.
    *
-   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The overview navigation item's thumbnail
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
    * @return void
    */
-  public function setThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
-    $this->thumbnail = $thumbnail;
+  public function addThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+    $this->thumbnails->attach($thumbnail);
+  }
+
+  /**
+   * Removes a thumbnail from the overview navigation item.
+   *
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
+   * @return void
+   */
+  public function removeThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+    $this->thumbnails->detach($thumbnail);
+  }
+
+  /**
+   * Removes all thumbnails from the overview navigation item.
+   *
+   * @return void
+   */
+  public function removeAllThumbnails() {
+    $this->thumbnails = new ObjectStorage();
   }
 
   /**

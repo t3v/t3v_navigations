@@ -16,8 +16,8 @@
         <source>Title</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnail">
-        <source>Thumbnail</source>
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails">
+        <source>Thumbnails</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.link">

@@ -23,13 +23,13 @@ return [
       'exclude' => true
     ],
 
-    'thumbnail' => [
-      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.thumbnail',
+    'thumbnails' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails',
       'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
         'image',
         [
           'foreign_match_fields' => [
-            'fieldname' => 'thumbnail',
+            'fieldname' => 'thumbnails',
             'tablenames' => 'tx_t3vnavigations_domain_model_overview_navigation_item',
             'table_local' => 'sys_file'
           ],
@@ -41,7 +41,7 @@ return [
             ]
           ],
           'minitems' => 0,
-          'maxitems' => 1,
+          'maxitems' => 2,
           'appearance' => [
             'showAllLocalizationLink' => true,
             'showSynchronizationLink' => true
@@ -253,7 +253,7 @@ return [
     'paletteGeneral' => [
       'showitem' => '
         title, --linebreak--,
-        thumbnail, --linebreak--,
+        thumbnails, --linebreak--,
         link
       ',
       'columnsOverrides' => [
