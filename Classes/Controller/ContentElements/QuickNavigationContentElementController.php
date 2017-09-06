@@ -23,8 +23,6 @@ class QuickNavigationContentElementController extends ContentElementController {
    * @return void
    */
   public function indexAction() {
-    var_dump($this->settings['primaryItems']);
-
     $primaryItems   = $this->quickNavigationItemRepository->findByUids($this->settings['primaryItems']);
     $secondaryItems = $this->quickNavigationItemRepository->findByUids($this->settings['secondaryItems']);
 
