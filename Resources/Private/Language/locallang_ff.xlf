@@ -4,6 +4,21 @@
     <header />
 
     <body>
+      <!-- === Content Elements === -->
+
+      <!-- Quick Navigation Content Element -->
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.sheetTitle">
+        <source>Settings</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
+        <source>Primary Items</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.secondaryItems.label">
+        <source>Secondary Items</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

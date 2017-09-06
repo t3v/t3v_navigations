@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.quickNavigationContentElement.settings.sheetTitle</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.primaryItems>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.quickNavigationContentElement.settings.primaryItems.label</label>
+              <config type="array">
+                <type>inline</type>
+                <foreign_table>tx_t3vnavigations_domain_model_quick_navigation_item</foreign_table>
+                <foreign_sortby>sorting</foreign_sortby>
+                <minitems>1</minitems>
+                <maxitems>100</maxitems>
+                <appearance type="array">
+                  <enabledControls>
+                    <info>1</info>
+                    <new>0</new>
+                    <dragdrop>1</dragdrop>
+                    <sort>0</sort>
+                    <hide>1</hide>
+                    <delete>1</delete>
+                    <localize>1</localize>
+                  </enabledControls>
+                  <collapseAll>1</collapseAll>
+                  <expandSingle>0</expandSingle>
+                  <levelLinksPosition>top</levelLinksPosition>
+                  <showAllLocalizationLink>0</showAllLocalizationLink>
+                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
+                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
+                  <showSynchronizationLink>0</showSynchronizationLink>
+                  <useSortable>1</useSortable>
+                </appearance>
+                <behaviour type="array">
+                  <localizationMode>select</localizationMode>
+                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                  <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
+                  <enableCascadingDelete>1</enableCascadingDelete>
+                </behaviour>
+              </config>
+            </TCEforms>
+          </settings.primaryItems>
+
+          <settings.secondaryItems>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.quickNavigationContentElement.settings.secondaryItems.label</label>
+              <config type="array">
+                <type>inline</type>
+                <foreign_table>tx_t3vnavigations_domain_model_quick_navigation_item</foreign_table>
+                <foreign_sortby>sorting</foreign_sortby>
+                <minitems>0</minitems>
+                <maxitems>100</maxitems>
+                <appearance type="array">
+                  <enabledControls>
+                    <info>1</info>
+                    <new>0</new>
+                    <dragdrop>1</dragdrop>
+                    <sort>0</sort>
+                    <hide>1</hide>
+                    <delete>1</delete>
+                    <localize>1</localize>
+                  </enabledControls>
+                  <collapseAll>1</collapseAll>
+                  <expandSingle>0</expandSingle>
+                  <levelLinksPosition>top</levelLinksPosition>
+                  <showAllLocalizationLink>0</showAllLocalizationLink>
+                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
+                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
+                  <showSynchronizationLink>0</showSynchronizationLink>
+                  <useSortable>1</useSortable>
+                </appearance>
+                <behaviour type="array">
+                  <localizationMode>select</localizationMode>
+                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                  <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
+                  <enableCascadingDelete>1</enableCascadingDelete>
+                </behaviour>
+              </config>
+            </TCEforms>
+          </settings.secondaryItems>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

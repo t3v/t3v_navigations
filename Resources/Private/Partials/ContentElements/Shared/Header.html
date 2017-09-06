@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vContent/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{data.header}">
+    <f:if condition="{data.header_layout} != 0">
+      <f:if condition="{data.header_layout} != 100">
+        <div class="ce__header">
+          <f:format.html parseFuncTSPath="lib.parseFunc">
+            {t3v:headline(content: data.header, layout: data.header_layout, cssClass: 'ce__title')}
+          </f:format.html>
+        </div>
+      </f:if>
+    </f:if>
+  </f:if>
+</html>

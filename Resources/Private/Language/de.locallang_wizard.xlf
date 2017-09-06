@@ -4,6 +4,24 @@
     <header />
 
     <body>
+      <!-- === Content Elements === -->
+
+      <trans-unit id="mod.wizards.newContentElement.wizardItems.contentElements.header">
+        <source>Content Elements</source>
+        <target>Content Elements</target>
+      </trans-unit>
+
+      <!-- Quick Navigation Content Element -->
+
+      <trans-unit id="contentElements.quickNavigationContentElement.title">
+        <source>Quick Navigation</source>
+        <target>Quick Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.description">
+        <source>Quick Navigation Content Element</source>
+        <target>Quick Navigation Content Element</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
