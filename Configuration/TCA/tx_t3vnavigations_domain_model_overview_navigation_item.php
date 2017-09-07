@@ -27,7 +27,7 @@ return [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.abstract',
       'config' => [
         'type' => 'text',
-        'eval' => 'trim, required'
+        'eval' => 'trim'
       ],
       'defaultExtras' => 'richtext[]',
       'l10n_mode' => 'mergeIfNotBlank',
@@ -295,6 +295,9 @@ return [
         label
       ',
       'columnsOverrides' => [
+        'abstract' => [
+          'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
+        ]
       ],
       'canNotCollapse' => true
     ],
