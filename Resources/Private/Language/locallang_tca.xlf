@@ -34,6 +34,10 @@
         <source>Title</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.page">
+        <source>Page</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.link">
         <source>Link</source>
       </trans-unit>

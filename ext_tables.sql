@@ -44,6 +44,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_quick_navigation_item (
   pid int(11) DEFAULT '0' NOT NULL,
 
   title varchar(255) DEFAULT '' NOT NULL,
+  page int(11) DEFAULT '0' NOT NULL,
   link varchar(255) DEFAULT '' NOT NULL,
 
   tstamp int(11) unsigned DEFAULT '0' NOT NULL,

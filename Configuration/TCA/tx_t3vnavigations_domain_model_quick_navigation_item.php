@@ -23,13 +23,25 @@ return [
       'exclude' => true
     ],
 
+    'page' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.page',
+      'config' => [
+        'type' => 'group',
+        'internal_type' => 'db',
+        'allowed' => 'pages',
+        'size' => 1
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'link' => [
       'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.link',
       'config' => [
         'type' => 'input',
         'size' => 42,
         'max' => 255,
-        'eval' => 'trim, required',
+        'eval' => 'trim',
         'wizards' => [
           'link' => [
             'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
@@ -39,7 +51,7 @@ return [
               'name' => 'wizard_link'
             ],
             'params' => [
-              'blindLinkOptions' => 'folder, file, mail, spec',
+              'blindLinkOptions' => 'folder, file, mail, page, spec',
               'blindLinkFields' => 'class, params'
             ],
             'JSopenParams' => 'height=600,width=800,status=0,menubar=0,scrollbars=1'
@@ -223,6 +235,7 @@ return [
     'paletteGeneral' => [
       'showitem' => '
         title, --linebreak--,
+        page, --linebreak--,
         link
       ',
       'columnsOverrides' => [

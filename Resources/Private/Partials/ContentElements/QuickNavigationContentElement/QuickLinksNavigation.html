@@ -1,11 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:tag name="nav" class="t3v-navigations-quick-navigation navigation" hideIfEmpty="true">
     <f:if condition="{primaryItems}">
-      <f:render partial="ContentElements/QuickNavigationContentElement/QuickLinksNavigation/PrimaryEntries" arguments="{items: primaryItems}" />
+      <f:render partial="ContentElements/QuickNavigationContentElement/QuickLinksNavigation/Entries/Primary" arguments="{items: primaryItems}" />
     </f:if>
 
     <f:if condition="{secondaryItems}">
-      <f:render partial="ContentElements/QuickNavigationContentElement/QuickLinksNavigation/SecondaryEntries" arguments="{items: secondaryItems}" />
+      <f:render partial="ContentElements/QuickNavigationContentElement/QuickLinksNavigation/Entries/Secondary" arguments="{items: secondaryItems}" />
     </f:if>
   </v:tag>
 </html>

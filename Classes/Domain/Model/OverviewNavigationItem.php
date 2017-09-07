@@ -27,7 +27,7 @@ class OverviewNavigationItem extends AbstractModel {
   protected $thumbnails;
 
   /**
-   * The overview navigation item's link.
+   * The overview navigation item's link (typolink).
    *
    * @var string
    */
@@ -98,18 +98,18 @@ class OverviewNavigationItem extends AbstractModel {
   }
 
   /**
-   * Returns the overview navigation item's link.
+   * Returns the overview navigation item's link (typolink).
    *
-   * @return string The overview navigation item's link
+   * @return string The overview navigation item's link (typolink)
    */
   public function getLink() {
     return $this->link;
   }
 
   /**
-   * Sets the overview navigation item's link.
+   * Sets the overview navigation item's link (typolink).
    *
-   * @param string $link The overview navigation item's link
+   * @param string $link The overview navigation item's link (typolink)
    * @return void
    */
   public function setLink($link) {
