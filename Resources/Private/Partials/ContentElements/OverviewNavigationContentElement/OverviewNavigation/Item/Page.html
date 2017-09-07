@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:tag name="div" class="t3v-navigations-overview-navigation-item navigation-item" hideIfEmpty="true">
+    <v:tag name="div" class="t3v-navigations-overview-navigation-item__header" hideIfEmpty="true">
+      <f:if condition="{item.thumbnails}">
+        <f:link.page pageUid="{item.page}"
+                     class="t3v-navigations-overview-navigation-item__thumbnail"
+                     title="{item.title}">
+          {item.title}
+        </f:link.page>
+      </f:if>
+    </v:tag>
+
+    <v:tag name="div" class="t3v-navigations-overview-navigation-item__main" hideIfEmpty="true">
+      <v:tag name="div" class="t3v-navigations-overview-navigation-item__meta" hideIfEmpty="true">
+        <h3 class="t3v-navigations-overview-navigation-item__title">
+          <f:link.page pageUid="{item.page}"
+                       title="{item.title}">
+            {item.title}
+          </f:link.page>
+        </h3>
+      </v:tag>
+
+      <f:if condition="{item.abstract}">
+        <div class="t3v-navigations-overview-navigation-item__abstract">
+          <f:format.crop maxCharacters="200" respectWordBoundaries="1">
+            <f:format.html>{item.abstract}</f:format.html>
+          </f:format.crop>
+        </div>
+      </f:if>
+
+      <v:tag name="div" class="t3v-navigations-overview-navigation-item__more" hideIfEmpty="true">
+        <f:if condition="{item.label}">
+          <f:then>
+            <f:link.page pageUid="{item.page}"
+                         class="link--more link"
+                         title="{item.label}">
+              {item.label}
+            </f:link.page>
+          </f:then>
+
+          <f:else>
+            <f:link.page pageUid="{item.page}"
+                         class="link--more link"
+                         title="{f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}">
+              {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
+            </f:link.page>
+          </f:else>
+        </f:if>
+      </v:tag>
+    </v:tag>
+  </v:tag>
+</html>

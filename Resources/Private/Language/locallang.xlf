@@ -17,6 +17,14 @@
       <trans-unit id="domain.model.QuickNavigationItem">
         <source>Quick Navigation Item</source>
       </trans-unit>
+
+      <!-- === Content Elements === -->
+
+      <!-- Overview Navigation Content Element -->
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label">
+        <source>More</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
