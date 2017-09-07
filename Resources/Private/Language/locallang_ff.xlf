@@ -13,11 +13,11 @@
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
-        <source>Primary Items</source>
+        <source>Primary Navigation Items</source>
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.secondaryItems.label">
-        <source>Secondary Items</source>
+        <source>Secondary Navigation Items</source>
       </trans-unit>
     </body>
   </file>

@@ -10,14 +10,14 @@
 
       <trans-unit id="domain.model.overviewNavigationItem">
         <source>Overview Navigation Item</source>
-        <target>Übersicht Navigation Menüpunkt</target>
+        <target>Übersicht-Navigationspunkt</target>
       </trans-unit>
 
       <!-- Quick Navigation Item Model -->
 
       <trans-unit id="domain.model.QuickNavigationItem">
         <source>Quick Navigation Item</source>
-        <target>Schnell Navigation Menüpunkt</target>
+        <target>Quick-Navigationspunkt</target>
       </trans-unit>
     </body>
   </file>

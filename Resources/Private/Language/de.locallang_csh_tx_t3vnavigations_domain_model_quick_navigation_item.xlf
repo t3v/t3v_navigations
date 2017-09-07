@@ -9,6 +9,11 @@
         <target>Titel</target>
       </trans-unit>
 
+      <trans-unit id="page.description">
+        <source>Page</source>
+        <target>Seite</target>
+      </trans-unit>
+
       <trans-unit id="link.description">
         <source>Link</source>
         <target>Link</target>

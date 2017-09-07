@@ -14,13 +14,13 @@
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
-        <source>Primary Items</source>
-        <target>Primäre Menüpunkte</target>
+        <source>Primary Navigation Items</source>
+        <target>Primäre Navigationspunkte</target>
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.secondaryItems.label">
-        <source>Secondary Items</source>
-        <target>Sekundäre Menüpunkte</target>
+        <source>Secondary Navigation Items</source>
+        <target>Sekundäre Navigationspunkte</target>
       </trans-unit>
     </body>
   </file>

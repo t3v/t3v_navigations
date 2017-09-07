@@ -10,7 +10,7 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item">
         <source>Overview Navigation Item</source>
-        <target>Übersicht Navigation Menüpunkt</target>
+        <target>Übersicht-Navigationspunkt</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.title">
@@ -32,7 +32,7 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
         <source>Quick Navigation Item</source>
-        <target>Schnell Navigation Menüpunkt</target>
+        <target>Quick-Navigationspunkt</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.title">

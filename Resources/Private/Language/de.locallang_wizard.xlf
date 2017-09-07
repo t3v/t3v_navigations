@@ -15,12 +15,12 @@
 
       <trans-unit id="contentElements.quickNavigationContentElement.title">
         <source>Quick Navigation</source>
-        <target>Quick Navigation</target>
+        <target>Quick-Navigation</target>
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.description">
         <source>Quick Navigation Content Element</source>
-        <target>Quick Navigation Content Element</target>
+        <target>Quick-Navigation Content Element</target>
       </trans-unit>
     </body>
   </file>
