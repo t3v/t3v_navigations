@@ -6,6 +6,48 @@
     <body>
       <!-- === Content Elements === -->
 
+      <!-- Overview Navigation Content Element -->
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.sheetTitle">
+        <source>Settings</source>
+        <target>Einstellungen</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.items.label">
+        <source>Navigation Items</source>
+        <target>Navigationspunkte</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.title">
+        <source>Responsive</source>
+        <target>Responsive</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.title">
+        <source>Breakpoint</source>
+        <target>Breakpoint</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.items.item.minWidth.label">
+        <source>Minimum Width in px</source>
+        <target>Mindestbreite in px</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailHeight.label">
+        <source>Thumbnail Height in px</source>
+        <target>Vorschaubild Höhe in px</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailWidth.label">
+        <source>Thumbnail Width in px</source>
+        <target>Vorschaubild Breite in px</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+        <source>Retina Display</source>
+        <target>Hochauflösendes Display</target>
+      </trans-unit>
+
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.sheetTitle">

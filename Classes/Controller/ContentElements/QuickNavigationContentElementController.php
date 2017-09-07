@@ -5,6 +5,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 use T3v\T3vContent\Controller\ContentElements\ContentElementController;
 
+use T3v\T3vNavigations\Domain\Repository\QuickNavigationItemRepository;
+
 /**
  * Quick Navigation Content Element Controller Class
  *
@@ -12,7 +14,7 @@ use T3v\T3vContent\Controller\ContentElements\ContentElementController;
  */
 class QuickNavigationContentElementController extends ContentElementController {
   /**
-   * The overview navigation item repository.
+   * The quick navigation item repository.
    *
    * @var \T3v\T3vNavigations\Domain\Repository\QuickNavigationItemRepository
    * @inject
@@ -25,10 +27,12 @@ class QuickNavigationContentElementController extends ContentElementController {
    * @return void
    */
   public function indexAction() {
+    $settings = $this->settings;
+
     $primaryItems       = [];
-    $primaryItemsUids   = GeneralUtility::intExplode(',', $this->settings['primaryItems'], true);
+    $primaryItemsUids   = GeneralUtility::intExplode(',', $settings['primaryItems'], true);
     $secondaryItems     = [];
-    $secondaryItemsUids = GeneralUtility::intExplode(',', $this->settings['secondaryItems'], true);
+    $secondaryItemsUids = GeneralUtility::intExplode(',', $settings['secondaryItems'], true);
 
     foreach($primaryItemsUids as $uid) {
       $primaryItems[] = $this->quickNavigationItemRepository->findByUid($uid);
@@ -38,6 +42,7 @@ class QuickNavigationContentElementController extends ContentElementController {
       $secondaryItems[] = $this->quickNavigationItemRepository->findByUid($uid);
     }
 
+    $this->view->assign('settings', $settings);
     $this->view->assign('primaryItems', $primaryItems);
     $this->view->assign('secondaryItems', $secondaryItems);
   }

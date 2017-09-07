@@ -11,6 +11,18 @@
         <target>Content Elements</target>
       </trans-unit>
 
+      <!-- Overview Navigation Content Element -->
+
+      <trans-unit id="contentElements.quickNavigationContentElement.title">
+        <source>Quick Navigation</source>
+        <target>Übersicht-Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.description">
+        <source>Quick Navigation Content Element</source>
+        <target>Übersicht-Navigation Content Element</target>
+      </trans-unit>
+
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.title">

@@ -10,6 +10,16 @@
         <source>Content Elements</source>
       </trans-unit>
 
+      <!-- Overview Navigation Content Element -->
+
+      <trans-unit id="contentElements.quickNavigationContentElement.title">
+        <source>Quick Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.description">
+        <source>Quick Navigation Content Element</source>
+      </trans-unit>
+
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.title">

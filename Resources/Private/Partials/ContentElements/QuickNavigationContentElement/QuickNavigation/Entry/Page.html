@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:page.info as="currentPage">
     <li class="t3v-navigations-quick-navigation__entry navigation__entry--page {f:if(condition: '{currentPage.uid} == {item.page}', then: 'navigation__entry--active')} navigation__entry">
-      <f:render partial="ContentElements/QuickNavigationContentElement/QuickLinksNavigation/Item" arguments="{item: item}" />
+      <f:render partial="ContentElements/QuickNavigationContentElement/QuickNavigation/Item" arguments="{item: item}" />
     </li>
   </v:page.info>
 </html>

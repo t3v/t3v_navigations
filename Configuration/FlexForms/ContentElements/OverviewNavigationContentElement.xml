@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.sheetTitle</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.items>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.items.label</label>
+              <config type="array">
+                <type>inline</type>
+                <foreign_table>tx_t3vnavigations_domain_model_overview_navigation_item</foreign_table>
+                <foreign_sortby>sorting</foreign_sortby>
+                <minitems>1</minitems>
+                <maxitems>100</maxitems>
+                <appearance type="array">
+                  <enabledControls>
+                    <info>1</info>
+                    <new>1</new>
+                    <dragdrop>1</dragdrop>
+                    <sort>0</sort>
+                    <hide>1</hide>
+                    <delete>1</delete>
+                    <localize>1</localize>
+                  </enabledControls>
+                  <collapseAll>1</collapseAll>
+                  <expandSingle>0</expandSingle>
+                  <levelLinksPosition>top</levelLinksPosition>
+                  <showAllLocalizationLink>0</showAllLocalizationLink>
+                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
+                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
+                  <showSynchronizationLink>0</showSynchronizationLink>
+                  <useSortable>1</useSortable>
+                </appearance>
+                <behaviour type="array">
+                  <localizationMode>select</localizationMode>
+                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                  <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
+                  <enableCascadingDelete>1</enableCascadingDelete>
+                </behaviour>
+              </config>
+            </TCEforms>
+          </settings.items>
+
+          <settings.responsive>
+            <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.title</title>
+            <type>array</type>
+            <section>1</section>
+            <el>
+              <breakpoint>
+                <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.title</title>
+                <type>array</type>
+                <section>1</section>
+                <el>
+                  <minWidth>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.items.item.minWidth.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim, required</eval>
+                      </config>
+                    </TCEforms>
+                  </minWidth>
+
+                  <thumbnailHeight>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.thumbnailHeight.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim</eval>
+                      </config>
+                    </TCEforms>
+                  </thumbnailHeight>
+
+                  <thumbnailWidth>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.thumbnailWidth.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim</eval>
+                      </config>
+                    </TCEforms>
+                  </thumbnailWidth>
+
+                  <retinaDisplay>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
+                      <config type="array">
+                        <type>check</type>
+                        <default>1</default>
+                      </config>
+                    </TCEforms>
+                  </retinaDisplay>
+                </el>
+              </breakpoint>
+            </el>
+          </settings.responsive>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

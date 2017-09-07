@@ -21,6 +21,7 @@ Installation
 Content Elements
 ----------------
 
+* Overview Navigation Content Element
 * Quick Navigation Content Element
 
 Development
