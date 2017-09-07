@@ -17,6 +17,7 @@ class OverviewNavigationItemRepository extends AbstractRepository {
    * @var array
    */
   protected $defaultOrderings = [
+    'title'   => QueryInterface::ORDER_ASCENDING,
     'sorting' => QueryInterface::ORDER_ASCENDING
   ];
 }
