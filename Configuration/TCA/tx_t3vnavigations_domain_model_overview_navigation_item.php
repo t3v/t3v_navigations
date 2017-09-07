@@ -71,7 +71,7 @@ return [
         'type' => 'input',
         'size' => 42,
         'max' => 255,
-        'eval' => 'trim, required',
+        'eval' => 'trim',
         'wizards' => [
           'link' => [
             'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
