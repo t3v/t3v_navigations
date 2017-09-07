@@ -53,6 +53,18 @@ return [
       'exclude' => true
     ],
 
+    'page' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.page',
+      'config' => [
+        'type' => 'group',
+        'internal_type' => 'db',
+        'allowed' => 'pages',
+        'size' => 1
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'link' => [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.link',
       'config' => [
@@ -254,6 +266,7 @@ return [
       'showitem' => '
         title, --linebreak--,
         thumbnails, --linebreak--,
+        page, --linebreak--,
         link
       ',
       'columnsOverrides' => [

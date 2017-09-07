@@ -23,6 +23,11 @@
         <target>Vorschaubilder</target>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.page">
+        <source>Page</source>
+        <target>Seite</target>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.link">
         <source>Link</source>
         <target>Link</target>

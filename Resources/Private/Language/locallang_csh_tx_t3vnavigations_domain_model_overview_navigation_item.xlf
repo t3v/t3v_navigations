@@ -12,6 +12,10 @@
         <source>Thumbnails</source>
       </trans-unit>
 
+      <trans-unit id="page.description">
+        <source>Page</source>
+      </trans-unit>
+
       <trans-unit id="link.description">
         <source>Link</source>
       </trans-unit>

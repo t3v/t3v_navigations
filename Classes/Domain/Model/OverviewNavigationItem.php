@@ -27,6 +27,13 @@ class OverviewNavigationItem extends AbstractModel {
   protected $thumbnails;
 
   /**
+   * The overview navigation item's page (UID).
+   *
+   * @var int
+   */
+  protected $page;
+
+  /**
    * The overview navigation item's link (typolink).
    *
    * @var string
@@ -95,6 +102,25 @@ class OverviewNavigationItem extends AbstractModel {
    */
   public function removeAllThumbnails() {
     $this->thumbnails = new ObjectStorage();
+  }
+
+  /**
+   * Returns the overview navigation item's page (UID).
+   *
+   * @return int The overview navigation item's page (UID)
+   */
+  public function getPage() {
+    return $this->page;
+  }
+
+  /**
+   * Sets the overview navigation item's page (UID).
+   *
+   * @param int $link The overview navigation item's link page (UID)
+   * @return void
+   */
+  public function setPage($page) {
+    $this->page = $page;
   }
 
   /**
