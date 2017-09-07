@@ -23,6 +23,17 @@ return [
       'exclude' => true
     ],
 
+    'abstract' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.abstract',
+      'config' => [
+        'type' => 'text',
+        'eval' => 'trim, required'
+      ],
+      'defaultExtras' => 'richtext[]',
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'thumbnails' => [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails',
       'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
@@ -88,6 +99,18 @@ return [
           ]
         ],
         'softref' => 'typolink'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
+    'label' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
       ],
       'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
@@ -265,9 +288,11 @@ return [
     'paletteGeneral' => [
       'showitem' => '
         title, --linebreak--,
+        abstract, --linebreak--,
         thumbnails, --linebreak--,
         page, --linebreak--,
-        link
+        link, --linebreak--,
+        label
       ',
       'columnsOverrides' => [
       ],

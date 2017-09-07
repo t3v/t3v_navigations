@@ -9,6 +9,11 @@
         <target>Titel</target>
       </trans-unit>
 
+      <trans-unit id="abstract.description">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
       <trans-unit id="thumbnails.description">
         <source>Thumbnails</source>
         <target>Vorschaubilder</target>
@@ -22,6 +27,11 @@
       <trans-unit id="link.description">
         <source>Link</source>
         <target>Link</target>
+      </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>Label</source>
+        <target>Beschriftung</target>
       </trans-unit>
     </body>
   </file>

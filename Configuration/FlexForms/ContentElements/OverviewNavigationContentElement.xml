@@ -52,18 +52,18 @@
           </settings.items>
 
           <settings.responsive>
-            <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.title</title>
+            <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.title</title>
             <type>array</type>
             <section>1</section>
             <el>
               <breakpoint>
-                <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.title</title>
+                <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.title</title>
                 <type>array</type>
                 <section>1</section>
                 <el>
                   <minWidth>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.items.item.minWidth.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.items.item.minWidth.label</label>
                       <config type="array">
                         <type>input</type>
                         <size>42</size>
@@ -75,7 +75,7 @@
 
                   <thumbnailHeight>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.thumbnailHeight.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailHeight.label</label>
                       <config type="array">
                         <type>input</type>
                         <size>42</size>
@@ -87,7 +87,7 @@
 
                   <thumbnailWidth>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.thumbnailWidth.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailWidth.label</label>
                       <config type="array">
                         <type>input</type>
                         <size>42</size>
@@ -99,7 +99,7 @@
 
                   <retinaDisplay>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.sliderContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
                       <config type="array">
                         <type>check</type>
                         <default>1</default>

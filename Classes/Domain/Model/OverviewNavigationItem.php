@@ -18,6 +18,13 @@ class OverviewNavigationItem extends AbstractModel {
   protected $title;
 
   /**
+   * The overview navigation item's abstract.
+   *
+   * @var string
+   */
+  protected $abstract;
+
+  /**
    * The overview navigation item's thumbnails.
    *
    * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
@@ -39,6 +46,13 @@ class OverviewNavigationItem extends AbstractModel {
    * @var string
    */
   protected $link;
+
+  /**
+   * The overview navigation item's label.
+   *
+   * @var string
+   */
+  protected $label;
 
   /**
    * Constructs a new overview navigation item.
@@ -64,6 +78,25 @@ class OverviewNavigationItem extends AbstractModel {
    */
   public function setTitle($title) {
     $this->title = $title;
+  }
+
+  /**
+   * Returns the overview navigation item's abstract.
+   *
+   * @return string The overview navigation item's abstract
+   */
+  public function getAbstract() {
+    return $this->abstract;
+  }
+
+  /**
+   * Sets the overview navigation item's abstract.
+   *
+   * @param string $abstract The overview navigation item's abstract
+   * @return void
+   */
+  public function setAbstract($abstract) {
+    $this->abstract = $abstract;
   }
 
   /**
@@ -140,5 +173,24 @@ class OverviewNavigationItem extends AbstractModel {
    */
   public function setLink($link) {
     $this->link = $link;
+  }
+
+  /**
+   * Returns the overview navigation item's label.
+   *
+   * @return string The overview navigation item's label
+   */
+  public function getLabel() {
+    return $this->label;
+  }
+
+  /**
+   * Sets the overview navigation item's label.
+   *
+   * @param string $label The overview navigation item's label
+   * @return void
+   */
+  public function setLabel($label) {
+    $this->label = $label;
   }
 }

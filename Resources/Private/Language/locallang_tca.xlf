@@ -16,6 +16,10 @@
         <source>Title</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.abstract">
+        <source>Abstract</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails">
         <source>Thumbnails</source>
       </trans-unit>
@@ -26,6 +30,10 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.link">
         <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
+        <source>Label</source>
       </trans-unit>
 
       <!-- Quick Navigation Item -->

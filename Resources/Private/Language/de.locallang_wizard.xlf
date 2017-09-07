@@ -13,13 +13,13 @@
 
       <!-- Overview Navigation Content Element -->
 
-      <trans-unit id="contentElements.quickNavigationContentElement.title">
-        <source>Quick Navigation</source>
+      <trans-unit id="contentElements.overviewNavigationContentElement.title">
+        <source>Overview Navigation</source>
         <target>Übersicht-Navigation</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.quickNavigationContentElement.description">
-        <source>Quick Navigation Content Element</source>
+      <trans-unit id="contentElements.overviewNavigationContentElement.description">
+        <source>Overview Navigation Content Element</source>
         <target>Übersicht-Navigation Content Element</target>
       </trans-unit>
 

@@ -8,6 +8,10 @@
         <source>Title</source>
       </trans-unit>
 
+      <trans-unit id="abstract.description">
+        <source>Abstract</source>
+      </trans-unit>
+
       <trans-unit id="thumbnails.description">
         <source>Thumbnails</source>
       </trans-unit>
@@ -18,6 +22,10 @@
 
       <trans-unit id="link.description">
         <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>Label</source>
       </trans-unit>
     </body>
   </file>

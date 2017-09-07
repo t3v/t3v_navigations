@@ -22,7 +22,17 @@ call_user_func(function($namespace, $extkey) {
     \TYPO3\CMS\Core\Imaging\IconRegistry::class
   );
 
-  // --- Quick Navigation Content Element ---
+  // --- Overview Navigation Content Element Icon ---
+
+  $iconIdentifier = 'overview_navigation_content_element';
+
+  $iconRegistry->registerIcon(
+    "{$extkey}-{$iconIdentifier}",
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/OverviewNavigationContentElement.svg"]
+  );
+
+  // --- Quick Navigation Content Element Icon ---
 
   $iconIdentifier = 'quick_navigation_content_element';
 
