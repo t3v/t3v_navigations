@@ -18,6 +18,26 @@
         <target>Navigationspunkte</target>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.label">
+        <source>Layout</source>
+        <target>Layout</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.default.label">
+        <source>Default</source>
+        <target>Default</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.3Columns.label">
+        <source>3 Columns</source>
+        <target>3 Spalten</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.4Columns.label">
+        <source>4 Columns</source>
+        <target>4 Spalten</target>
+      </trans-unit>
+
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.title">
         <source>Responsive</source>
         <target>Responsive</target>
@@ -63,6 +83,16 @@
       <trans-unit id="contentElements.quickNavigationContentElement.settings.secondaryItems.label">
         <source>Secondary Navigation Items</source>
         <target>Sekundäre Navigationspunkte</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.label">
+        <source>Layout</source>
+        <target>Layout</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.default.label">
+        <source>Default</source>
+        <target>Default</target>
       </trans-unit>
     </body>
   </file>

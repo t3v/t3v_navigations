@@ -16,6 +16,22 @@
         <source>Navigation Items</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.3Columns.label">
+        <source>3 Columns</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.4Columns.label">
+        <source>4 Columns</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.title">
         <source>Responsive</source>
       </trans-unit>
@@ -52,6 +68,14 @@
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.secondaryItems.label">
         <source>Secondary Navigation Items</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.default.label">
+        <source>Default</source>
       </trans-unit>
     </body>
   </file>

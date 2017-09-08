@@ -51,6 +51,34 @@
             </TCEforms>
           </settings.items>
 
+          <settings.layout>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.layout.label</label>
+              <config type="array">
+                <type>select</type>
+                <size>1</size>
+                <minitems>1</minitems>
+                <maxitems>1</maxitems>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.layout.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.layout.3Columns.label</numIndex>
+                    <numIndex index="1">3-columns</numIndex>
+                  </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.layout.4Columns.label</numIndex>
+                    <numIndex index="1">4-columns</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </settings.layout>
+
           <settings.responsive>
             <title>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.title</title>
             <type>array</type>
