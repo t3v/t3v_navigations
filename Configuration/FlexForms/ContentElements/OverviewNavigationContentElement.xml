@@ -9,7 +9,7 @@
     <sDEF>
       <ROOT>
         <TCEforms type="array">
-          <sheetTitle>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.sheetTitle</sheetTitle>
+          <sheetTitle>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.shared.sheets.general.title</sheetTitle>
         </TCEforms>
         <type>array</type>
         <el>
@@ -50,7 +50,17 @@
               </config>
             </TCEforms>
           </settings.items>
+        </el>
+      </ROOT>
+    </sDEF>
 
+    <appearance>
+     <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.shared.sheets.appearance.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
           <settings.layout>
             <TCEforms type="array">
               <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.layout.label</label>
@@ -139,7 +149,7 @@
             </el>
           </settings.responsive>
         </el>
-      </ROOT>
-    </sDEF>
+     </ROOT>
+    </appearance>
   </sheets>
 </T3DataStructure>

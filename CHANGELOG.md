@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Updated FlexForms
 * Added `Layout` setting to `Overview Navigation` and `Quick Navigation` Content Element
 
 1.0.0

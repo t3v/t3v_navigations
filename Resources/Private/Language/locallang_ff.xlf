@@ -8,10 +8,6 @@
 
       <!-- Overview Navigation Content Element -->
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.sheetTitle">
-        <source>Settings</source>
-      </trans-unit>
-
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.items.label">
         <source>Navigation Items</source>
       </trans-unit>
@@ -58,10 +54,6 @@
 
       <!-- Quick Navigation Content Element -->
 
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.sheetTitle">
-        <source>Settings</source>
-      </trans-unit>
-
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
         <source>Primary Navigation Items</source>
       </trans-unit>
@@ -76,6 +68,16 @@
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.default.label">
         <source>Default</source>
+      </trans-unit>
+
+      <!-- Shared -->
+
+      <trans-unit id="contentElements.shared.sheets.general.title">
+        <source>General</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.shared.sheets.appearance.title">
+        <source>Appearance</source>
       </trans-unit>
     </body>
   </file>
