@@ -1,21 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:tag name="div" class="t3v-navigations-overview-navigation-item--{item.uid} t3v-navigations-overview-navigation-item navigation-item" hideIfEmpty="true">
     <v:tag name="div" class="t3v-navigations-overview-navigation-item__header" hideIfEmpty="true">
-      <f:link.typolink parameter="{item.link}"
-                       class="t3v-navigations-overview-navigation-item__thumbnail"
-                       title="{item.title}">
+      <f:link.typolink parameter="{item.link}" class="t3v-navigations-overview-navigation-item__thumbnail" title="{item.title}">
         {item.title}
       </f:link.typolink>
     </v:tag>
 
     <v:tag name="div" class="t3v-navigations-overview-navigation-item__main" hideIfEmpty="true">
       <v:tag name="div" class="t3v-navigations-overview-navigation-item__meta" hideIfEmpty="true">
-        <h3 class="t3v-navigations-overview-navigation-item__title">
-          <f:link.typolink parameter="{item.link}"
-                           title="{item.title}">
+        <v:tag name="h3" class="t3v-navigations-overview-navigation-item__title" hideIfEmpty="true">
+          <f:link.typolink parameter="{item.link}" title="{item.title}">
             {item.title}
           </f:link.typolink>
-        </h3>
+        </v:tag>
       </v:tag>
 
       <f:if condition="{item.abstract}">
@@ -29,9 +26,7 @@
       <v:tag name="div" class="t3v-navigations-overview-navigation-item__more" hideIfEmpty="true">
         <f:if condition="{item.label}">
           <f:then>
-            <f:link.typolink parameter="{item.link}"
-                             class="link--more link"
-                             title="{item.label}">
+            <f:link.typolink parameter="{item.link}" class="link--more link" title="{item.label}">
               {item.label}
             </f:link.typolink>
           </f:then>
