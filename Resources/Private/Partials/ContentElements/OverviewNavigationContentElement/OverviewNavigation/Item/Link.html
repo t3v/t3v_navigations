@@ -1,14 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
-  <v:tag name="div" class="t3v-navigations-overview-navigation-item--{item.uid} t3v-navigations-overview-navigation-item navigation-item" hideIfEmpty="true">
-    <v:tag name="div" class="t3v-navigations-overview-navigation-item__header" hideIfEmpty="true">
-      <f:link.typolink parameter="{item.link}" class="t3v-navigations-overview-navigation-item__thumbnail" title="{item.title}">
+  <v:tag name="div" class="t3v-navigations-overview-navigation__item--{item.uid} t3v-navigations-overview-navigation__item navigation__item" hideIfEmpty="true">
+    <v:tag name="div" class="t3v-navigations-overview-navigation__item__header" hideIfEmpty="true">
+      <f:link.typolink parameter="{item.link}" class="t3v-navigations-overview-navigation__item__thumbnail" title="{item.title}">
         {item.title}
       </f:link.typolink>
     </v:tag>
 
-    <v:tag name="div" class="t3v-navigations-overview-navigation-item__main" hideIfEmpty="true">
-      <v:tag name="div" class="t3v-navigations-overview-navigation-item__meta" hideIfEmpty="true">
-        <v:tag name="h3" class="t3v-navigations-overview-navigation-item__title" hideIfEmpty="true">
+    <v:tag name="div" class="t3v-navigations-overview-navigation__item__main" hideIfEmpty="true">
+      <v:tag name="div" class="t3v-navigations-overview-navigation__item__meta" hideIfEmpty="true">
+        <v:tag name="h3" class="t3v-navigations-overview-navigation__item__title" hideIfEmpty="true">
           <f:link.typolink parameter="{item.link}" title="{item.title}">
             {item.title}
           </f:link.typolink>
@@ -16,14 +16,14 @@
       </v:tag>
 
       <f:if condition="{item.abstract}">
-        <div class="t3v-navigations-overview-navigation-item__abstract">
+        <div class="t3v-navigations-overview-navigation__item__abstract">
           <f:format.crop maxCharacters="200" respectWordBoundaries="1">
             <f:format.html>{item.abstract}</f:format.html>
           </f:format.crop>
         </div>
       </f:if>
 
-      <v:tag name="div" class="t3v-navigations-overview-navigation-item__more" hideIfEmpty="true">
+      <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
         <f:if condition="{item.label}">
           <f:then>
             <f:link.typolink parameter="{item.link}" class="link--more link" title="{item.label}">
