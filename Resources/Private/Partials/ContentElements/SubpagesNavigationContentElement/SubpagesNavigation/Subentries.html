@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vDataMapper/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{entry.active}">
+    <f:if condition="{entry.hasSubPages}">
+      <ul class="t3v-navigations-subpages-navigation__subentries navigation__subentries">
+        <v:menu pageUid="{entry.uid}" useShortcutData="1" as="subentries">
+          <f:for each="{subentries}" as="subentry">
+            <t3v:page.visible uid="{subentry.uid}">
+              <li class="t3v-navigations-subpages-navigation__subentry {f:if(condition: '{subentry.active}', then: 'navigation__subentry--active')} {f:if(condition: '{subentry.hasSubPages}', then: 'navigation__subentry--with-subentries')} navigation__subentry">
+                <f:link.page pageUid="{subentry.uid}"
+                             class="t3v-navigations-subpages-navigation__subitem navigation__subitem"
+                             title="{subentry.linktext}">
+                  {subentry.linktext}
+                </f:link.page>
+
+                <f:render partial="ContentElements/SubpagesNavigationContentElement/SubpagesNavigation/SubSubentries" arguments="{entry: subentry}" />
+              </li>
+            </t3v:page.visible>
+          </f:for>
+        </v:menu>
+      </ul>
+    </f:if>
+  </f:if>
+</html>

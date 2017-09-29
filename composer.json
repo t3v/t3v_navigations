@@ -41,6 +41,7 @@
     "typo3/cms-core": "^7.6 || ^8.7",
     "fluidtypo3/vhs": "^3.1 || ^4.2",
     "t3v/t3v_core": "*",
+    "t3v/t3v_datamapper": "*",
     "t3v/t3v_content": "*"
   },
   "require-dev": {
