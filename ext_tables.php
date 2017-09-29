@@ -42,6 +42,16 @@ call_user_func(function($namespace, $extkey) {
     ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/QuickNavigationContentElement.svg"]
   );
 
+  // --- Subpages Navigation Content Element Icon ---
+
+  $iconIdentifier = 'subpages_navigation_content_element';
+
+  $iconRegistry->registerIcon(
+    "{$extkey}-{$iconIdentifier}",
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/SubpagesNavigationContentElement.svg"]
+  );
+
   // === TypoScript ===
 
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extkey, 'Configuration/TypoScript', 'T3v Navigations');

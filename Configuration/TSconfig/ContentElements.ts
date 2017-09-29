@@ -22,3 +22,4 @@
 
 <INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/OverviewNavigationContentElement.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/QuickNavigationContentElement.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/SubpagesNavigationContentElement.ts">

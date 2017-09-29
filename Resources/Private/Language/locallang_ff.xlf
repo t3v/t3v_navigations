@@ -70,6 +70,20 @@
         <source>Default</source>
       </trans-unit>
 
+      <!-- Subpages Navigation Content Element -->
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.entryPage.label">
+        <source>Entry Page</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
       <!-- Shared -->
 
       <trans-unit id="contentElements.shared.sheets.general.title">

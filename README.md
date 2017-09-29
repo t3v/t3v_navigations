@@ -66,6 +66,7 @@ Credits
 * [Browser free icon (1)]
 * [Browser free icon (2)]
 * [Links free icon]
+* [List free icon]
 
 Icons made by [Freepik] and [Smashicons] from [Flaticon] is licensed by [CC 3.0 BY].
 
@@ -86,6 +87,7 @@ T3v Navigations is released under the [MIT License (MIT)], see [LICENSE].
 [here]: https://github.com/t3v/t3v_navigations/issues "GitHub Issue Tracker"
 [LICENSE]: https://raw.githubusercontent.com/t3v/t3v_navigations/master/LICENSE "License"
 [Links free icon]: https://www.flaticon.com/free-icon/links_358937 "Links free icon"
+[List free icon]: https://www.flaticon.com/free-icon/list_140881 "List free icon"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Smashicons]: https://www.flaticon.com/authors/smashicons "Smashicons"

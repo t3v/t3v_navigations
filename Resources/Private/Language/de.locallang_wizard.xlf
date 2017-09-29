@@ -34,6 +34,18 @@
         <source>Quick Navigation Content Element</source>
         <target>Quick-Navigation Content Element</target>
       </trans-unit>
+
+      <!-- Subpages Navigation Content Element -->
+
+      <trans-unit id="contentElements.quickNavigationContentElement.title">
+        <source>Subpages Navigation</source>
+        <target>Unterseiten-Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.description">
+        <source>Subpages Navigation Content Element</source>
+        <target>Unterseiten-Navigation Content Element</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
