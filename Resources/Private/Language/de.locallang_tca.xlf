@@ -6,7 +6,7 @@
     <body>
       <!-- === Models === -->
 
-      <!-- Overview Navigation Item -->
+      <!-- Overview Navigation Item Model -->
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item">
         <source>Overview Navigation Item</source>
@@ -43,7 +43,7 @@
         <target>Beschriftung</target>
       </trans-unit>
 
-      <!-- Quick Navigation Item -->
+      <!-- Quick Navigation Item Model -->
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
         <source>Quick Navigation Item</source>

@@ -18,6 +18,12 @@ Installation
 2. Run `composer install` or `composer update` to install all dependencies with Composer
 3. Include the TypoScript for T3v Navigations
 
+Models
+------
+
+* Overview Navigation Item
+* Quick Navigation Item
+
 Content Elements
 ----------------
 
@@ -81,8 +87,8 @@ T3v Navigations is released under the [MIT License (MIT)], see [LICENSE].
 [Browser free icon (2)]: https://www.flaticon.com/free-icon/browser_140808 "Browser free icon (2)"
 [CC 3.0 BY]: http://creativecommons.org/licenses/by/3.0/ "Creative Commons BY 3.0"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
-[Flaticon]: http://www.flaticon.com "Flaticon"
-[Freepik]: http://www.flaticon.com/authors/freepik "Freepik"
+[Flaticon]: https://www.flaticon.com "Flaticon"
+[Freepik]: https://www.flaticon.com/authors/freepik "Freepik"
 [Functional testing TYPO3]: https://wiki.typo3.org/Functional_testing "Functional testing TYPO3"
 [here]: https://github.com/t3v/t3v_navigations/issues "GitHub Issue Tracker"
 [LICENSE]: https://raw.githubusercontent.com/t3v/t3v_navigations/master/LICENSE "License"
