@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Merged Extensions and Vendor TypoScript
 * Updated icons
 
 1.1.0
