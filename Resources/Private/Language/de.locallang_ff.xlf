@@ -20,7 +20,7 @@
 
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.default.label">
         <source>Default</source>
-        <target>Default</target>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.3Columns.label">
@@ -31,6 +31,41 @@
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.4Columns.label">
         <source>4 Columns</source>
         <target>4 Spalten</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.label">
+        <source>Container</source>
+        <target>Container</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.none.label">
+        <source>None</source>
+        <target>Ohne</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.medium.label">
+        <source>Medium</source>
+        <target>Medium</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.large.label">
+        <source>Large</source>
+        <target>Groß</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.title">
@@ -63,6 +98,26 @@
         <target>Hochauflösendes Display</target>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label">
+        <source>Non-Retina</source>
+        <target>Nicht-Retina</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
+        <source>2X</source>
+        <target>2X</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
+        <source>3X</source>
+        <target>3X</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
+        <source>4X</source>
+        <target>4X</target>
+      </trans-unit>
+
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
@@ -82,7 +137,42 @@
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.default.label">
         <source>Default</source>
-        <target>Default</target>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.label">
+        <source>Container</source>
+        <target>Container</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.none.label">
+        <source>None</source>
+        <target>Ohne</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.medium.label">
+        <source>Medium</source>
+        <target>Medium</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.large.label">
+        <source>Large</source>
+        <target>Groß</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
       </trans-unit>
 
       <!-- Subpages Navigation Content Element -->
@@ -99,7 +189,42 @@
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.default.label">
         <source>Default</source>
-        <target>Default</target>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.label">
+        <source>Container</source>
+        <target>Container</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.none.label">
+        <source>None</source>
+        <target>Ohne</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.medium.label">
+        <source>Medium</source>
+        <target>Medium</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.large.label">
+        <source>Large</source>
+        <target>Groß</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
       </trans-unit>
 
       <!-- Shared -->

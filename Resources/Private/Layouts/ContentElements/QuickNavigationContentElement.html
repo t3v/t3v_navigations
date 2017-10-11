@@ -1,9 +1,23 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-  <div id="c{data.uid}" class="ce--t3v-navigations-quick-navigation ce">
-    <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <div id="c{data.uid}" class="ce--t3v-navigations-quick-navigation ce--{settings.layout} ce">
+    <f:if condition="{settings.container}">
+      <f:then>
+        <v:tag name="div" class="ce__container container--{settings.container} container" hideIfEmpty="true">
+          <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
 
-    <div class="ce__main">
-      <f:render section="Main" />
-    </div>
+          <v:tag name="div" class="ce__main" hideIfEmpty="true">
+            <f:render section="Main" />
+          </v:tag>
+        </v:tag>
+      </f:then>
+
+      <f:else>
+        <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
+
+        <v:tag name="div" class="ce__main" hideIfEmpty="true">
+          <f:render section="Main" />
+        </v:tag>
+      </f:else>
+    </f:if>
   </div>
 </html>

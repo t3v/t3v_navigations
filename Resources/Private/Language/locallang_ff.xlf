@@ -28,6 +28,34 @@
         <source>4 Columns</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.title">
         <source>Responsive</source>
       </trans-unit>
@@ -52,6 +80,22 @@
         <source>Retina Display</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label">
+        <source>Non-Retina</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
+        <source>2X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
+        <source>3X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
+        <source>4X</source>
+      </trans-unit>
+
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
@@ -70,6 +114,34 @@
         <source>Default</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
       <!-- Subpages Navigation Content Element -->
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.settings.entryPage.label">
@@ -82,6 +154,34 @@
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.default.label">
         <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.custom.label">
+        <source>Custom</source>
       </trans-unit>
 
       <!-- Shared -->
