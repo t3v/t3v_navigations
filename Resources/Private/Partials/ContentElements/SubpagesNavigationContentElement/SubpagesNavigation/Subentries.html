@@ -12,7 +12,9 @@
                   {subentry.linktext}
                 </f:link.page>
 
-                <f:render partial="ContentElements/SubpagesNavigationContentElement/SubpagesNavigation/SubSubentries" arguments="{entry: subentry}" />
+                <f:if condition="{settings.levels} >= 3">
+                  <f:render partial="ContentElements/SubpagesNavigationContentElement/SubpagesNavigation/SubSubentries" arguments="{entry: subentry, settings: settings}" />
+                </f:if>
               </li>
             </t3v:page.visible>
           </f:for>

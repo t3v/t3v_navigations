@@ -27,6 +27,27 @@
               </config>
             </TCEforms>
           </settings.entryPage>
+
+          <settings.levels>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.subpagesNavigationContentElement.settings.levels.label</label>
+              <config type="array">
+                <type>input</type>
+                <size>42</size>
+                <max>255</max>
+                <eval>int, trim, required</eval>
+                <range type="array">
+                  <lower>1</lower>
+                  <upper>3</upper>
+                </range>
+                <slider>
+                  <step>1</step>
+                  <width>3</width>
+                </slider>
+                <default>2</default>
+              </config>
+            </TCEforms>
+          </settings.levels>
         </el>
       </ROOT>
     </sDEF>

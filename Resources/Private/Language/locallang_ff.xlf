@@ -148,6 +148,10 @@
         <source>Entry Page</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.levels.label">
+        <source>Levels</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.label">
         <source>Layout</source>
       </trans-unit>

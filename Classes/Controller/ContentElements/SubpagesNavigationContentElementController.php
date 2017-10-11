@@ -15,8 +15,8 @@ class SubpagesNavigationContentElementController extends ContentElementControlle
    * @return void
    */
   public function indexAction() {
-    $entryPage = $this->settings['entryPage'];
+    $settings = $this->settings;
 
-    $this->view->assign('entryPage', $entryPage);
+    $this->view->assign('settings', $settings);
   }
 }
