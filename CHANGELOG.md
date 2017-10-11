@@ -8,6 +8,8 @@ Unreleased
 
 * Merged Extensions and Vendor TypoScript
 * Updated icons
+* Updated dependencies
+* Updated AppVeyor configuration
 
 1.1.0
 -----
