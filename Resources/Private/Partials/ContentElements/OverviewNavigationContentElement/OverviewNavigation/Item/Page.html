@@ -24,21 +24,11 @@
       </f:if>
 
       <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
-        <f:if condition="{item.label}">
-          <f:then>
-            <f:link.page pageUid="{item.page}" class="link--more link" title="{item.label}">
-              {item.label}
-            </f:link.page>
-          </f:then>
-
-          <f:else>
-            <f:link.page pageUid="{item.page}"
-                         class="link--more link"
-                         title="{f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}">
-              {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
-            </f:link.page>
-          </f:else>
-        </f:if>
+        <f:link.page pageUid="{item.page}"
+                     class="link--more link"
+                     title="{item.label}">
+          {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
+        </f:link.page>
       </v:tag>
     </v:tag>
   </v:tag>
