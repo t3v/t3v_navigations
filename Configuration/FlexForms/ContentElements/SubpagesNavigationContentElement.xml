@@ -75,6 +75,21 @@
                   </numIndex>
 
                   <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.subpagesNavigationContentElement.settings.layout.one.label</numIndex>
+                    <numIndex index="1">layout-1</numIndex>
+                  </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.subpagesNavigationContentElement.settings.layout.two.label</numIndex>
+                    <numIndex index="1">layout-2</numIndex>
+                  </numIndex>
+
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.subpagesNavigationContentElement.settings.layout.three.label</numIndex>
+                    <numIndex index="1">layout-3</numIndex>
+                  </numIndex>
+
+                  <numIndex index="4" type="array">
                     <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.subpagesNavigationContentElement.settings.layout.custom.label</numIndex>
                     <numIndex index="1">custom</numIndex>
                   </numIndex>

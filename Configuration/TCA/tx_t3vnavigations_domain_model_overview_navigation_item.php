@@ -258,7 +258,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'title',
+    'searchFields' => 'title, abstract, label',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -266,7 +266,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'title, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'title, abstract, label, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],

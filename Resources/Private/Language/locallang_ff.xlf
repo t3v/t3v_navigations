@@ -114,6 +114,22 @@
         <source>Default</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.one.label">
+        <source>Layout 1</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.two.label">
+        <source>Layout 2</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.three.label">
+        <source>Layout 3</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.custom.label">
         <source>Custom</source>
       </trans-unit>
@@ -160,8 +176,16 @@
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.custom.label">
-        <source>Custom</source>
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.one.label">
+        <source>Layout 1</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.two.label">
+        <source>Layout 2</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.three.label">
+        <source>Layout 3</source>
       </trans-unit>
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.label">

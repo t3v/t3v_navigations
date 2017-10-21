@@ -18,6 +18,11 @@
         <source>Link</source>
         <target>Link</target>
       </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

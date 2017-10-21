@@ -32,6 +32,13 @@ class QuickNavigationItem extends AbstractModel {
   protected $link;
 
   /**
+   * The quick navigation item's label.
+   *
+   * @var string
+   */
+  protected $label;
+
+  /**
    * Returns the quick navigation item's title.
    *
    * @return string The quick navigation item's title
@@ -86,5 +93,31 @@ class QuickNavigationItem extends AbstractModel {
    */
   public function setLink($link) {
     $this->link = $link;
+  }
+
+  /**
+   * Returns the quick navigation item's label.
+   *
+   * @return string The quick navigation item's label
+   */
+  public function getLabel() {
+    $label = $this->label;
+    $title = $this->title;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $title;
+    }
+  }
+
+  /**
+   * Sets the quick navigation item's label.
+   *
+   * @param string $label The quick navigation item's label
+   * @return void
+   */
+  public function setLabel($label) {
+    $this->label = $label;
   }
 }

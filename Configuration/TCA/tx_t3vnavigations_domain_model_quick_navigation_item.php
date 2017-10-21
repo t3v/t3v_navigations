@@ -63,6 +63,18 @@ return [
       'exclude' => true
     ],
 
+    'label' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     // --- Default TYPO3 columns ---
 
     'uid' => [
@@ -205,7 +217,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'title',
+    'searchFields' => 'title, label',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -213,7 +225,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'title, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'title, label, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],
@@ -236,7 +248,8 @@ return [
       'showitem' => '
         title, --linebreak--,
         page, --linebreak--,
-        link
+        link, --linebreak--,
+        label
       ',
       'columnsOverrides' => [
       ],

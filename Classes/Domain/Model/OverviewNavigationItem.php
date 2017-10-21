@@ -102,7 +102,7 @@ class OverviewNavigationItem extends AbstractModel {
   /**
    * Returns all thumbnails belonging to the overview navigation item.
    *
-   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> The overview navigation item's thumbnails
    */
   public function getThumbnails() {
     return $this->thumbnails;
@@ -181,7 +181,14 @@ class OverviewNavigationItem extends AbstractModel {
    * @return string The overview navigation item's label
    */
   public function getLabel() {
-    return $this->label;
+    $label = $this->label;
+    $title = $this->title;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $title;
+    }
   }
 
   /**
