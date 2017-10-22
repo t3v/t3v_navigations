@@ -68,12 +68,12 @@
         <source>Minimum Width in px</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailHeight.label">
-        <source>Thumbnail Height in px</source>
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailWidth.label">
-        <source>Thumbnail Width in px</source>
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.label">

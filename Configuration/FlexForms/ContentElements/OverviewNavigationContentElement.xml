@@ -156,9 +156,9 @@
                     </TCEforms>
                   </minWidth>
 
-                  <thumbnailHeight>
+                  <imageHeight>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailHeight.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageHeight.label</label>
                       <config type="array">
                         <type>input</type>
                         <size>42</size>
@@ -166,11 +166,11 @@
                         <eval>int, trim</eval>
                       </config>
                     </TCEforms>
-                  </thumbnailHeight>
+                  </imageHeight>
 
-                  <thumbnailWidth>
+                  <imageWidth>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailWidth.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageWidth.label</label>
                       <config type="array">
                         <type>input</type>
                         <size>42</size>
@@ -178,7 +178,7 @@
                         <eval>int, trim</eval>
                       </config>
                     </TCEforms>
-                  </thumbnailWidth>
+                  </imageWidth>
 
                   <retinaDisplay>
                     <TCEforms type="array">

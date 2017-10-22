@@ -83,14 +83,14 @@
         <target>Mindestbreite in px</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailHeight.label">
-        <source>Thumbnail Height in px</source>
-        <target>Vorschaubild Höhe in px</target>
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
+        <target>Bildhöhe in px</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.thumbnailWidth.label">
-        <source>Thumbnail Width in px</source>
-        <target>Vorschaubild Breite in px</target>
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
+        <target>Bildbreite in px</target>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.label">
