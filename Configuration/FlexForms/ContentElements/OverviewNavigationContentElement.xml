@@ -191,7 +191,7 @@
                         <maxitems>1</maxitems>
                         <items type="array">
                           <numIndex index="0" type="array">
-                            <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label</numIndex>
+                            <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.none.label</numIndex>
                             <numIndex index="1"></numIndex>
                           </numIndex>
 

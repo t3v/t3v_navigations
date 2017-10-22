@@ -80,7 +80,7 @@
         <source>Retina Display</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label">
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
         <source>Non-Retina</source>
       </trans-unit>
 
