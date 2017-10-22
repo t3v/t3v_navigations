@@ -146,7 +146,7 @@
                 <el>
                   <minWidth>
                     <TCEforms type="array">
-                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.items.item.minWidth.label</label>
+                      <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.minWidth.label</label>
                       <config type="array">
                         <type>input</type>
                         <size>42</size>

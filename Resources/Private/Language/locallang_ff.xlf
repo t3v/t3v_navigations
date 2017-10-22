@@ -64,7 +64,7 @@
         <source>Breakpoint</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.items.item.minWidth.label">
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.minWidth.label">
         <source>Minimum Width in px</source>
       </trans-unit>
 
