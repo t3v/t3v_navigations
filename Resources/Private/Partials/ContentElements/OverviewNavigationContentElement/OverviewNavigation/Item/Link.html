@@ -21,15 +21,15 @@
             <f:format.html>{item.abstract}</f:format.html>
           </f:format.crop>
         </div>
-      </f:if>
 
-      <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
-        <f:link.typolink parameter="{item.link}"
-                         class="link--more link"
-                         title="{item.label}">
-          {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
-        </f:link.typolink>
-      </v:tag>
+        <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
+          <f:link.typolink parameter="{item.link}"
+                           class="link--more link"
+                           title="{item.label}">
+            {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
+          </f:link.typolink>
+        </v:tag>
+      </f:if>
     </v:tag>
   </v:tag>
 </html>
