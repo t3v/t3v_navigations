@@ -5,9 +5,9 @@
         {item.thumbnails -> v:iterator.first() -> v:variable.set(name: '1stThumbnail')}
 
         <f:if condition="{1stThumbnail}">
-          .t3v-navigations-overview-navigation__item--{item.uid} .t3v-navigations-overview-navigation__item__thumbnail { background-image: url('<v:uri.image src="{1stThumbnail.uid}" height="242c" treatIdAsReference="1" />'); }
+          .t3v-navigations-overview-navigation__item--{item.uid} .t3v-navigations-overview-navigation__item__thumbnail { background-image: url('<v:uri.image src="{1stThumbnail.uid}" height="160c" treatIdAsReference="1" />'); }
 
-          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .t3v-navigations-overview-navigation__item--{item.uid} .t3v-navigations-overview-navigation__item__thumbnail { background-image: url('<v:uri.image src="{1stThumbnail.uid}" height="484c" treatIdAsReference="1" />'); } }
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .t3v-navigations-overview-navigation__item--{item.uid} .t3v-navigations-overview-navigation__item__thumbnail { background-image: url('<v:uri.image src="{1stThumbnail.uid}" height="320c" treatIdAsReference="1" />'); } }
         </f:if>
       </f:if>
     </f:for>
