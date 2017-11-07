@@ -3,20 +3,12 @@
     <f:if condition="{settings.container}">
       <f:then>
         <v:tag name="div" class="ce__container container--{settings.container} container" hideIfEmpty="true">
-          <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
-
-          <v:tag name="div" class="ce__main" hideIfEmpty="true">
-            <f:render section="Main" />
-          </v:tag>
+          <f:render section="ContentElement" arguments="{items: items, data: data, settings: settings}" />
         </v:tag>
       </f:then>
 
       <f:else>
-        <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
-
-        <v:tag name="div" class="ce__main" hideIfEmpty="true">
-          <f:render section="Main" />
-        </v:tag>
+        <f:render section="ContentElement" arguments="{items: items, data: data, settings: settings}" />
       </f:else>
     </f:if>
   </div>
