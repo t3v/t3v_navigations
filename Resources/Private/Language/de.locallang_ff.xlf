@@ -38,6 +38,21 @@
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.label">
+        <source>Background Size (Thumbnails)</source>
+        <target>Hintergrundgröße (Vorschaubilder)</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.cover.label">
+        <source>Cover</source>
+        <target>Cover</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.contain.label">
+        <source>Contain</source>
+        <target>Contain</target>
+      </trans-unit>
+
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.label">
         <source>Container</source>
         <target>Container</target>

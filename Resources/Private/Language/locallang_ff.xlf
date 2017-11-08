@@ -32,6 +32,18 @@
         <source>Custom</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.label">
+        <source>Background Size (Thumbnails)</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.cover.label">
+        <source>Cover</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.contain.label">
+        <source>Contain</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.label">
         <source>Container</source>
       </trans-unit>
