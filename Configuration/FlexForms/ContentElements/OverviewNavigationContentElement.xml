@@ -95,9 +95,9 @@
             </TCEforms>
           </settings.layout>
 
-          <settings.backgroundSize>
+          <settings.thumbnails.backgroundSize>
             <TCEforms type="array">
-              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.backgroundSize.label</label>
+              <label>LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.label</label>
               <config type="array">
                 <type>select</type>
                 <renderType>selectSingle</renderType>
@@ -106,18 +106,18 @@
                 <maxitems>1</maxitems>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.backgroundSize.cover.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.cover.label</numIndex>
                     <numIndex index="1">cover</numIndex>
                   </numIndex>
 
                   <numIndex index="1" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.backgroundSize.contain.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.contain.label</numIndex>
                     <numIndex index="1">contain</numIndex>
                   </numIndex>
                 </items>
               </config>
             </TCEforms>
-          </settings.backgroundSize>
+          </settings.thumbnails.backgroundSize>
 
           <settings.container>
             <TCEforms type="array">

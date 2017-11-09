@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Namespace `backgroundSize` setting
 * Updated constants and configuration
 * Updated partials
 * Added `levels` settings to `Subpages Navigation` Content Element

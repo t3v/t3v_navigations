@@ -32,15 +32,15 @@
         <source>Custom</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.label">
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.label">
         <source>Background Size (Thumbnails)</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.cover.label">
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.cover.label">
         <source>Cover</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.backgroundSize.contain.label">
+      <trans-unit id="contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.contain.label">
         <source>Contain</source>
       </trans-unit>
 
