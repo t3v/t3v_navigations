@@ -1,4 +1,6 @@
-# === T3v Navigations Configuration ===
+# ---------------------------------
+# | T3v Navigations Configuration |
+# ---------------------------------
 
 plugin {
   tx_t3vnavigations {
