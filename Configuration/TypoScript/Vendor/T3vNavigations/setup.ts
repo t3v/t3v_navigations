@@ -3,12 +3,6 @@
 plugin {
   tx_t3vnavigations {
     persistence {
-      enableAutomaticCacheClearing = 1
-
-      updateReferenceIndex = 1
-
-      # storagePid = {$plugin.tx_t3vnavigations.persistence.storagePid}
-
       classes {
         T3v\T3vNavigations\Domain\Model\OverviewNavigationItem {
           mapping {
@@ -32,18 +26,30 @@ plugin {
           }
         }
       }
-    }
 
-    view {
-      layoutRootPath = {$plugin.tx_t3vnavigations.view.layoutRootPath}
+      enableAutomaticCacheClearing = {$plugin.tx_t3vnavigations.persistence.enableAutomaticCacheClearing}
 
-      templateRootPath = {$plugin.tx_t3vnavigations.view.templateRootPath}
+      storagePid = {$plugin.tx_t3vnavigations.persistence.storagePid}
 
-      partialRootPath = {$plugin.tx_t3vnavigations.view.partialRootPath}
+      updateReferenceIndex = {$plugin.tx_t3vnavigations.persistence.updateReferenceIndex}
     }
 
     settings {
       # ...
+    }
+
+    view {
+      layoutRootPaths {
+        0 = {$plugin.tx_t3vnavigations.view.layoutRootPath}
+      }
+
+      templateRootPaths {
+        0 = {$plugin.tx_t3vnavigations.view.templateRootPath}
+      }
+
+      partialRootPaths {
+        0 = {$plugin.tx_t3vnavigations.view.partialRootPath}
+      }
     }
   }
 }

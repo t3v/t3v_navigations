@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Updated constants and configuration
 * Updated partials
 * Added `levels` settings to `Subpages Navigation` Content Element
 * Updated FlexForms, layouts, templates and partials
