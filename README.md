@@ -9,7 +9,10 @@ Dependencies
 ------------
 
 * TYPO3 CMS 7.6 or greater
+* VHS extension
 * T3v Core extension
+* T3v DataMapper extension
+* T3v Content extension
 
 Installation
 ------------
