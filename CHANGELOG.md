@@ -3,8 +3,8 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.0.0
+-----
 
 * Namespace `backgroundSize` setting
 * Refactored TypoScript
