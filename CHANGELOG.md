@@ -13,8 +13,9 @@ Unreleased
 * Updated FlexForms, layouts, templates and partials
 * Merged Extensions and Vendor TypoScript
 * Updated icons
-* Updated dependencies
 * Updated AppVeyor configuration
+* Updated dependencies
+* Dropped support for PHP 5.x
 
 1.1.0
 -----
