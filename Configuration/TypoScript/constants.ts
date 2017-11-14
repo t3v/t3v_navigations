@@ -2,6 +2,29 @@
 # | T3v Navigations Constants |
 # -----------------------------
 
+t3v {
+  navigations {
+    config {
+      contentElements {
+        overviewNavigationContentElement {
+          # cat=t3v/navigations/config/contentElements/overviewNavigationContentElement; type=string; label=The Content Element's container
+          container =
+        }
+
+        quickNavigationContentElement {
+          # cat=t3v/navigations/config/contentElements/quickNavigationContentElement; type=string; label=The Content Element's container
+          container =
+        }
+
+        subpagesNavigationContentElement {
+          # cat=t3v/navigations/config/contentElements/subpagesNavigationContentElement; type=string; label=The Content Element's container
+          container =
+        }
+      }
+    }
+  }
+}
+
 # === Plugin Constants ===
 
 plugin {
@@ -33,3 +56,7 @@ plugin {
     }
   }
 }
+
+# === Includes ===
+
+<INCLUDE_TYPOSCRIPT: source="FILE: ./Library/constants.ts">

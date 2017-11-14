@@ -57,3 +57,7 @@ plugin {
     }
   }
 }
+
+# === Includes ===
+
+<INCLUDE_TYPOSCRIPT: source="FILE: ./Library/setup.ts">
