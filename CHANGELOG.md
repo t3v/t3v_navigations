@@ -7,11 +7,12 @@ Unreleased
 ----------
 
 * Namespace `backgroundSize` setting
+* Refactored TypoScript
 * Updated constants and configuration
+* Merged Extensions and Vendor TypoScript
 * Updated partials
 * Added `levels` settings to `Subpages Navigation` Content Element
 * Updated FlexForms, layouts, templates and partials
-* Merged Extensions and Vendor TypoScript
 * Updated icons
 * Updated AppVeyor configuration
 * Updated dependencies
