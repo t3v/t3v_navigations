@@ -30,6 +30,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 1.0.0
 -----
 
+* First release
 * Implemented `Overview Navigation` Content Element
 * Implemented `Overview Navigation Item` Model
 * Implemented `Quick Navigation` Content Element
