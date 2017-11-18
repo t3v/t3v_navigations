@@ -45,13 +45,13 @@ plugin {
     }
 
     view {
-      # cat=plugin/tx_t3vnavigations/view; type=string; label=The default path to the layouts
+      # cat=plugin/tx_t3vnavigations/view; type=string; label=The path where the layouts are stored
       layoutRootPath = EXT:t3v_navigations/Resources/Private/Layouts/
 
-      # cat=plugin/tx_t3vnavigations/view; type=string; label=The default path to the templates
+      # cat=plugin/tx_t3vnavigations/view; type=string; label=The path where the templates are stored
       templateRootPath = EXT:t3v_navigations/Resources/Private/Templates/
 
-      # cat=plugin/tx_t3vnavigations/view; type=string; label=The default path to the partials
+      # cat=plugin/tx_t3vnavigations/view; type=string; label=The path where the partials are stored
       partialRootPath = EXT:t3v_navigations/Resources/Private/Partials/
     }
   }
