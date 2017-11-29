@@ -8,6 +8,7 @@ Unreleased
 
 * Updated TypoScript
 * Fixed functional tests
+* Updated AppVeyor configuration
 
 2.0.0
 -----
