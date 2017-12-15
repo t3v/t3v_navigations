@@ -4,7 +4,7 @@ namespace T3v\T3vNavigations\Domain\Model;
 use TYPO3\CMS\Core\Localization\LocalizationFactory;
 
 use T3v\T3vCore\Domain\Model\AbstractEntity;
-use T3v\T3vCore\Domain\Model\Traits\LocalisationTrait;
+use T3v\T3vCore\Domain\Model\Traits\LocalizationTrait;
 
 /**
  * Abstract Model Class
@@ -14,13 +14,11 @@ use T3v\T3vCore\Domain\Model\Traits\LocalisationTrait;
 abstract class AbstractModel extends AbstractEntity {
   /**
    * The extension key.
-   *
-   * Required by `LocalisationTrait`.
    */
   const EXTENSION_KEY = 't3v_navigations';
 
   /**
-   * The Localization Factory.
+   * The localization factory.
    *
    * @var \TYPO3\CMS\Core\Localization\LocalizationFactory
    * @inject
@@ -28,7 +26,7 @@ abstract class AbstractModel extends AbstractEntity {
   protected $localizationFactory;
 
   /**
-   * Use the localisation trait.
+   * Use the localization trait, requires an extension key and a localisation factory.
    */
-  use LocalisationTrait;
+  use LocalizationTrait;
 }
