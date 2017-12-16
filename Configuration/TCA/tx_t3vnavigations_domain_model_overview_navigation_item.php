@@ -276,8 +276,11 @@ return [
   'types' => [
     0 => [
       'showitem' => '
-        --palette--;;generalPalette, --palette--;;l10nPalette,
-        --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access;, --palette--;;accessPalette
+        --palette--;;generalPalette,
+        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language,
+        --palette--;;languagePalette,
+        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
+        --palette--;;accessPalette
       '
     ]
   ],
@@ -302,7 +305,7 @@ return [
       'canNotCollapse' => true
     ],
 
-    'l10nPalette' => [
+    'languagePalette' => [
       'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource',
       'canNotCollapse' => true
     ],

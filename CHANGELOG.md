@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Improved TCA configurations
 * Updated `AbstractModel`
 * Refactoring / Renaming
 * Cleaned up
