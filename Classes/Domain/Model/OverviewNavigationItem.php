@@ -58,6 +58,8 @@ class OverviewNavigationItem extends AbstractModel {
    * Constructs a new overview navigation item.
    */
   public function __construct() {
+    parent::__construct();
+
     $this->thumbnails = new ObjectStorage();
   }
 

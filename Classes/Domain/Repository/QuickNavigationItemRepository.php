@@ -5,7 +5,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 use T3v\T3vCore\Domain\Repository\AbstractRepository;
 
-use T3v\T3vNavigations\Domain\Repository\Traits\LocalisationTrait;
+use T3v\T3vNavigations\Domain\Repository\Traits\LocalizationTrait;
 
 /**
  * Quick Navigation Item Repository Class
@@ -13,11 +13,6 @@ use T3v\T3vNavigations\Domain\Repository\Traits\LocalisationTrait;
  * @package T3v\T3vNavigations\Domain\Repository
  */
 class QuickNavigationItemRepository extends AbstractRepository {
-  /**
-   * Use the localisation trait.
-   */
-  use LocalisationTrait;
-
   /**
    * The default orderings.
    *
@@ -27,4 +22,9 @@ class QuickNavigationItemRepository extends AbstractRepository {
     'title'   => QueryInterface::ORDER_ASCENDING,
     'sorting' => QueryInterface::ORDER_ASCENDING
   ];
+
+  /**
+   * Use the localization trait.
+   */
+  use LocalizationTrait;
 }

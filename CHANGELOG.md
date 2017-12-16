@@ -7,6 +7,8 @@ Unreleased
 ----------
 
 * Updated `AbstractModel`
+* Refactoring / Renaming
+* Cleaned up
 
 2.2.0
 -----

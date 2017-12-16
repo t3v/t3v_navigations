@@ -4,11 +4,11 @@ namespace T3v\T3vNavigations\Domain\Repository\Traits;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
 /**
- * Localisation Trait
+ * Localization Trait
  *
  * @package T3v\T3vNavigations\Domain\Repository\Traits
  */
-trait LocalisationTrait {
+trait LocalizationTrait {
   /**
    * The life cycle method.
    *
