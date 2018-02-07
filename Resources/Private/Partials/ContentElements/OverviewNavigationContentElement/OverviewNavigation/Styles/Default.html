@@ -1,5 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
-  <v:asset.style name="t3v-navigations-overview-navigation-{data.uid}-css" movable="false" standalone="true" fluid="true">
+  <v:asset.style name="t3v-navigations-overview-navigation-{data.uid}-css" fluid="true" movable="false" standalone="true">
     <f:for each="{items}" as="item">
       <f:if condition="{item.thumbnails}">
         {item.thumbnails -> v:iterator.first() -> v:variable.set(name: '1stThumbnail')}
