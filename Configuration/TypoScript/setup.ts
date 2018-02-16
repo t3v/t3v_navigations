@@ -39,7 +39,9 @@ plugin {
     }
 
     settings {
-      # ...
+      extbase {
+        controllerExtensionName = {$plugin.tx_t3vnavigations.settings.extbase.controllerExtensionName}
+      }
     }
 
     view {
