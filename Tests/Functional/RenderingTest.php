@@ -6,6 +6,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use Nimut\TestingFramework\Http\Response;
 use Nimut\TestingFramework\TestCase\FunctionalTestCase;
 
+use PHPUnit\Util\PHP\DefaultPhpProcess;
+
 /**
  * The rendering test class.
  *
@@ -90,7 +92,7 @@ class RenderingTest extends FunctionalTestCase {
       'ntfRoot'      => __DIR__ . '/../../.build/vendor/nimut/testing-framework/'
     ]);
 
-    $php      = \PHPUnit_Util_PHP::factory();
+    $php      = DefaultPhpProcess::factory();
     $response = $php->runJob($template->render());
     $result   = json_decode($response['stdout'], true);
 

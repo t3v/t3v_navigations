@@ -6,9 +6,11 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
-* Updated TypoScript
-* Updated partials
 * Cleaned up
+* Updated Tests
+* Updated dependencies
+* Updated Travis CI and AppVeyor configuration
+* Dropped support for TYPO3 7.x
 
 2.4.0
 -----
