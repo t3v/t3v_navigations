@@ -4,7 +4,7 @@ namespace T3v\T3vNavigations\Domain\Repository\Traits;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
 /**
- * Localization Trait
+ * The localization trait.
  *
  * @package T3v\T3vNavigations\Domain\Repository\Traits
  */

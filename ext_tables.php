@@ -1,58 +1,25 @@
 <?php
-defined('TYPO3_MODE') or die('Access denied.');
+defined('TYPO3_MODE') or die();
 
-call_user_func(function($namespace, $extkey) {
-  $extensionSignature = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($namespace . '.' . $extkey);
+$extensionKey   = $_EXTKEY;
+$languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::languageFolder($extensionKey);
 
-  // === TCA ===
+// === Models ===
 
-  // --- Overview Navigation Item Model ---
+// --- Overview Navigation Item Model ---
 
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vnavigations_domain_model_overview_navigation_item', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vnavigations_domain_model_overview_navigation_item.xlf');
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vnavigations_domain_model_overview_navigation_item');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vnavigations_domain_model_overview_navigation_item');
 
-  // --- Quick Navigation Item Model ---
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+  'tx_t3vnavigations_domain_model_overview_navigation_item',
+  "${languageFolder}/locallang_csh_tx_t3vnavigations_domain_model_overview_navigation_item.xlf"
+);
 
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vnavigations_domain_model_quick_navigation_item', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vnavigations_domain_model_quick_navigation_item.xlf');
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vnavigations_domain_model_quick_navigation_item');
+// --- Quick Navigation Item Model ---
 
-  // === Icons ===
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vnavigations_domain_model_quick_navigation_item');
 
-  $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Imaging\IconRegistry::class
-  );
-
-  // --- Overview Navigation Content Element Icon ---
-
-  $iconIdentifier = 'overview_navigation_content_element';
-
-  $iconRegistry->registerIcon(
-    "{$extkey}-{$iconIdentifier}",
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/OverviewNavigationContentElement.svg"]
-  );
-
-  // --- Quick Navigation Content Element Icon ---
-
-  $iconIdentifier = 'quick_navigation_content_element';
-
-  $iconRegistry->registerIcon(
-    "{$extkey}-{$iconIdentifier}",
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/QuickNavigationContentElement.svg"]
-  );
-
-  // --- Subpages Navigation Content Element Icon ---
-
-  $iconIdentifier = 'subpages_navigation_content_element';
-
-  $iconRegistry->registerIcon(
-    "{$extkey}-{$iconIdentifier}",
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/SubpagesNavigationContentElement.svg"]
-  );
-
-  // === TypoScript ===
-
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extkey, 'Configuration/TypoScript', 'T3v Navigations');
-}, 't3v', $_EXTKEY);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+  'tx_t3vnavigations_domain_model_quick_navigation_item',
+  "${languageFolder}/locallang_csh_tx_t3vnavigations_domain_model_quick_navigation_item.xlf"
+);

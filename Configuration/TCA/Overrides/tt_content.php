@@ -1,66 +1,63 @@
 <?php
-defined('TYPO3_MODE') or die('Access denied.');
+defined('TYPO3_MODE') or die();
 
-call_user_func(function($namespace, $extkey) {
-  $extensionName      = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($extkey));
-  $extensionSignature = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($namespace . '.' . $extkey);
+// === Variables ===
 
-  // === Content Elements ===
+$namespace           = 'T3v';
+$extensionKey        = 't3v_navigations';
+$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::extensionIdentifier($extensionKey);
+$extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::extensionSignature($namespace, $extensionKey);
+$flexFormsFolder     = \T3v\T3vCore\Utility\ExtensionUtility::flexFormsFolder($extensionKey);
 
-  // --- Overview Navigation Content Element ---
+// === Content Elements ===
 
-  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    $extensionSignature,
+// --- Overview Navigation Content Element ---
 
-    // A unique name of the content element in upper camel case
-    'OverviewNavigation',
+$contentElementKey         = 'Overview Navigation';
+$contentElementDescription = 'Overview Navigation Content Element';
+$contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
+$contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
-    // Description of the content element shown in the backend dropdown field
-    'Overview Navigation Content Element'
-  );
+// Register the content element
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
 
-  $contentElementName      = strtolower('OverviewNavigation');
-  $contentElementSignature = $extensionName . '_' . $contentElementName;
+// Disable the display of `layout`, `pages` and `select_key` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key';
 
-  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
-  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/OverviewNavigationContentElement.xml');
+// Activate the display of the `flexform` field and set the FlexForm definition
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, "{$flexFormsFolder}/ContentElements/OverviewNavigationContentElement.xml");
 
-  // --- Quick Navigation Content Element ---
+// --- Quick Navigation Content Element ---
 
-  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    $extensionSignature,
+$contentElementKey         = 'Quick Navigation';
+$contentElementDescription = 'Quick Navigation Content Element';
+$contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
+$contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
-    // A unique name of the content element in upper camel case
-    'QuickNavigation',
+// Register the content element
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
 
-    // Description of the content element shown in the backend dropdown field
-    'Quick Navigation Content Element'
-  );
+// Disable the display of `layout`, `pages` and `select_key` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key';
 
-  $contentElementName      = strtolower('QuickNavigation');
-  $contentElementSignature = $extensionName . '_' . $contentElementName;
+// Activate the display of the `flexform` field and set the FlexForm definition
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, "{$flexFormsFolder}/ContentElements/QuickNavigationContentElement.xml");
 
-  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
-  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/QuickNavigationContentElement.xml');
+// --- Quick Navigation Content Element ---
 
-  // --- Subpages Navigation Content Element ---
+$contentElementKey         = 'Subpages Navigation';
+$contentElementDescription = 'Subpages Navigation Content Element';
+$contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
+$contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
-  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    $extensionSignature,
+// Register the content element
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
 
-    // A unique name of the content element in upper camel case
-    'SubpagesNavigation',
+// Disable the display of `layout`, `pages` and `select_key` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key';
 
-    // Description of the content element shown in the backend dropdown field
-    'Subpages Navigation Content Element'
-  );
-
-  $contentElementName      = strtolower('SubpagesNavigation');
-  $contentElementSignature = $extensionName . '_' . $contentElementName;
-
-  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
-  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/SubpagesNavigationContentElement.xml');
-}, 't3v', 't3v_navigations');
+// Activate the display of the `flexform` field and set the FlexForm definition
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, "{$flexFormsFolder}/ContentElements/SubpagesNavigationContentElement.xml");

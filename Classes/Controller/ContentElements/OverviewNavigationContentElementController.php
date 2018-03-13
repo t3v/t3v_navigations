@@ -8,7 +8,7 @@ use T3v\T3vContent\Controller\ContentElements\ContentElementController;
 use T3v\T3vNavigations\Domain\Repository\OverviewNavigationItemRepository;
 
 /**
- * Overview Navigation Content Element Controller Class
+ * The overview navigation content element controller class.
  *
  * @package T3v\T3vNavigations\Controller\ContentElements
  */

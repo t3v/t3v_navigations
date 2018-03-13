@@ -1,72 +1,120 @@
 <?php
-defined('TYPO3_MODE') or die('Access denied.');
+defined('TYPO3_MODE') or die();
 
-call_user_func(function($namespace, $extkey) {
-  $extensionSignature = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($namespace . '.' . $extkey);
+// === Variables ===
 
-  // === Content Elements ===
+$namespace           = 'T3v';
+$extensionKey        = $_EXTKEY;
+$extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::extensionSignature($namespace, $extensionKey);
+$configurationFolder = \T3v\T3vCore\Utility\ExtensionUtility::configurationFolder($extensionKey);
+$iconsFolder         = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
-  // --- Overview Navigation Content Element ---
+// === Content Elements ===
 
-  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    $extensionSignature,
+// --- Overview Navigation Content Element ---
 
-    // A unique name of the content element in upper camel case
-    'OverviewNavigation',
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+  $extensionSignature,
 
-    // An array holding the controller-action-combinations that are accessible
-    [
-      // The first controller and its first action will be the default
-      'ContentElements\OverviewNavigationContentElement' => 'index'
-    ],
+  // The unique name of the content element in upper camel case
+  'OverviewNavigation',
 
-    // An array of non-cachable controller-action-combinations (they must already be enabled)
-    [
-      // 'ContentElements\OverviewNavigationContentElement' => 'index'
-    ]
+  // The array holding the controller-action-combinations that are accessible
+  [
+    // The first controller and its first action will be the default
+    'ContentElements\OverviewNavigationContentElement' => 'index'
+  ],
+
+  // The array of non-cachable controller-action-combinations (they must already be enabled)
+  [
+    // 'ContentElements\OverviewNavigationContentElement' => 'index'
+  ]
+);
+
+// --- Quick Navigation Content Element ---
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+  $extensionSignature,
+
+  // The unique name of the content element in upper camel case
+  'QuickNavigation',
+
+  // The array holding the controller-action-combinations that are accessible
+  [
+    // The first controller and its first action will be the default
+    'ContentElements\QuickNavigationContentElement' => 'index'
+  ],
+
+  // The array of non-cachable controller-action-combinations (they must already be enabled)
+  [
+    // 'ContentElements\QuickNavigationContentElement' => 'index'
+  ]
+);
+
+// --- Subpages Navigation Content Element ---
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+  $extensionSignature,
+
+  // The unique name of the content element in upper camel case
+  'SubpagesNavigation',
+
+  // The array holding the controller-action-combinations that are accessible
+  [
+    // The first controller and its first action will be the default
+    'ContentElements\SubpagesNavigationContentElement' => 'index'
+  ],
+
+  // The array of non-cachable controller-action-combinations (they must already be enabled)
+  [
+    // 'ContentElements\SubpagesNavigationContentElement' => 'index'
+  ]
+);
+
+// === Page TSconfig ===
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig("<INCLUDE_TYPOSCRIPT: source=\"{$configurationFolder}/TSconfig.ts\">");
+
+// === Backend ===
+
+if (TYPO3_MODE === 'BE') {
+  // --- Icons ---
+
+  $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+
+  // +++ Overview Navigation Content Element Icon +++
+
+  $iconKey        = 'Overview Navigation Content Element';
+  $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($iconKey);
+  $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
+
+  $iconRegistry->registerIcon(
+    $iconSignature,
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "{$iconsFolder}/ContentElements/OverviewNavigationContentElement.svg"]
   );
 
-  // --- Quick Navigation Content Element ---
+  // +++ Quick Navigation Content Element Icon +++
 
-  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    $extensionSignature,
+  $iconKey        = 'Quick Navigation Content Element';
+  $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($iconKey);
+  $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
 
-    // A unique name of the content element in upper camel case
-    'QuickNavigation',
-
-    // An array holding the controller-action-combinations that are accessible
-    [
-      // The first controller and its first action will be the default
-      'ContentElements\QuickNavigationContentElement' => 'index'
-    ],
-
-    // An array of non-cachable controller-action-combinations (they must already be enabled)
-    [
-      // 'ContentElements\QuickNavigationContentElement' => 'index'
-    ]
+  $iconRegistry->registerIcon(
+    $iconSignature,
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "{$iconsFolder}/ContentElements/QuickNavigationContentElement.svg"]
   );
 
-  // --- Subpages Navigation Content Element ---
+  // +++ Subpages Navigation Content Element Icon +++
 
-  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    $extensionSignature,
+  $iconKey        = 'Subpages Navigation Content Element';
+  $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($iconKey);
+  $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
 
-    // A unique name of the content element in upper camel case
-    'SubpagesNavigation',
-
-    // An array holding the controller-action-combinations that are accessible
-    [
-      // The first controller and its first action will be the default
-      'ContentElements\SubpagesNavigationContentElement' => 'index'
-    ],
-
-    // An array of non-cachable controller-action-combinations (they must already be enabled)
-    [
-      // 'ContentElements\SubpagesNavigationContentElement' => 'index'
-    ]
+  $iconRegistry->registerIcon(
+    $iconSignature,
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "{$iconsFolder}/ContentElements/SubpagesNavigationContentElement.svg"]
   );
-
-  // === TsConfig ===
-
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $extkey . '/Configuration/TSconfig.ts">');
-}, 't3v', $_EXTKEY);
+}

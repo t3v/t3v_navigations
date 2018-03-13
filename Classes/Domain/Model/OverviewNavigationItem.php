@@ -5,7 +5,7 @@ use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * Overview Navigation Item Class
+ * The overview navigation item class.
  *
  * @package T3v\T3vNavigations\Domain\Model
  */

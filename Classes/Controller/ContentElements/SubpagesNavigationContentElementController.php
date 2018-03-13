@@ -4,7 +4,7 @@ namespace T3v\T3vNavigations\Controller\ContentElements;
 use T3v\T3vContent\Controller\ContentElements\ContentElementController;
 
 /**
- * Subpages Navigation Content Element Controller Class
+ * The subpages navigation content element controller class.
  *
  * @package T3v\T3vNavigations\Controller\ContentElements
  */

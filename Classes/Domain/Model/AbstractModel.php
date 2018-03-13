@@ -7,7 +7,7 @@ use T3v\T3vCore\Domain\Model\AbstractEntity;
 use T3v\T3vCore\Domain\Model\Traits\LocalizationTrait;
 
 /**
- * Abstract Model Class
+ * The abstract model class.
  *
  * @package T3v\T3vNavigations\Domain\Model
  */

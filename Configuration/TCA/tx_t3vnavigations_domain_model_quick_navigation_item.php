@@ -1,9 +1,11 @@
 <?php
-defined('TYPO3_MODE') or die('Access denied.');
+defined('TYPO3_MODE') or die();
 
-$extkey    = 't3v_navigations';
-$resources = "EXT:${extkey}/Resources";
-$lll       = "LLL:${resources}/Private/Language/locallang_tca.xlf:";
+// === Variables ===
+
+$extensionKey = 't3v_navigations';
+$lll          = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_tca.xlf');
+$iconsFolder  = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
 return [
   // === Columns ===
@@ -201,7 +203,7 @@ return [
     // 'label_alt' => 'abstract',
     // 'label_alt_force' => 1,
     // 'descriptionColumn' => 'description',
-    'iconfile' => "${resources}/Public/Icons/TCA/QuickNavigationItem.svg",
+    'iconfile' => "${iconsFolder}/TCA/QuickNavigationItem.svg",
     'tstamp' => 'tstamp',
     'crdate' => 'crdate',
     'delete' => 'deleted',
@@ -237,7 +239,7 @@ return [
       'showitem' => '
         --palette--;;generalPalette,
         --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language,
-        --palette--;;languagePalette,
+        --palette--;;l10nPalette,
         --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
         --palette--;;accessPalette
       '
@@ -259,7 +261,7 @@ return [
       'canNotCollapse' => true
     ],
 
-    'languagePalette' => [
+    'l10nPalette' => [
       'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource',
       'canNotCollapse' => true
     ],

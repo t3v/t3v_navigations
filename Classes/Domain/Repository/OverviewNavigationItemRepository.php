@@ -8,7 +8,7 @@ use T3v\T3vCore\Domain\Repository\AbstractRepository;
 use T3v\T3vNavigations\Domain\Repository\Traits\LocalizationTrait;
 
 /**
- * Overview Navigation Item Repository Class
+ * The overview navigation item repository class.
  *
  * @package T3v\T3vNavigations\Domain\Repository
  */

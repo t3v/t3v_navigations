@@ -2,7 +2,7 @@
 namespace T3v\T3vNavigations\Tests\Unit\Fixtures;
 
 /**
- * Loadable Class
+ * The loadable class.
  *
  * @package T3v\T3vNavigations\Tests\Unit\Fixtures
  */
