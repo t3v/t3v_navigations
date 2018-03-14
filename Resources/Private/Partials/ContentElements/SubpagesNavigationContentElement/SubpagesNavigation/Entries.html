@@ -1,12 +1,11 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vDataMapper/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vDataMapper/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <ul class="t3v-navigations-subpages-navigation__entries navigation__entries">
     <v:menu pageUid="{settings.entryPage}" useShortcutData="true" as="entries">
       <f:for each="{entries}" as="entry">
         <t3v:page.visible uid="{entry.uid}">
           <li class="t3v-navigations-subpages-navigation__entry {f:if(condition: '{entry.active}', then: 'navigation__entry--active')} {f:if(condition: '{entry.hasSubPages}', then: 'navigation__entry--with-subentries')} navigation__entry">
-            <f:link.page pageUid="{entry.uid}"
-                         class="t3v-navigations-subpages-navigation__item navigation__item"
-                         title="{entry.linktext}">
+            <f:link.page pageUid="{entry.uid}" class="t3v-navigations-subpages-navigation__item navigation__item" title="{entry.title}">
               {entry.linktext}
             </f:link.page>
 

@@ -2,7 +2,7 @@
 
 # === Constants ===
 
-TYPO3_VERSION="^8.7"
+TYPO3_VERSION="^7.6"
 
 # === Commands ===
 
@@ -11,8 +11,11 @@ if [ -f composer.lock ]; then
   rm composer.lock
 fi
 
-# Install TYPO3 and all other required dependencies
+# Require TYPO3 including dependencies
 composer require typo3/cms="$TYPO3_VERSION"
 
 # Reset the changes
 git checkout composer.json
+
+# Try to keep environment pollution down, EPA loves us
+unset TYPO3_VERSION

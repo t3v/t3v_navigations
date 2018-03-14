@@ -76,7 +76,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Sets the overview navigation item's title.
    *
    * @param string $title The overview navigation item's title
-   * @return void
    */
   public function setTitle($title) {
     $this->title = $title;
@@ -95,7 +94,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Sets the overview navigation item's abstract.
    *
    * @param string $abstract The overview navigation item's abstract
-   * @return void
    */
   public function setAbstract($abstract) {
     $this->abstract = $abstract;
@@ -114,7 +112,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Adds a thumbnail to the overview navigation item.
    *
    * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
-   * @return void
    */
   public function addThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
     $this->thumbnails->attach($thumbnail);
@@ -124,7 +121,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Removes a thumbnail from the overview navigation item.
    *
    * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
-   * @return void
    */
   public function removeThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
     $this->thumbnails->detach($thumbnail);
@@ -132,8 +128,6 @@ class OverviewNavigationItem extends AbstractModel {
 
   /**
    * Removes all thumbnails from the overview navigation item.
-   *
-   * @return void
    */
   public function removeAllThumbnails() {
     $this->thumbnails = new ObjectStorage();
@@ -152,7 +146,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Sets the overview navigation item's page (UID).
    *
    * @param int $link The overview navigation item's link page (UID)
-   * @return void
    */
   public function setPage($page) {
     $this->page = $page;
@@ -171,7 +164,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Sets the overview navigation item's link (typolink).
    *
    * @param string $link The overview navigation item's link (typolink)
-   * @return void
    */
   public function setLink($link) {
     $this->link = $link;
@@ -197,7 +189,6 @@ class OverviewNavigationItem extends AbstractModel {
    * Sets the overview navigation item's label.
    *
    * @param string $label The overview navigation item's label
-   * @return void
    */
   public function setLabel($label) {
     $this->label = $label;

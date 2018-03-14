@@ -23,8 +23,6 @@ class OverviewNavigationContentElementController extends ContentElementControlle
 
   /**
    * The index action.
-   *
-   * @return void
    */
   public function indexAction() {
     $settings = $this->settings;

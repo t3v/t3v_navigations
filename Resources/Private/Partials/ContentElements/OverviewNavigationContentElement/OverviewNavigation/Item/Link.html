@@ -1,17 +1,38 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:tag name="div" class="t3v-navigations-overview-navigation__item--{item.uid} t3v-navigations-overview-navigation__item navigation__item" hideIfEmpty="true">
     <v:tag name="div" class="t3v-navigations-overview-navigation__item__header" hideIfEmpty="true">
-      <f:link.typolink parameter="{item.link}" class="t3v-navigations-overview-navigation__item__thumbnail" title="{item.label}">
-        {item.title}
-      </f:link.typolink>
+      <v:condition.string.contains haystack="{item.link}" needle="_blank">
+        <f:then>
+          <f:link.typolink parameter="{item.link}" class="t3v-navigations-overview-navigation__item__thumbnail" title="{item.label}"
+                  additionalAttributes="{rel: 'noopener'}">
+            {item.title}
+          </f:link.typolink>
+        </f:then>
+
+        <f:else>
+          <f:link.typolink parameter="{item.link}" class="t3v-navigations-overview-navigation__item__thumbnail" title="{item.label}">
+            {item.title}
+          </f:link.typolink>
+        </f:else>
+      </v:condition.string.contains>
     </v:tag>
 
     <v:tag name="div" class="t3v-navigations-overview-navigation__item__main" hideIfEmpty="true">
       <v:tag name="div" class="t3v-navigations-overview-navigation__item__meta" hideIfEmpty="true">
         <v:tag name="h3" class="t3v-navigations-overview-navigation__item__title" hideIfEmpty="true">
-          <f:link.typolink parameter="{item.link}" title="{item.label}">
-            {item.title}
-          </f:link.typolink>
+          <v:condition.string.contains haystack="{item.link}" needle="_blank">
+            <f:then>
+              <f:link.typolink parameter="{item.link}" title="{item.label}" additionalAttributes="{rel: 'noopener'}">
+                {item.title}
+              </f:link.typolink>
+            </f:then>
+
+            <f:else>
+              <f:link.typolink parameter="{item.link}" title="{item.label}">
+                {item.title}
+              </f:link.typolink>
+            </f:else>
+          </v:condition.string.contains>
         </v:tag>
       </v:tag>
 
@@ -23,11 +44,20 @@
         </div>
 
         <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
-          <f:link.typolink parameter="{item.link}"
-                           class="link--more link"
-                           title="{item.label}">
-            {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
-          </f:link.typolink>
+          <v:condition.string.contains haystack="{item.link}" needle="_blank">
+            <f:then>
+              <f:link.typolink parameter="{item.link}" class="link--more link" title="{item.label}"
+                      additionalAttributes="{rel: 'noopener'}">
+                {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
+              </f:link.typolink>
+            </f:then>
+
+            <f:else>
+              <f:link.typolink parameter="{item.link}" class="link--more link" title="{item.label}">
+                {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
+              </f:link.typolink>
+            </f:else>
+          </v:condition.string.contains>
         </v:tag>
       </f:if>
     </v:tag>

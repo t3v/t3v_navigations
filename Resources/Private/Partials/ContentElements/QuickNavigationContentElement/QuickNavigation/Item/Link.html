@@ -1,7 +1,17 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-  <f:link.typolink parameter="{item.link}"
-                   class="t3v-navigations-quick-navigation__item navigation__item"
-                   title="{item.label}">
-    {item.title}
-  </f:link.typolink>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:condition.string.contains haystack="{item.link}" needle="_blank">
+    <f:then>
+      <f:link.typolink parameter="{item.link}" class="t3v-navigations-quick-navigation__item navigation__item"
+                       title="{item.label}" additionalAttributes="{rel: 'noopener'}">
+        {item.title}
+      </f:link.typolink>
+    </f:then>
+
+    <f:else>
+      <f:link.typolink parameter="{item.link}" class="t3v-navigations-quick-navigation__item navigation__item"
+                       title="{item.label}">
+        {item.title}
+      </f:link.typolink>
+    </f:else>
+  </v:condition.string.contains>
 </html>

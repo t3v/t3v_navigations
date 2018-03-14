@@ -9,15 +9,7 @@
       "homepage": "https://bitaculous.com"
     }
   ],
-  "keywords": [
-    "CMS",
-    "Extension",
-    "Navigations",
-    "T3v",
-    "TYPO3",
-    "TYPO3voila",
-    "UH LÁLÁ"
-  ],
+  "keywords": ["CMS", "Extension", "Navigations", "T3v", "TYPO3", "TYPO3voila", "UH LÁLÁ"],
   "homepage": "https://t3v.github.io/t3v_navigations/",
   "support": {
     "issues": "https://github.com/t3v/t3v_navigations/issues"
@@ -39,7 +31,7 @@
   "require": {
     "php": ">= 7.0 < 7.3",
     "typo3/cms-core": "^7.6",
-    "fluidtypo3/vhs": "^4.2",
+    "fluidtypo3/vhs": "^4.4",
     "t3v/t3v_core": "dev-7-0",
     "t3v/t3v_datamapper": "dev-7-0",
     "t3v/t3v_content": "dev-7-0"

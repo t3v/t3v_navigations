@@ -23,8 +23,6 @@ class QuickNavigationContentElementController extends ContentElementController {
 
   /**
    * The index action.
-   *
-   * @return void
    */
   public function indexAction() {
     $settings = $this->settings;

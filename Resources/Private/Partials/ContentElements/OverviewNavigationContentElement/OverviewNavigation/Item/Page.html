@@ -1,7 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:variable.set name="title" value="{v:page.info(pageUid: '{item.page}', field: 'title')}" />
+
   <v:tag name="div" class="t3v-navigations-overview-navigation__item--{item.uid} t3v-navigations-overview-navigation__item navigation__item" hideIfEmpty="true">
     <v:tag name="div" class="t3v-navigations-overview-navigation__item__header" hideIfEmpty="true">
-      <f:link.page pageUid="{item.page}" class="t3v-navigations-overview-navigation__item__thumbnail" title="{item.label}">
+      <f:link.page pageUid="{item.page}" class="t3v-navigations-overview-navigation__item__thumbnail" title="{title}">
         {item.title}
       </f:link.page>
     </v:tag>
@@ -9,7 +11,7 @@
     <v:tag name="div" class="t3v-navigations-overview-navigation__item__main" hideIfEmpty="true">
       <v:tag name="div" class="t3v-navigations-overview-navigation__item__meta" hideIfEmpty="true">
         <v:tag name="h3" class="t3v-navigations-overview-navigation__item__title" hideIfEmpty="true">
-          <f:link.page pageUid="{item.page}" title="{item.label}">
+          <f:link.page pageUid="{item.page}" title="{title}">
             {item.title}
           </f:link.page>
         </v:tag>
@@ -23,9 +25,7 @@
         </div>
 
         <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
-          <f:link.page pageUid="{item.page}"
-                       class="link--more link"
-                       title="{item.label}">
+          <f:link.page pageUid="{item.page}" class="link--more link" title="{title}">
             {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
           </f:link.page>
         </v:tag>

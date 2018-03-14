@@ -11,8 +11,6 @@ use T3v\T3vContent\Controller\ContentElements\ContentElementController;
 class SubpagesNavigationContentElementController extends ContentElementController {
   /**
    * The index action.
-   *
-   * @return void
    */
   public function indexAction() {
     $settings = $this->settings;
