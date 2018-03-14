@@ -11,8 +11,6 @@ use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 trait LocalizationTrait {
   /**
    * The life cycle method.
-   *
-   * @return void
    */
   public function initializeObject() {
     $querySettings = $this->objectManager->get(Typo3QuerySettings::class);

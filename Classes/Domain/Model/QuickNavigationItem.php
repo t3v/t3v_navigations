@@ -51,7 +51,6 @@ class QuickNavigationItem extends AbstractModel {
    * Sets the quick navigation item's title.
    *
    * @param string $title The quick navigation item's title
-   * @return void
    */
   public function setTitle($title) {
     $this->title = $title;
@@ -70,7 +69,6 @@ class QuickNavigationItem extends AbstractModel {
    * Sets the quick navigation item's page (UID).
    *
    * @param int $link The quick navigation item's link page (UID)
-   * @return void
    */
   public function setPage($page) {
     $this->page = $page;
@@ -89,7 +87,6 @@ class QuickNavigationItem extends AbstractModel {
    * Sets the quick navigation item's link (typolink).
    *
    * @param string $link The quick navigation item's link (typolink)
-   * @return void
    */
   public function setLink($link) {
     $this->link = $link;
@@ -115,7 +112,6 @@ class QuickNavigationItem extends AbstractModel {
    * Sets the quick navigation item's label.
    *
    * @param string $label The quick navigation item's label
-   * @return void
    */
   public function setLabel($label) {
     $this->label = $label;
