@@ -19,6 +19,7 @@ trait LocalizationTrait {
     $querySettings->setRespectSysLanguage(true);
 
     // Switch by system language UID (Language Fallback Mapping)
+    //
     // $sysLanguageUid = $this->languageService->getSysLanguageUid();
     //
     // switch ($sysLanguageUid) {
