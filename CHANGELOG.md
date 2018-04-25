@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* SEO optimizations
 * Cleaned up
 
 3.0.0

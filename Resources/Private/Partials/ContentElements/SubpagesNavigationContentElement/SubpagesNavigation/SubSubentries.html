@@ -6,9 +6,7 @@
           <f:for each="{subentries}" as="subentry">
             <t3v:page.visible uid="{subentry.uid}">
               <li class="t3v-navigations-subpages-navigation__subsubentry {f:if(condition: '{subentry.active}', then: 'navigation__subsubentry--active')} {f:if(condition: '{subentry.hasSubPages}', then: 'navigation__subsubentry--with-subentries')} navigation__subsubentry">
-                <f:link.page pageUid="{subentry.uid}"
-                             class="t3v-navigations-subpages-navigation__subsubitem navigation__subsubitem"
-                             title="{subentry.linktext}">
+                <f:link.page pageUid="{subentry.uid}" class="t3v-navigations-subpages-navigation__subsubitem navigation__subsubitem" title="{subentry.title}">
                   {subentry.linktext}
                 </f:link.page>
               </li>
