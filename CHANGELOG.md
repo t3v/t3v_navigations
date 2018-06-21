@@ -3,12 +3,12 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.6.0
+-----
 
 * SEO optimizations
-* Updated AppVeyor configuration
 * Updated dependencies
+* Updated AppVeyor configuration
 * Cleaned up
 
 2.5.0
