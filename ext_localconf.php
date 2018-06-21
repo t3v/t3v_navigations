@@ -9,6 +9,10 @@ $extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::extensionSignature
 $configurationFolder = \T3v\T3vCore\Utility\ExtensionUtility::configurationFolder($extensionKey);
 $iconsFolder         = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
+// === Page TSconfig ===
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig("<INCLUDE_TYPOSCRIPT: source=\"{$configurationFolder}/TSconfig.tsconfig\">");
+
 // === Content Elements ===
 
 // --- Overview Navigation Content Element ---
@@ -71,10 +75,6 @@ $iconsFolder         = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($exten
   ]
 );
 
-// === Page TSconfig ===
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig("<INCLUDE_TYPOSCRIPT: source=\"{$configurationFolder}/TSconfig.ts\">");
-
 // === Backend ===
 
 if (TYPO3_MODE === 'BE') {
@@ -82,39 +82,20 @@ if (TYPO3_MODE === 'BE') {
 
   $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 
-  // +++ Overview Navigation Content Element Icon +++
+  $icons = [
+    'Overview Navigation Content Element' => "{$iconsFolder}/ContentElements/OverviewNavigationContentElement.svg",
+    'Quick Navigation Content Element'    => "{$iconsFolder}/ContentElements/QuickNavigationContentElement.svg",
+    'Subpages Navigation Content Element' => "{$iconsFolder}/ContentElements/SubpagesNavigationContentElement.svg"
+  ];
 
-  $iconKey        = 'Overview Navigation Content Element';
-  $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($iconKey);
-  $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
+  foreach ($icons as $name => $source) {
+    $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($name);
+    $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
 
-  $iconRegistry->registerIcon(
-    $iconSignature,
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "{$iconsFolder}/ContentElements/OverviewNavigationContentElement.svg"]
-  );
-
-  // +++ Quick Navigation Content Element Icon +++
-
-  $iconKey        = 'Quick Navigation Content Element';
-  $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($iconKey);
-  $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
-
-  $iconRegistry->registerIcon(
-    $iconSignature,
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "{$iconsFolder}/ContentElements/QuickNavigationContentElement.svg"]
-  );
-
-  // +++ Subpages Navigation Content Element Icon +++
-
-  $iconKey        = 'Subpages Navigation Content Element';
-  $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::iconIdentifier($iconKey);
-  $iconSignature  = \T3v\T3vCore\Utility\IconUtility::iconSignature($extensionKey, $iconIdentifier);
-
-  $iconRegistry->registerIcon(
-    $iconSignature,
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "{$iconsFolder}/ContentElements/SubpagesNavigationContentElement.svg"]
-  );
+    $iconRegistry->registerIcon(
+      $iconSignature,
+      \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+      ['source' => $source]
+    );
+  }
 }

@@ -62,4 +62,4 @@ plugin {
 
 # === Includes ===
 
-<INCLUDE_TYPOSCRIPT: source="FILE: ./Library/constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: ./Library/constants.typoscript">

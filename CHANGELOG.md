@@ -7,6 +7,9 @@ Unreleased
 ----------
 
 * SEO optimizations
+* Updated TypoScript structure
+* Updated dependencies
+* Updated AppVeyor configuration
 * Cleaned up
 
 3.0.0
