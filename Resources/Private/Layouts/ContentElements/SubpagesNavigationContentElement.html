@@ -2,13 +2,17 @@
   <v:variable.set name="layout" value="{settings.layout}" />
 
   <div id="c{data.uid}" class="ce--t3v-navigations-subpages-navigation ce--{layout} ce">
-    <v:variable.set name="container" value="{f:cObject(typoscriptObjectPath: 'lib.t3v.navigations.config.contentElements.subpagesNavigationContentElement.container')}" />
-
     <f:if condition="{settings.container}">
-      <v:variable.set name="container" value="{settings.container}" />
+      <f:then>
+        <v:variable.set name="container" value="{settings.container}" />
+      </f:then>
+
+      <f:else>
+        <v:variable.set name="container" value="{f:cObject(typoscriptObjectPath: 'lib.plugin.tx_t3vnavigations.defaults.contentElements.subpagesNavigationContentElement.container')}" />
+      </f:else>
     </f:if>
 
-    <f:if condition="{container}">
+    <f:if condition="{container} != 'none'">
       <f:then>
         <v:tag name="div" class="ce__container container--{container} container" hideIfEmpty="true">
           <f:render section="ContentElement" arguments="{settings: settings}" />

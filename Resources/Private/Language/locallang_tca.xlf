@@ -12,8 +12,20 @@
         <source>Overview Navigation Item</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type.default">
+        <source>Default</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.title">
         <source>Title</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
+        <source>Label</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.abstract">
@@ -24,7 +36,7 @@
         <source>Thumbnails</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails.add">
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails.createNewRelation.link.title">
         <source>Add thumbnail</source>
       </trans-unit>
 
@@ -36,18 +48,26 @@
         <source>Link</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
-        <source>Label</source>
-      </trans-unit>
-
       <!-- Quick Navigation Item Model -->
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
         <source>Quick Navigation Item</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.type">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.type.default">
+        <source>Default</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.title">
         <source>Title</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.label">
+        <source>Label</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.page">
@@ -56,10 +76,6 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.link">
         <source>Link</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.label">
-        <source>Label</source>
       </trans-unit>
     </body>
   </file>

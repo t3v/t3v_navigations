@@ -38,21 +38,6 @@
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.label">
-        <source>Background Size (Thumbnails)</source>
-        <target>Hintergrundgröße (Vorschaubilder)</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.cover.label">
-        <source>Cover</source>
-        <target>Cover</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.thumbnails.backgroundSize.contain.label">
-        <source>Contain</source>
-        <target>Contain</target>
-      </trans-unit>
-
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
@@ -138,6 +123,21 @@
       </trans-unit>
 
       <!-- === Shared === -->
+
+      <trans-unit id="shared.settings.backgroundSize.label">
+        <source>Background Size</source>
+        <target>Hintergrundgröße</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.backgroundSize.cover.label">
+        <source>Cover</source>
+        <target>Cover</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.backgroundSize.contain.label">
+        <source>Contain</source>
+        <target>Contain</target>
+      </trans-unit>
 
       <trans-unit id="shared.settings.container.label">
         <source>Container</source>
