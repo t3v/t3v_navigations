@@ -25,6 +25,18 @@ return [
       'exclude' => true
     ],
 
+    'label' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'abstract' => [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.abstract',
       'config' => [
@@ -48,7 +60,7 @@ return [
           ],
           'foreign_types' => [
             \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-              'showitem' => '--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
+              'showitem' => '--palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
                              --palette--;;imageoverlayPalette,
                              --palette--;;filePalette'
             ]
@@ -58,7 +70,8 @@ return [
           'appearance' => [
             'showAllLocalizationLink' => true,
             'showSynchronizationLink' => true
-          ]
+          ],
+          'default' => 0
         ],
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
       ),
@@ -106,18 +119,6 @@ return [
       'exclude' => true
     ],
 
-    'label' => [
-      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.label',
-      'config' => [
-        'type' => 'input',
-        'size' => 42,
-        'max' => 255,
-        'eval' => 'trim'
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
-    ],
-
     // --- Default TYPO3 columns ---
 
     'uid' => [
@@ -134,18 +135,91 @@ return [
       ]
     ],
 
-    'tstamp' => [
-      'label' => 'tstamp',
+    'sys_language_uid' => [
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
       'config' => [
-        'type' => 'passthrough'
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'special' => 'languages',
+        'items' => [
+          [
+            'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+            -1,
+            'flags-multiple'
+          ],
+        ],
+        'default' => 0
+      ],
+      'exclude' => true
+    ],
+
+    'l10n_parent' => [
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'items' => [
+          ['', 0]
+        ],
+        'foreign_table' => 'tx_t3vnavigations_domain_model_overview_navigation_item',
+        'foreign_table_where' => 'AND tx_t3vnavigations_domain_model_overview_navigation_item.pid=###CURRENT_PID### AND tx_t3vnavigations_domain_model_overview_navigation_item.sys_language_uid IN (-1,0)',
+        'fieldWizard' => [
+          'selectIcons' => [
+            'disabled' => true
+          ]
+        ],
+        'default' => 0
+      ],
+      'displayCond' => 'FIELD:sys_language_uid:>:0',
+      'exclude' => true
+    ],
+
+    'l10n_diffsource' => [
+      'config' => [
+        'type' => 'passthrough',
+        'default' => ''
       ]
     ],
 
-    'crdate' => [
-      'label' => 'crdate',
+    'starttime' => [
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
       'config' => [
-        'type' => 'passthrough'
-      ]
+        'type' => 'input',
+        'size' => 13,
+        'max' => 20,
+        'eval' => 'datetime',
+        'range' => [
+          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+        ],
+        'default' => 0
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
+    'endtime' => [
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+      'config' => [
+        'type' => 'input',
+        'size' => 13,
+        'max' => 20,
+        'eval' => 'datetime',
+        'range' => [
+          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+        ],
+        'default' => 0
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
+    'hidden' => [
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+      'config' => [
+        'type' => 'check',
+        'default' => 0
+      ],
+      'exclude' => true
     ],
 
     'cruser_id' => [
@@ -155,83 +229,33 @@ return [
       ]
     ],
 
-    'starttime' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
+    'editlock' => [
+      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:editlock',
       'config' => [
-        'type' => 'input',
-        'size' => 13,
-        'max' => 20,
-        'eval' => 'datetime',
-        'default' => 0,
-        'range' => [
-          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-        ]
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
-    ],
-
-    'endtime' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
-      'config' => [
-        'type' => 'input',
-        'size' => 13,
-        'max' => 20,
-        'eval' => 'datetime',
-        'default' => 0,
-        'range' => [
-          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-        ]
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
-    ],
-
-    'hidden' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-      'config' => [
-        'type' => 'check'
-      ],
-      'exclude' => true
-    ],
-
-    'sys_language_uid' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
-      'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'special' => 'languages',
-        'items' => [
-          [
-            'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
-            -1,
-            'flags-multiple'
-          ],
-        ],
+        'type' => 'check',
         'default' => 0
       ],
-      'exclude' => 1
+      'exclude' => true
     ],
 
-    'l10n_parent' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
+    'crdate' => [
+      'label' => 'crdate',
       'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'items' => [
-          ['', 0]
-        ],
-        'foreign_table' => 'tx_t3vnavigations_domain_model_overview_navigation_item',
-        'foreign_table_where' => 'AND tx_t3vnavigations_domain_model_overview_navigation_item.pid=###CURRENT_PID### AND tx_t3vnavigations_domain_model_overview_navigation_item.sys_language_uid IN (-1,0)'
-      ],
-      'displayCond' => 'FIELD:sys_language_uid:>:0',
-      'exclude' => 1
+        'type' => 'passthrough'
+      ]
     ],
 
-    'l10n_diffsource' => [
+    'tstamp' => [
+      'label' => 'tstamp',
       'config' => [
-        'type' => 'passthrough',
-        'default' => ''
+        'type' => 'passthrough'
+      ]
+    ],
+
+    'sorting' => [
+      'label' => 'sorting',
+      'config' => [
+        'type' => 'passthrough'
       ]
     ]
   ],
@@ -241,34 +265,35 @@ return [
   'ctrl' => [
     'title' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item',
     'label' => 'title',
-    // 'label_alt' => 'abstract',
+    'label_alt' => 'label',
     // 'label_alt_force' => 1,
     // 'descriptionColumn' => 'description',
     'iconfile' => "${iconsFolder}/TCA/OverviewNavigationItem.svg",
-    'tstamp' => 'tstamp',
-    'crdate' => 'crdate',
-    'delete' => 'deleted',
-    'cruser_id' => 'cruser_id',
-    'origUid' => 't3_origuid',
     'languageField' => 'sys_language_uid',
     'transOrigPointerField' => 'l10n_parent',
     'transOrigDiffSourceField' => 'l10n_diffsource',
+    'cruser_id' => 'cruser_id',
+    'editlock' => 'editlock',
+    'crdate' => 'crdate',
+    'tstamp' => 'tstamp',
     // 'sortby' => 'sorting',
     'default_sortby' => 'ORDER BY title ASC',
+    'delete' => 'deleted',
     'enablecolumns' => [
-      'disabled' => 'hidden',
       'starttime' => 'starttime',
-      'endtime' => 'endtime'
+      'endtime' => 'endtime',
+      'disabled' => 'hidden'
     ],
-    'searchFields' => 'title, abstract, label',
-    'versioningWS' => true,
-    'hideTable' => false
+    'searchFields' => 'uid, title, label, abstract',
+    'origUid' => 't3_origuid',
+    'hideTable' => false,
+    'versioningWS' => true
   ],
 
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'title, abstract, label, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'title, label, abstract, sys_language_uid, l10n_parent, l10n_diffsource, starttime, endtime, hidden',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],
@@ -278,11 +303,12 @@ return [
   'types' => [
     0 => [
       'showitem' => '
-        --palette--;;generalPalette,
-        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language,
-        --palette--;;l10nPalette,
-        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
-        --palette--;;accessPalette
+        --palette--;;general,
+        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language.label,
+        --palette--;;language,
+        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access.label,
+        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.access.label;access,
+        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.visibility.label;visibility
       '
     ]
   ],
@@ -290,14 +316,14 @@ return [
   // === Palettes ===
 
   'palettes' => [
-    'generalPalette' => [
+    'general' => [
       'showitem' => '
         title, --linebreak--,
+        label, --linebreak--,
         abstract, --linebreak--,
         thumbnails, --linebreak--,
         page, --linebreak--,
-        link, --linebreak--,
-        label
+        link
       ',
       'columnsOverrides' => [
         'abstract' => [
@@ -307,16 +333,21 @@ return [
       'canNotCollapse' => true
     ],
 
-    'l10nPalette' => [
+    'language' => [
       'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource',
       'canNotCollapse' => true
     ],
 
-    'accessPalette' => [
+    'access' => [
       'showitem' => '
-        hidden, --linebreak--,
-        starttime, endtime
+        starttime, endtime, --linebreak--,
+        editlock
       ',
+      'canNotCollapse' => true
+    ],
+
+    'visibility' => [
+      'showitem' => 'hidden',
       'canNotCollapse' => true
     ]
   ]

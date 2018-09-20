@@ -18,6 +18,13 @@ class OverviewNavigationItem extends AbstractModel {
   protected $title;
 
   /**
+   * The overview navigation item's label.
+   *
+   * @var string
+   */
+  protected $label;
+
+  /**
    * The overview navigation item's abstract.
    *
    * @var string
@@ -48,13 +55,6 @@ class OverviewNavigationItem extends AbstractModel {
   protected $link;
 
   /**
-   * The overview navigation item's label.
-   *
-   * @var string
-   */
-  protected $label;
-
-  /**
    * Constructs a new overview navigation item.
    */
   public function __construct() {
@@ -79,6 +79,31 @@ class OverviewNavigationItem extends AbstractModel {
    */
   public function setTitle($title) {
     $this->title = $title;
+  }
+
+  /**
+   * Returns the overview navigation item's label.
+   *
+   * @return string The overview navigation item's label
+   */
+  public function getLabel() {
+    $label = $this->label;
+    $title = $this->title;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $title;
+    }
+  }
+
+  /**
+   * Sets the overview navigation item's label.
+   *
+   * @param string $label The overview navigation item's label
+   */
+  public function setLabel($label) {
+    $this->label = $label;
   }
 
   /**
@@ -167,30 +192,5 @@ class OverviewNavigationItem extends AbstractModel {
    */
   public function setLink($link) {
     $this->link = $link;
-  }
-
-  /**
-   * Returns the overview navigation item's label.
-   *
-   * @return string The overview navigation item's label
-   */
-  public function getLabel() {
-    $label = $this->label;
-    $title = $this->title;
-
-    if ($label) {
-      return $label;
-    } else {
-      return $title;
-    }
-  }
-
-  /**
-   * Sets the overview navigation item's label.
-   *
-   * @param string $label The overview navigation item's label
-   */
-  public function setLabel($label) {
-    $this->label = $label;
   }
 }
