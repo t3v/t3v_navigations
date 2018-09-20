@@ -28,6 +28,11 @@
         <target>Vorschaubilder</target>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails.add">
+        <source>Add thumbnail</source>
+        <target>Vorschaubild hinzufügen</target>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.page">
         <source>Page</source>
         <target>Seite</target>

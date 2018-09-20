@@ -19,9 +19,11 @@ return [
         'type' => 'input',
         'size' => 42,
         'max' => 255,
-        'eval' => 'trim, required'
+        'eval' => 'trim, required',
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -31,9 +33,11 @@ return [
         'type' => 'input',
         'size' => 42,
         'max' => 255,
-        'eval' => 'trim'
+        'eval' => 'trim',
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -41,10 +45,12 @@ return [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.abstract',
       'config' => [
         'type' => 'text',
-        'eval' => 'trim'
+        'enableRichtext' => true,
+        'eval' => 'trim',
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'defaultExtras' => 'richtext[]',
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -58,24 +64,21 @@ return [
             'tablenames' => 'tx_t3vnavigations_domain_model_overview_navigation_item',
             'table_local' => 'sys_file'
           ],
-          'foreign_types' => [
-            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-              'showitem' => '--palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                             --palette--;;imageoverlayPalette,
-                             --palette--;;filePalette'
-            ]
-          ],
           'minitems' => 0,
           'maxitems' => 2,
           'appearance' => [
-            'showAllLocalizationLink' => true,
+            'createNewRelationLinkTitle' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails.add',
+            'showAllLocalizationLink' => false,
+            'showPossibleLocalizationRecords' => true,
+            'showRemovedLocalizationRecords' => true,
             'showSynchronizationLink' => true
           ],
-          'default' => 0
+          'behaviour' => [
+            'allowLanguageSynchronization' => true
+          ]
         ],
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
       ),
-      'l10n_mode' => 'exclude',
       'exclude' => true
     ],
 
@@ -85,9 +88,13 @@ return [
         'type' => 'group',
         'internal_type' => 'db',
         'allowed' => 'pages',
-        'size' => 1
+        'size' => 1,
+        'maxitems' => 100,
+        'autoSizeMax' => 10,
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -95,27 +102,23 @@ return [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.link',
       'config' => [
         'type' => 'input',
+        'renderType' => 'inputLink',
         'size' => 42,
         'max' => 255,
         'eval' => 'trim',
-        'wizards' => [
-          'link' => [
-            'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
-            'type' => 'popup',
-            'icon' => 'actions-wizard-link',
-            'module' => [
-              'name' => 'wizard_link'
-            ],
-            'params' => [
-              'blindLinkOptions' => 'folder, file, mail, spec',
+        'fieldControl' => [
+          'linkPopup' => [
+            'options' => [
+              'blindLinkOptions' => 'folder, file, mail, page, spec',
               'blindLinkFields' => 'class, params'
-            ],
-            'JSopenParams' => 'height=600,width=800,status=0,menubar=0,scrollbars=1'
+            ]
           ]
         ],
-        'softref' => 'typolink'
+        'softref' => 'typolink',
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -140,17 +143,19 @@ return [
       'config' => [
         'type' => 'select',
         'renderType' => 'selectSingle',
-        'special' => 'languages',
+        'foreign_table' => 'sys_language',
+        'foreign_table_where' => 'ORDER BY sys_language.title',
         'items' => [
-          [
-            'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-            -1,
-            'flags-multiple'
-          ],
+          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages', -1],
+          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 0]
         ],
-        'default' => 0
-      ],
-      'exclude' => true
+        'default' => 0,
+        'fieldWizard' => [
+          'selectIcons' => [
+            'disabled' => false
+          ]
+        ]
+      ]
     ],
 
     'l10n_parent' => [
@@ -163,15 +168,9 @@ return [
         ],
         'foreign_table' => 'tx_t3vnavigations_domain_model_overview_navigation_item',
         'foreign_table_where' => 'AND tx_t3vnavigations_domain_model_overview_navigation_item.pid=###CURRENT_PID### AND tx_t3vnavigations_domain_model_overview_navigation_item.sys_language_uid IN (-1,0)',
-        'fieldWizard' => [
-          'selectIcons' => [
-            'disabled' => true
-          ]
-        ],
         'default' => 0
       ],
-      'displayCond' => 'FIELD:sys_language_uid:>:0',
-      'exclude' => true
+      'displayCond' => 'FIELD:sys_language_uid:>:0'
     ],
 
     'l10n_diffsource' => [
@@ -185,15 +184,13 @@ return [
       'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
       'config' => [
         'type' => 'input',
-        'size' => 13,
-        'max' => 20,
-        'eval' => 'datetime',
-        'range' => [
-          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-        ],
-        'default' => 0
+        'renderType' => 'inputDateTime',
+        'eval' => 'datetime, int',
+        'default' => 0,
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -201,15 +198,16 @@ return [
       'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
       'config' => [
         'type' => 'input',
-        'size' => 13,
-        'max' => 20,
-        'eval' => 'datetime',
+        'renderType' => 'inputDateTime',
+        'eval' => 'datetime, int',
         'range' => [
-          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+          'upper' => mktime(0, 0, 0, 1, 1, 2038)
         ],
-        'default' => 0
+        'default' => 0,
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ]
       ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -217,6 +215,11 @@ return [
       'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
       'config' => [
         'type' => 'check',
+        'items' => [
+          '1' => [
+            '0' => 'LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.enabled'
+          ]
+        ],
         'default' => 0
       ],
       'exclude' => true
@@ -233,6 +236,11 @@ return [
       'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:editlock',
       'config' => [
         'type' => 'check',
+        'items' => [
+          '1' => [
+            '0' => 'LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.enabled'
+          ]
+        ],
         'default' => 0
       ],
       'exclude' => true
@@ -307,8 +315,8 @@ return [
         --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language.label,
         --palette--;;language,
         --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access.label,
-        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.access.label;access,
-        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.visibility.label;visibility
+        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.visibility.label;visibility,
+        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.access.label;access
       '
     ]
   ],
@@ -327,7 +335,9 @@ return [
       ',
       'columnsOverrides' => [
         'abstract' => [
-          'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
+          'config' => [
+            'enableRichtext' => true
+          ]
         ]
       ],
       'canNotCollapse' => true
@@ -338,16 +348,16 @@ return [
       'canNotCollapse' => true
     ],
 
+    'visibility' => [
+      'showitem' => 'hidden',
+      'canNotCollapse' => true
+    ],
+
     'access' => [
       'showitem' => '
         starttime, endtime, --linebreak--,
         editlock
       ',
-      'canNotCollapse' => true
-    ],
-
-    'visibility' => [
-      'showitem' => 'hidden',
       'canNotCollapse' => true
     ]
   ]
