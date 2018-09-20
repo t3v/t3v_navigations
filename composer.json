@@ -30,7 +30,7 @@
   ],
   "require": {
     "php": ">= 7.0 < 7.3",
-    "typo3/cms-core": "^8.7 || ^9.3",
+    "typo3/cms-core": "^8.7 || ^9.4",
     "fluidtypo3/vhs": "^5.0",
     "t3v/t3v_core": "*",
     "t3v/t3v_datamapper": "*",
@@ -39,7 +39,7 @@
   "require-dev": {
     "mikey179/vfsStream": "^1.6",
     "namelesscoder/typo3-repository-client": "^2.0",
-    "nimut/testing-framework": "^3.0",
+    "nimut/testing-framework": "^4.0",
     "phpunit/phpunit": "^6.0"
   },
   "autoload": {
