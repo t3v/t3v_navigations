@@ -53,86 +53,6 @@
         <target>Contain</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.label">
-        <source>Container</source>
-        <target>Container</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.none.label">
-        <source>None</source>
-        <target>Ohne</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.medium.label">
-        <source>Medium</source>
-        <target>Medium</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.large.label">
-        <source>Large</source>
-        <target>Groß</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.container.custom.label">
-        <source>Custom</source>
-        <target>Benutzerdefiniert</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.title">
-        <source>Responsive</source>
-        <target>Responsive</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.title">
-        <source>Breakpoint</source>
-        <target>Breakpoint</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.minWidth.label">
-        <source>Minimum Width in px</source>
-        <target>Mindestbreite in px</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageHeight.label">
-        <source>Image Height in px</source>
-        <target>Bildhöhe in px</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.imageWidth.label">
-        <source>Image Width in px</source>
-        <target>Bildbreite in px</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.label">
-        <source>Retina Display</source>
-        <target>Hochauflösendes Display</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
-        <source>Non-Retina</source>
-        <target>Nicht-Retina</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
-        <source>2X</source>
-        <target>2X</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
-        <source>3X</source>
-        <target>3X</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
-        <source>4X</source>
-        <target>4X</target>
-      </trans-unit>
-
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
@@ -171,36 +91,6 @@
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.custom.label">
-        <source>Custom</source>
-        <target>Benutzerdefiniert</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.label">
-        <source>Container</source>
-        <target>Container</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.none.label">
-        <source>None</source>
-        <target>Ohne</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.medium.label">
-        <source>Medium</source>
-        <target>Medium</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.large.label">
-        <source>Large</source>
-        <target>Groß</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.container.custom.label">
         <source>Custom</source>
         <target>Benutzerdefiniert</target>
       </trans-unit>
@@ -247,44 +137,114 @@
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.label">
+      <!-- === Shared === -->
+
+      <trans-unit id="shared.settings.container.label">
         <source>Container</source>
         <target>Container</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.none.label">
+      <trans-unit id="shared.settings.container.none.label">
         <source>None</source>
         <target>Ohne</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.default.label">
+      <trans-unit id="shared.settings.container.default.label">
         <source>Default</source>
         <target>Standard</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.medium.label">
+      <trans-unit id="shared.settings.container.small.label">
+        <source>Small</source>
+        <target>Klein</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.container.moderate.label">
+        <source>Moderate</source>
+        <target>Moderat</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.container.medium.label">
         <source>Medium</source>
         <target>Medium</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.large.label">
+      <trans-unit id="shared.settings.container.large.label">
         <source>Large</source>
         <target>Groß</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.container.custom.label">
+      <trans-unit id="shared.settings.container.big.label">
+        <source>Big</source>
+        <target>Beträchtlich</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.container.great.label">
+        <source>Great</source>
+        <target>Riesig</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.container.custom.label">
         <source>Custom</source>
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
-      <!-- Shared -->
+      <trans-unit id="shared.settings.responsive.title">
+        <source>Responsive</source>
+        <target>Responsive</target>
+      </trans-unit>
 
-      <trans-unit id="contentElements.shared.sheets.general.title">
+      <trans-unit id="shared.settings.responsive.breakpoint.title">
+        <source>Breakpoint</source>
+        <target>Breakpoint</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.minWidth.label">
+        <source>Minimum Width in px</source>
+        <target>Mindestbreite in px</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
+        <target>Bildhöhe in px</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
+        <target>Bildbreite in px</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.label">
+        <source>Retina Display</source>
+        <target>Hochauflösendes Display</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.none.label">
+        <source>Non-Retina</source>
+        <target>Nicht-Retina</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.2x.label">
+        <source>2X</source>
+        <target>2X</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.3x.label">
+        <source>3X</source>
+        <target>3X</target>
+      </trans-unit>
+
+      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.4x.label">
+        <source>4X</source>
+        <target>4X</target>
+      </trans-unit>
+
+      <trans-unit id="shared.sheets.general.title">
         <source>General</source>
         <target>Allgemein</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.shared.sheets.appearance.title">
+      <trans-unit id="shared.sheets.appearance.title">
         <source>Appearance</source>
         <target>Erscheinungsbild</target>
       </trans-unit>

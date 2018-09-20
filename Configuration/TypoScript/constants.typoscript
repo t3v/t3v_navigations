@@ -2,33 +2,29 @@
 # | T3v Navigations Constants |
 # -----------------------------
 
-t3v {
-  navigations {
-    config {
-      contentElements {
-        overviewNavigationContentElement {
-          # cat=t3v/navigations/config/contentElements/overviewNavigationContentElement; type=string; label=The Content Element's container
-          container =
-        }
-
-        quickNavigationContentElement {
-          # cat=t3v/navigations/config/contentElements/quickNavigationContentElement; type=string; label=The Content Element's container
-          container =
-        }
-
-        subpagesNavigationContentElement {
-          # cat=t3v/navigations/config/contentElements/subpagesNavigationContentElement; type=string; label=The Content Element's container
-          container =
-        }
-      }
-    }
-  }
-}
-
 # === Plugin Constants ===
 
 plugin {
   tx_t3vnavigations {
+    default {
+      contentElements {
+        overviewNavigationContentElement {
+          # cat=plugin/tx_t3vnavigations/default/contentElements/overviewNavigationContentElement; type=string; label=The content element's container
+          container = none
+        }
+
+        quickNavigationContentElement {
+          # cat=plugin/tx_t3vnavigations/default/contentElements/quickNavigationContentElement; type=string; label=The content element's container
+          container = none
+        }
+
+        subpagesNavigationContentElement {
+          # cat=plugin/tx_t3vnavigations/default/contentElements/subpagesNavigationContentElement; type=string; label=The content element's container
+          container = none
+        }
+      }
+    }
+
     persistence {
       # cat=plugin/tx_t3vnavigations/persistence; type=boolean; label=Enables the automatic cache clearing when changing data sets
       enableAutomaticCacheClearing = 1

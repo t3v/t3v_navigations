@@ -1,26 +1,26 @@
 lib {
-  t3v {
-    navigations {
-      config {
+  plugin {
+    tx_t3vnavigations {
+      defaults {
         contentElements {
           overviewNavigationContentElement {
             container = TEXT
             container {
-              value = {$t3v.navigations.config.contentElements.overviewNavigationContentElement.container}
+              value = {$plugin.tx_t3vnavigations.defaults.contentElements.overviewNavigationContentElement.container}
             }
           }
 
           quickNavigationContentElement {
             container = TEXT
             container {
-              value = {$t3v.navigations.config.contentElements.quickNavigationContentElement.container}
+              value = {$plugin.tx_t3vnavigations.defaults.contentElements.quickNavigationContentElement.container}
             }
           }
 
           subpagesNavigationContentElement {
             container = TEXT
             container {
-              value = {$t3v.navigations.config.contentElements.subpagesNavigationContentElement.container}
+              value = {$plugin.tx_t3vnavigations.defaults.contentElements.subpagesNavigationContentElement.container}
             }
           }
         }
