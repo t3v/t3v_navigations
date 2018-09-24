@@ -1,11 +1,11 @@
-# === New Content Element Wizard configuration ===
+# === New Content Element Wizard Configuration ===
 
 # mod {
 #   wizards {
 #     newContentElement {
 #       wizardItems {
 #         contentElements {
-#           header = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_wizard.xlf:mod.wizards.newContentElement.wizardItems.contentElements.header
+#           header = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.contentElements.header
 #
 #           elements {
 #             # ...

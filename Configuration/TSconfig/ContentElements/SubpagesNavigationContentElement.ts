@@ -1,3 +1,5 @@
+# === Subpages Navigation Content Element Wizard Configuration ===
+
 mod {
   wizards {
     newContentElement {
@@ -5,9 +7,9 @@ mod {
         contentElements {
           elements {
             t3vnavigations_subpagesnavigation {
-              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_wizard.xlf:contentElements.subpagesNavigationContentElement.title
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.title
 
-              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_wizard.xlf:contentElements.subpagesNavigationContentElement.description
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.description
 
               iconIdentifier = t3v_navigations-subpages_navigation_content_element
 

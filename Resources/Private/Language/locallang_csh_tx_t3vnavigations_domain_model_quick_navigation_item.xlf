@@ -8,16 +8,20 @@
         <source>Title</source>
       </trans-unit>
 
+      <trans-unit id="label.description">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>Type</source>
+      </trans-unit>
+
       <trans-unit id="page.description">
         <source>Page</source>
       </trans-unit>
 
       <trans-unit id="link.description">
         <source>Link</source>
-      </trans-unit>
-
-      <trans-unit id="label.description">
-        <source>Label</source>
       </trans-unit>
     </body>
   </file>

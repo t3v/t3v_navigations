@@ -25,6 +25,37 @@ return [
       'exclude' => true
     ],
 
+    'label' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
+    'type' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.type',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'items' => [
+          [$lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.type.default', 'default']
+        ],
+        'default' => 'default',
+        'fieldWizard' => [
+          'selectIcons' => [
+            'disabled' => false
+          ]
+        ]
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => false
+    ],
+
     'page' => [
       'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.page',
       'config' => [
@@ -65,19 +96,7 @@ return [
       'exclude' => true
     ],
 
-    'label' => [
-      'label' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item.label',
-      'config' => [
-        'type' => 'input',
-        'size' => 42,
-        'max' => 255,
-        'eval' => 'trim'
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
-    ],
-
-    // --- Default TYPO3 columns ---
+    // --- TYPO3 columns ---
 
     'uid' => [
       'label' => 'uid',
@@ -93,11 +112,127 @@ return [
       ]
     ],
 
-    'tstamp' => [
-      'label' => 'tstamp',
+    'sys_language_uid' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.sysLanguageUid.label',
       'config' => [
-        'type' => 'passthrough'
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'foreign_table' => 'sys_language',
+        'foreign_table_where' => 'ORDER BY sys_language.title',
+        'items' => [
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.allLanguages.label', -1],
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.default.label', 0]
+        ],
+        'default' => 0,
+        'fieldWizard' => [
+          'selectIcons' => [
+            'disabled' => false
+          ]
+        ]
+      ],
+      'exclude' => true
+    ],
+
+    'l10n_parent' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.l10nParent.label',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'foreign_table' => 'tx_t3vnavigations_domain_model_quick_navigation_item',
+        'foreign_table_where' => 'AND tx_t3vnavigations_domain_model_quick_navigation_item.pid=###CURRENT_PID### AND tx_t3vnavigations_domain_model_quick_navigation_item.sys_language_uid IN (-1,0)',
+        'items' => [
+          ['', 0]
+        ],
+        'default' => 0
+      ],
+      'displayCond' => 'FIELD:sys_language_uid:>:0',
+      'exclude' => true
+    ],
+
+    'l10n_diffsource' => [
+      'config' => [
+        'type' => 'passthrough',
+        'default' => ''
       ]
+    ],
+
+    'hidden' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.hidden.label',
+      'config' => [
+        'type' => 'check',
+        'items' => [
+          '1' => [
+            '0' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.enabled.label'
+          ]
+        ],
+        'default' => 0
+      ],
+      'exclude' => true
+    ],
+
+    'starttime' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.starttime.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 13,
+        'max' => 20,
+        'eval' => 'datetime',
+        'default' => 0,
+        'range' => [
+          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+        ]
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
+    'endtime' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.endtime.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 13,
+        'max' => 20,
+        'eval' => 'datetime',
+        'default' => 0,
+        'range' => [
+          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+        ]
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
+    'fe_group' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.feGroup.label',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectMultipleSideBySide',
+        'foreign_table' => 'fe_groups',
+        'foreign_table_where' => 'ORDER BY fe_groups.title',
+        'items' => [
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.hideAtLogin.label', -1],
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.anyLogin.label', -2],
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.userGroups.label', '--div--']
+        ],
+        'exclusiveKeys' => '-1, -2',
+        'size' => 5,
+        'maxitems' => 20
+      ],
+      'exclude' => true
+    ],
+
+    'editlock' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.editlock.label',
+      'config' => [
+        'type' => 'check',
+        'items' => [
+          '1' => [
+            '0' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.enabled.label'
+          ]
+        ],
+        'default' => 0
+      ],
+      'exclude' => true
     ],
 
     'crdate' => [
@@ -114,83 +249,17 @@ return [
       ]
     ],
 
-    'starttime' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
+    'tstamp' => [
+      'label' => 'tstamp',
       'config' => [
-        'type' => 'input',
-        'size' => 13,
-        'max' => 20,
-        'eval' => 'datetime',
-        'default' => 0,
-        'range' => [
-          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-        ]
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
+        'type' => 'passthrough'
+      ]
     ],
 
-    'endtime' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
+    'sorting' => [
+      'label' => 'sorting',
       'config' => [
-        'type' => 'input',
-        'size' => 13,
-        'max' => 20,
-        'eval' => 'datetime',
-        'default' => 0,
-        'range' => [
-          'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-        ]
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
-    ],
-
-    'hidden' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-      'config' => [
-        'type' => 'check'
-      ],
-      'exclude' => true
-    ],
-
-    'sys_language_uid' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
-      'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'special' => 'languages',
-        'items' => [
-          [
-            'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
-            -1,
-            'flags-multiple'
-          ],
-        ],
-        'default' => 0
-      ],
-      'exclude' => 1
-    ],
-
-    'l10n_parent' => [
-      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
-      'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'items' => [
-          ['', 0]
-        ],
-        'foreign_table' => 'tx_t3vnavigations_domain_model_quick_navigation_item',
-        'foreign_table_where' => 'AND tx_t3vnavigations_domain_model_quick_navigation_item.pid=###CURRENT_PID### AND tx_t3vnavigations_domain_model_quick_navigation_item.sys_language_uid IN (-1,0)'
-      ],
-      'displayCond' => 'FIELD:sys_language_uid:>:0',
-      'exclude' => 1
-    ],
-
-    'l10n_diffsource' => [
-      'config' => [
-        'type' => 'passthrough',
-        'default' => ''
+        'type' => 'passthrough'
       ]
     ]
   ],
@@ -200,36 +269,47 @@ return [
   'ctrl' => [
     'title' => $lll . 'tx_t3vnavigations_domain_model_quick_navigation_item',
     'label' => 'title',
-    // 'label_alt' => 'abstract',
+    'label_alt' => 'label',
     // 'label_alt_force' => 1,
     // 'descriptionColumn' => 'description',
+    'type' => 'type',
+    // 'typeicon_column' => 'type',
+    // 'typeicon_classes' => [
+    //   'default' => 'mimetypes-x-content-text'
+    // ],
+    // 'thumbnail' => 'thumbnail',
     'iconfile' => "${iconsFolder}/TCA/QuickNavigationItem.svg",
-    'tstamp' => 'tstamp',
-    'crdate' => 'crdate',
-    'delete' => 'deleted',
-    'cruser_id' => 'cruser_id',
-    'origUid' => 't3_origuid',
     'languageField' => 'sys_language_uid',
     'transOrigPointerField' => 'l10n_parent',
     'transOrigDiffSourceField' => 'l10n_diffsource',
+    'editlock' => 'editlock',
+    'crdate' => 'crdate',
+    'cruser_id' => 'cruser_id',
+    'tstamp' => 'tstamp',
     // 'sortby' => 'sorting',
     'default_sortby' => 'ORDER BY title ASC',
+    'delete' => 'deleted',
+    'origUid' => 't3_origuid',
     'enablecolumns' => [
       'disabled' => 'hidden',
       'starttime' => 'starttime',
-      'endtime' => 'endtime'
+      'endtime' => 'endtime',
+      'fe_group' => 'fe_group'
     ],
-    'searchFields' => 'title, label',
-    'versioningWS' => true,
-    'hideTable' => false
+    'searchFields' => 'uid, title, label, type, abstract',
+    // 'hideAtCopy' => true,
+    // 'prependAtCopy' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
+    'useColumnsForDefaultValues' => 'type, sys_language_uid',
+    // 'hideTable' => true,
+    'versioningWS' => true
   ],
 
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'title, label, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
-    'maxDBListItems' => 50,
-    'maxSingleDBListItems' => 50
+    'showRecordFieldList' => 'uid, title, label, type, abstract, page, link, sys_language_uid, l10n_parent, hidden, starttime, endtime',
+    'maxDBListItems' => 20,
+    'maxSingleDBListItems' => 100
   ],
 
   // === Types ===
@@ -237,11 +317,12 @@ return [
   'types' => [
     0 => [
       'showitem' => '
-        --palette--;;generalPalette,
-        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language,
-        --palette--;;l10nPalette,
-        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
-        --palette--;;accessPalette
+        --palette--;;general,
+        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language.label,
+        --palette--;;language,
+        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access.label,
+        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.visibility.label;visibility,
+        --palette--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:palettes.access.label;access
       '
     ]
   ],
@@ -249,27 +330,37 @@ return [
   // === Palettes ===
 
   'palettes' => [
-    'generalPalette' => [
+    'general' => [
       'showitem' => '
         title, --linebreak--,
+        label, --linebreak--,
+        abstract, --linebreak--,
         page, --linebreak--,
-        link, --linebreak--,
-        label
+        link
       ',
       'columnsOverrides' => [
+        'abstract' => [
+          'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
+        ]
       ],
       'canNotCollapse' => true
     ],
 
-    'l10nPalette' => [
+    'language' => [
       'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource',
       'canNotCollapse' => true
     ],
 
-    'accessPalette' => [
+    'visibility' => [
+      'showitem' => 'hidden',
+      'canNotCollapse' => true
+    ],
+
+    'access' => [
       'showitem' => '
-        hidden, --linebreak--,
-        starttime, endtime
+        starttime, endtime, --linebreak--,
+        fe_group, --linebreak--,
+        editlock
       ',
       'canNotCollapse' => true
     ]

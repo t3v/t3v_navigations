@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-  <file product-name="t3v_navigations" source-language="en" datatype="plaintext" original="messages">
+  <file product-name="t3v_navigations" source-language="en" target-language="de" datatype="plaintext" original="messages">
     <header />
 
     <body>
@@ -8,36 +8,58 @@
 
       <trans-unit id="mod.wizards.newContentElement.wizardItems.contentElements.header">
         <source>Content Elements</source>
+        <target>Content Elements</target>
       </trans-unit>
 
       <!-- Overview Navigation Content Element -->
 
       <trans-unit id="contentElements.overviewNavigationContentElement.title">
         <source>Overview Navigation</source>
+        <target>Übersicht-Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.overviewNavigationContentElement.label">
+        <source>Overview Navigation Content Element</source>
+        <target>Übersicht-Navigation Content Element</target>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.description">
         <source>Overview Navigation Content Element</source>
+        <target>Übersicht-Navigation Content Element</target>
       </trans-unit>
 
       <!-- Quick Navigation Content Element -->
 
       <trans-unit id="contentElements.quickNavigationContentElement.title">
         <source>Quick Navigation</source>
+        <target>Schnell-Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.quickNavigationContentElement.label">
+        <source>Quick Navigation Content Element</source>
+        <target>Schnell-Navigation Content Element</target>
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.description">
         <source>Quick Navigation Content Element</source>
+        <target>Schnell-Navigation Content Element</target>
       </trans-unit>
 
       <!-- Subpages Navigation Content Element -->
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.title">
         <source>Subpages Navigation</source>
+        <target>Unterseiten-Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.label">
+        <source>Subpages Navigation Content Element</source>
+        <target>Unterseiten-Navigation Content Element</target>
       </trans-unit>
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.description">
         <source>Subpages Navigation Content Element</source>
+        <target>Unterseiten-Navigation Content Element</target>
       </trans-unit>
     </body>
   </file>

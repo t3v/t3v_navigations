@@ -14,7 +14,7 @@
 
       <!-- Quick Navigation Item Model -->
 
-      <trans-unit id="domain.model.QuickNavigationItem">
+      <trans-unit id="domain.model.quickNavigationItem">
         <source>Quick Navigation Item</source>
       </trans-unit>
 

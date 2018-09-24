@@ -5,9 +5,11 @@ addons:
 
 before_install:
   - echo $TRAVIS_PHP_VERSION
-  - if php -i | grep -q xdebug; then phpenv config-rm xdebug.ini; fi
+  - if php -v | grep -q 'Xdebug'; then phpenv config-rm xdebug.ini; fi
 
 before_script:
+  - TYPO3_VERSION_DIGITS=${TYPO3_VERSION//[^[:digit:]]/}
+  - TYPO3_MAJOR_VERSION="${TYPO3_VERSION_DIGITS::1}"
   - composer require typo3/cms="$TYPO3_VERSION"
   - export BUILD_PATH="$PWD/.build"
   - export BIN_PATH="$BUILD_PATH/bin"
@@ -36,8 +38,11 @@ matrix:
       env: TYPO3_VERSION="^7.6"
     - php: 7.1
       env: TYPO3_VERSION="^7.6"
-    # - php: 7.2
-    #   env: TYPO3_VERSION="^7.6"
+    - php: 7.2
+      env: TYPO3_VERSION="^7.6"
+  allow_failures:
+    - php: 7.2
+      env: TYPO3_VERSION="^7.6"
 
 notifications:
   email:

@@ -18,6 +18,21 @@
         <target>Titel</target>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type.default">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.abstract">
         <source>Abstract</source>
         <target>Zusammenfassung</target>
@@ -26,6 +41,11 @@
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails">
         <source>Thumbnails</source>
         <target>Vorschaubilder</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.thumbnails.createNewRelation.link.title">
+        <source>Add thumbnail</source>
+        <target>Vorschaubild hinzufügen</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.page">
@@ -38,21 +58,31 @@
         <target>Link</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
-        <source>Label</source>
-        <target>Beschriftung</target>
-      </trans-unit>
-
       <!-- Quick Navigation Item Model -->
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
         <source>Quick Navigation Item</source>
-        <target>Quick-Navigationspunkt</target>
+        <target>Schnell-Navigationspunkt</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.type.default">
+        <source>Default</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.title">
         <source>Title</source>
         <target>Titel</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.page">
@@ -63,11 +93,6 @@
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.link">
         <source>Link</source>
         <target>Link</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.label">
-        <source>Label</source>
-        <target>Beschriftung</target>
       </trans-unit>
     </body>
   </file>

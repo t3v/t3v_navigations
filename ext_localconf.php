@@ -20,7 +20,7 @@ $iconsFolder         = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($exten
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
   $extensionSignature,
 
-  // The unique name of the content element in upper camel case
+  // The unique name of the Content Element in upper camel case
   'OverviewNavigation',
 
   // The array holding the controller-action-combinations that are accessible
@@ -40,7 +40,7 @@ $iconsFolder         = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($exten
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
   $extensionSignature,
 
-  // The unique name of the content element in upper camel case
+  // The unique name of the Content Element in upper camel case
   'QuickNavigation',
 
   // The array holding the controller-action-combinations that are accessible
@@ -60,7 +60,7 @@ $iconsFolder         = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($exten
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
   $extensionSignature,
 
-  // The unique name of the content element in upper camel case
+  // The unique name of the Content Element in upper camel case
   'SubpagesNavigation',
 
   // The array holding the controller-action-combinations that are accessible
