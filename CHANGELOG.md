@@ -8,6 +8,7 @@ Unreleased
 
 * Updated TCA configurations
 * Updated dependencies
+* Updated translations
 * Updated Travis CI and AppVeyor configuration
 * Cleaned up
 

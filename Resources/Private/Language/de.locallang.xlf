@@ -17,7 +17,7 @@
 
       <trans-unit id="domain.model.QuickNavigationItem">
         <source>Quick Navigation Item</source>
-        <target>Quick-Navigationspunkt</target>
+        <target>Schnell-Navigationspunkt</target>
       </trans-unit>
 
       <!-- === Content Elements === -->

@@ -62,7 +62,7 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
         <source>Quick Navigation Item</source>
-        <target>Quick-Navigationspunkt</target>
+        <target>Schnell-Navigationspunkt</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.type">
