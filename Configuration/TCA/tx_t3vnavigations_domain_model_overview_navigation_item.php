@@ -157,15 +157,15 @@ return [
     ],
 
     'sys_language_uid' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.sysLanguageUid.label',
       'config' => [
         'type' => 'select',
         'renderType' => 'selectSingle',
         'foreign_table' => 'sys_language',
         'foreign_table_where' => 'ORDER BY sys_language.title',
         'items' => [
-          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages', -1],
-          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 0]
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.allLanguages.label', -1],
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.default.label', 0]
         ],
         'default' => 0,
         'fieldWizard' => [
@@ -178,7 +178,7 @@ return [
     ],
 
     'l10n_parent' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.l10nParent.label',
       'config' => [
         'type' => 'select',
         'renderType' => 'selectSingle',
@@ -200,8 +200,22 @@ return [
       ]
     ],
 
+    'hidden' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.hidden.label',
+      'config' => [
+        'type' => 'check',
+        'items' => [
+          '1' => [
+            '0' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.enabled.label'
+          ]
+        ],
+        'default' => 0
+      ],
+      'exclude' => true
+    ],
+
     'starttime' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.starttime.label',
       'config' => [
         'type' => 'input',
         'renderType' => 'inputDateTime',
@@ -215,7 +229,7 @@ return [
     ],
 
     'endtime' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.endtime.label',
       'config' => [
         'type' => 'input',
         'renderType' => 'inputDateTime',
@@ -231,8 +245,27 @@ return [
       'exclude' => true
     ],
 
-    'hidden' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+    'fe_group' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.feGroup.label',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectMultipleSideBySide',
+        'foreign_table' => 'fe_groups',
+        'foreign_table_where' => 'ORDER BY fe_groups.title',
+        'items' => [
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.hideAtLogin.label', -1],
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.anyLogin.label', -2],
+          ['LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.userGroups.label', '--div--']
+        ],
+        'exclusiveKeys' => '-1, -2',
+        'size' => 5,
+        'maxitems' => 20
+      ],
+      'exclude' => true
+    ],
+
+    'editlock' => [
+      'label' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:columns.editlock.label',
       'config' => [
         'type' => 'check',
         'items' => [
@@ -241,25 +274,6 @@ return [
           ]
         ],
         'default' => 0
-      ],
-      'exclude' => true
-    ],
-
-    'fe_group' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.fe_group',
-      'config' => [
-        'type' => 'select',
-        'renderType' => 'selectMultipleSideBySide',
-        'foreign_table' => 'fe_groups',
-        'foreign_table_where' => 'ORDER BY fe_groups.title',
-        'items' => [
-          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hide_at_login', -1],
-          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.any_login', -2],
-          ['LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.usergroups', '--div--']
-        ],
-        'exclusiveKeys' => '-1, -2',
-        'size' => 5,
-        'maxitems' => 20
       ],
       'exclude' => true
     ],
@@ -290,20 +304,6 @@ return [
       'config' => [
         'type' => 'passthrough'
       ]
-    ],
-
-    'editlock' => [
-      'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:editlock',
-      'config' => [
-        'type' => 'check',
-        'items' => [
-          '1' => [
-            '0' => 'LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.enabled'
-          ]
-        ],
-        'default' => 0
-      ],
-      'exclude' => true
     ]
   ],
 
@@ -325,13 +325,13 @@ return [
     'languageField' => 'sys_language_uid',
     'transOrigPointerField' => 'l10n_parent',
     'transOrigDiffSourceField' => 'l10n_diffsource',
-    'cruser_id' => 'cruser_id',
+    'editlock' => 'editlock',
     'crdate' => 'crdate',
+    'cruser_id' => 'cruser_id',
     'tstamp' => 'tstamp',
     // 'sortby' => 'sorting',
     'default_sortby' => 'ORDER BY title ASC',
     'delete' => 'deleted',
-    'editlock' => 'editlock',
     'origUid' => 't3_origuid',
     'enablecolumns' => [
       'disabled' => 'hidden',
@@ -350,7 +350,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'pid, type, title, label, abstract, sys_language_uid, l10n_parent, l10n_diffsource, starttime, endtime, hidden',
+    'showRecordFieldList' => 'pid, type, title, label, abstract, sys_language_uid, l10n_parent, l10n_diffsource, hidden, starttime, endtime',
     'maxDBListItems' => 30,
     'maxSingleDBListItems' => 50
   ],
@@ -406,6 +406,7 @@ return [
     'access' => [
       'showitem' => '
         starttime, endtime, --linebreak--,
+        fe_group, --linebreak--,
         editlock
       ',
       'canNotCollapse' => true

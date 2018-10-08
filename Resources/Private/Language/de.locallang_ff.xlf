@@ -126,17 +126,17 @@
 
       <trans-unit id="shared.settings.backgroundSize.label">
         <source>Background Size</source>
-        <target>Hintergrundgröße</target>
+        <target>Hintergrundbild Abmessungen</target>
       </trans-unit>
 
       <trans-unit id="shared.settings.backgroundSize.cover.label">
         <source>Cover</source>
-        <target>Cover</target>
+        <target>Abdeckend</target>
       </trans-unit>
 
       <trans-unit id="shared.settings.backgroundSize.contain.label">
         <source>Contain</source>
-        <target>Contain</target>
+        <target>Beibehaltend</target>
       </trans-unit>
 
       <trans-unit id="shared.settings.container.label">
