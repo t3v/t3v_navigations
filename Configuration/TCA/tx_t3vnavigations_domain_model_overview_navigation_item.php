@@ -13,24 +13,6 @@ return [
   'columns' => [
     // --- Custom columns ---
 
-    'type' => [
-      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.type',
-      'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'items' => [
-          [$lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.type.default', 'default']
-        ],
-        'default' => 'default',
-        'fieldWizard' => [
-          'selectIcons' => [
-            'disabled' => false
-          ]
-        ]
-      ],
-      'exclude' => false
-    ],
-
     'title' => [
       'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.title',
       'config' => [
@@ -57,6 +39,24 @@ return [
         ]
       ],
       'exclude' => true
+    ],
+
+    'type' => [
+      'label' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.type',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'items' => [
+          [$lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.type.default', 'default']
+        ],
+        'default' => 'default',
+        'fieldWizard' => [
+          'selectIcons' => [
+            'disabled' => false
+          ]
+        ]
+      ],
+      'exclude' => false
     ],
 
     'abstract' => [
@@ -140,7 +140,7 @@ return [
       'exclude' => true
     ],
 
-    // --- Default TYPO3 columns ---
+    // --- TYPO3 columns ---
 
     'uid' => [
       'label' => 'uid',
@@ -270,7 +270,7 @@ return [
         'type' => 'check',
         'items' => [
           '1' => [
-            '0' => 'LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.enabled'
+            '0' => 'LLL:EXT:t3v_core/Resources/Private/Language/locallang_tca.xlf:shared.enabled.label'
           ]
         ],
         'default' => 0
@@ -310,18 +310,18 @@ return [
   // === Ctrl ===
 
   'ctrl' => [
-    'type' => 'type',
-    // 'typeicon_column' => 'type',
-    // 'typeicon_classes' => [
-    //   'default' => 'mimetypes-x-content-text'
-    // ],
     'title' => $lll . 'tx_t3vnavigations_domain_model_overview_navigation_item',
     'label' => 'title',
     'label_alt' => 'label',
     // 'label_alt_force' => 1,
     // 'descriptionColumn' => 'description',
-    'iconfile' => "${iconsFolder}/TCA/OverviewNavigationItem.svg",
+    'type' => 'type',
+    // 'typeicon_column' => 'type',
+    // 'typeicon_classes' => [
+    //   'default' => 'mimetypes-x-content-text'
+    // ],
     // 'thumbnail' => 'thumbnail',
+    'iconfile' => "${iconsFolder}/TCA/OverviewNavigationItem.svg",
     'languageField' => 'sys_language_uid',
     'transOrigPointerField' => 'l10n_parent',
     'transOrigDiffSourceField' => 'l10n_diffsource',
@@ -342,7 +342,7 @@ return [
     'searchFields' => 'uid, title, label, abstract',
     // 'hideAtCopy' => true,
     // 'prependAtCopy' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
-    'useColumnsForDefaultValues' => 'type',
+    'useColumnsForDefaultValues' => 'type, sys_language_uid',
     // 'hideTable' => true,
     'versioningWS' => true
   ],
@@ -350,9 +350,9 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'pid, type, title, label, abstract, sys_language_uid, l10n_parent, l10n_diffsource, hidden, starttime, endtime',
-    'maxDBListItems' => 30,
-    'maxSingleDBListItems' => 50
+    'showRecordFieldList' => 'uid, pid, type, title, label, abstract, sys_language_uid, l10n_parent, l10n_diffsource, hidden, starttime, endtime',
+    'maxDBListItems' => 20,
+    'maxSingleDBListItems' => 100
   ],
 
   // === Types ===
@@ -375,7 +375,6 @@ return [
   'palettes' => [
     'general' => [
       'showitem' => '
-        type, --linebreak--,
         title, --linebreak--,
         label, --linebreak--,
         abstract, --linebreak--,

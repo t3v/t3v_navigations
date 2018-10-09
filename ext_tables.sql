@@ -3,9 +3,9 @@ CREATE TABLE tx_t3vnavigations_domain_model_overview_navigation_item (
   uid int(11) NOT NULL auto_increment,
   pid int(11) DEFAULT '0' NOT NULL,
 
-  type varchar(32) DEFAULT 'default' NOT NULL,
   title varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
+  type varchar(32) DEFAULT 'default' NOT NULL,
   abstract text NOT NULL,
   thumbnails int(11) unsigned DEFAULT '0' NOT NULL,
   page int(11) DEFAULT '0' NOT NULL,
@@ -48,9 +48,9 @@ CREATE TABLE tx_t3vnavigations_domain_model_quick_navigation_item (
   uid int(11) NOT NULL auto_increment,
   pid int(11) DEFAULT '0' NOT NULL,
 
-  type varchar(32) DEFAULT 'default' NOT NULL,
   title varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
+  type varchar(32) DEFAULT 'default' NOT NULL,
   page int(11) DEFAULT '0' NOT NULL,
   link varchar(255) DEFAULT '' NOT NULL,
 

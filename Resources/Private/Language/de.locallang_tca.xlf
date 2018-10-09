@@ -13,16 +13,6 @@
         <target>Übersicht-Navigationspunkt</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type">
-        <source>Type</source>
-        <target>Typ</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type.default">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.title">
         <source>Title</source>
         <target>Titel</target>
@@ -31,6 +21,16 @@
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
         <source>Label</source>
         <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type.default">
+        <source>Default</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.abstract">
