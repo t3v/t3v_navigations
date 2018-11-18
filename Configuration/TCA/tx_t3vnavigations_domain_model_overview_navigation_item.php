@@ -50,6 +50,9 @@ return [
           [$lll . 'tx_t3vnavigations_domain_model_overview_navigation_item.type.default', 'default']
         ],
         'default' => 'default',
+        'behaviour' => [
+          'allowLanguageSynchronization' => true
+        ],
         'fieldWizard' => [
           'selectIcons' => [
             'disabled' => false
@@ -339,7 +342,7 @@ return [
       'endtime' => 'endtime',
       'fe_group' => 'fe_group'
     ],
-    'searchFields' => 'uid, title, label, abstract',
+    'searchFields' => 'uid, title, label, type, abstract',
     // 'hideAtCopy' => true,
     // 'prependAtCopy' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
     'useColumnsForDefaultValues' => 'type, sys_language_uid',
@@ -350,7 +353,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'uid, pid, type, title, label, abstract, sys_language_uid, l10n_parent, l10n_diffsource, hidden, starttime, endtime',
+    'showRecordFieldList' => 'title, label, type, abstract, thumbnails, page, link, sys_language_uid, l10n_parent, hidden, starttime, endtime',
     'maxDBListItems' => 20,
     'maxSingleDBListItems' => 100
   ],
@@ -393,7 +396,7 @@ return [
     ],
 
     'language' => [
-      'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource',
+      'showitem' => 'sys_language_uid, l10n_parent',
       'canNotCollapse' => true
     ],
 
