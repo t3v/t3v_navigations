@@ -6,10 +6,12 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Updated `tt_content` override
 * Updated TCA configurations
 * Updated dependencies
 * Updated translations
 * Updated Travis CI and AppVeyor configuration
+* Updated dependencies
 * Cleaned up
 
 3.1.0

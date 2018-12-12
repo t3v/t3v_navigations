@@ -19,11 +19,11 @@ $contentElementDescription = $lll . 'contentElements.overviewNavigationContentEl
 $contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
 $contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
-// Register the content element
+// Register the Content Element
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
 
-// Disable the display of `layout`, `pages` and `select_key` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key';
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';
 
 // Activate the display of the `flexform` field and set the FlexForm definition
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
@@ -36,11 +36,11 @@ $contentElementDescription = $lll . 'contentElements.quickNavigationContentEleme
 $contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
 $contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
-// Register the content element
+// Register the Content Element
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
 
-// Disable the display of `layout`, `pages` and `select_key` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key';
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';
 
 // Activate the display of the `flexform` field and set the FlexForm definition
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
@@ -53,11 +53,11 @@ $contentElementDescription = $lll . 'contentElements.subpagesNavigationContentEl
 $contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
 $contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
-// Register the content element
+// Register the Content Element
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
 
-// Disable the display of `layout`, `pages` and `select_key` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key';
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';
 
 // Activate the display of the `flexform` field and set the FlexForm definition
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
