@@ -1,20 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vDataMapper/ViewHelpers"
       xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
-  <f:if condition="{entry.active}">
-    <f:if condition="{entry.hasSubPages}">
-      <ul class="t3v-navigations-subpages-navigation__subsubentries navigation__subsubentries">
-        <v:menu pageUid="{entry.uid}" useShortcutData="true" as="subentries">
-          <f:for each="{subentries}" as="subentry">
-            <t3v:page.visible uid="{subentry.uid}">
-              <li class="t3v-navigations-subpages-navigation__subsubentry {f:if(condition: '{subentry.active}', then: 'navigation__subsubentry--active')} {f:if(condition: '{subentry.hasSubPages}', then: 'navigation__subsubentry--with-subentries')} navigation__subsubentry">
-                <f:link.page pageUid="{subentry.uid}" class="t3v-navigations-subpages-navigation__subsubitem navigation__subsubitem" title="{subentry.title}">
-                  {subentry.linktext}
-                </f:link.page>
-              </li>
-            </t3v:page.visible>
-          </f:for>
-        </v:menu>
-      </ul>
-    </f:if>
+  <f:if condition="{entry.active} && {entry.hasSubPages}">
+    <ul class="t3v-navigations-subpages-navigation__subsubentries navigation__subsubentries">
+      <v:menu pageUid="{entry.uid}" useShortcutData="true" as="subentries">
+        <f:for each="{subentries}" as="subentry">
+          <t3v:page.visible uid="{subentry.uid}">
+            <li class="t3v-navigations-subpages-navigation__subsubentry {f:if(condition: '{subentry.active}', then: 'navigation__subsubentry--active')} {f:if(condition: '{subentry.hasSubPages}', then: 'navigation__subsubentry--with-subentries')} navigation__subsubentry">
+              <f:link.page pageUid="{subentry.uid}" class="t3v-navigations-subpages-navigation__subsubitem navigation__subsubitem" title="{subentry.title}">
+                {subentry.linktext}
+              </f:link.page>
+            </li>
+          </t3v:page.visible>
+        </f:for>
+      </v:menu>
+    </ul>
   </f:if>
 </html>

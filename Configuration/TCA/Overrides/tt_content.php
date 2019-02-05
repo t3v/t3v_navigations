@@ -14,13 +14,13 @@ $lll                 = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey,
 
 // --- Overview Navigation Content Element ---
 
-$contentElementKey         = 'Overview Navigation';
-$contentElementDescription = $lll . 'contentElements.overviewNavigationContentElement.description';
-$contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
-$contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
+$contentElementKey        = 'Overview Navigation';
+$contentElementLabel      = $lll . 'contentElements.overviewNavigationContentElement.label';
+$contentElementIdentifier = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
+$contentElementSignature  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
 // Register the Content Element
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';
@@ -31,13 +31,13 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
 
 // --- Quick Navigation Content Element ---
 
-$contentElementKey         = 'Quick Navigation';
-$contentElementDescription = $lll . 'contentElements.quickNavigationContentElement.description';
-$contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
-$contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
+$contentElementKey        = 'Quick Navigation';
+$contentElementLabel      = $lll . 'contentElements.quickNavigationContentElement.label';
+$contentElementIdentifier = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
+$contentElementSignature  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
 // Register the Content Element
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';
@@ -48,13 +48,13 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
 
 // --- Subpages Navigation Content Element ---
 
-$contentElementKey         = 'Subpages Navigation';
-$contentElementDescription = $lll . 'contentElements.subpagesNavigationContentElement.description';
-$contentElementIdentifier  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
-$contentElementSignature   = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
+$contentElementKey        = 'Subpages Navigation';
+$contentElementLabel      = $lll . 'contentElements.subpagesNavigationContentElement.label';
+$contentElementIdentifier = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
+$contentElementSignature  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
 
 // Register the Content Element
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementDescription);
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';

@@ -25,17 +25,15 @@ class QuickNavigationContentElementController extends ContentElementController {
    * The index action.
    */
   public function indexAction() {
-    $settings = $this->settings;
-
-    $primaryItems     = [];
-    $primaryItemsUids = GeneralUtility::intExplode(',', $settings['primaryItems'], true);
+    $settings           = $this->settings;
+    $primaryItems       = [];
+    $primaryItemsUids   = GeneralUtility::intExplode(',', $settings['primaryItems'], true);
+    $secondaryItems     = [];
+    $secondaryItemsUids = GeneralUtility::intExplode(',', $settings['secondaryItems'], true);
 
     foreach($primaryItemsUids as $uid) {
       $primaryItems[] = $this->quickNavigationItemRepository->findByUid($uid);
     }
-
-    $secondaryItems     = [];
-    $secondaryItemsUids = GeneralUtility::intExplode(',', $settings['secondaryItems'], true);
 
     foreach($secondaryItemsUids as $uid) {
       $secondaryItems[] = $this->quickNavigationItemRepository->findByUid($uid);

@@ -25,8 +25,7 @@ class OverviewNavigationContentElementController extends ContentElementControlle
    * The index action.
    */
   public function indexAction() {
-    $settings = $this->settings;
-
+    $settings  = $this->settings;
     $items     = [];
     $itemsUids = GeneralUtility::intExplode(',', $settings['items'], true);
 

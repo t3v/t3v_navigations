@@ -310,7 +310,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'title, label, type, page, link, sys_language_uid, l10n_parent, hidden, starttime, endtime',
+    'showRecordFieldList' => 'uid, title, label, type, page, link, sys_language_uid, l10n_parent, hidden, starttime, endtime',
     'maxDBListItems' => 20,
     'maxSingleDBListItems' => 100
   ],

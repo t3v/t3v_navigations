@@ -18,19 +18,6 @@ abstract class AbstractModel extends AbstractEntity {
   const EXTENSION_KEY = 't3v_navigations';
 
   /**
-   * The localization factory.
-   *
-   * @var \TYPO3\CMS\Core\Localization\LocalizationFactory
-   * @inject
-   */
-  protected $localizationFactory;
-
-  /**
-   * Use the localization trait, requires an extension key and a localisation factory.
-   */
-  use LocalizationTrait;
-
-  /**
    * The abstract model's title.
    *
    * @var string
@@ -161,4 +148,17 @@ abstract class AbstractModel extends AbstractEntity {
   public function setLink($link) {
     $this->link = $link;
   }
+
+  /**
+   * The localization factory.
+   *
+   * @var \TYPO3\CMS\Core\Localization\LocalizationFactory
+   * @inject
+   */
+  protected $localizationFactory;
+
+  /**
+   * Use the localization trait, requires an extension key and a localisation factory.
+   */
+  use LocalizationTrait;
 }

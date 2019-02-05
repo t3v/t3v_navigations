@@ -4,11 +4,6 @@
     <header />
 
     <body>
-      <trans-unit id="type.description">
-        <source>Type</source>
-        <target>Typ</target>
-      </trans-unit>
-
       <trans-unit id="title.description">
         <source>Title</source>
         <target>Titel</target>
@@ -17,6 +12,11 @@
       <trans-unit id="label.description">
         <source>Label</source>
         <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>Type</source>
+        <target>Typ</target>
       </trans-unit>
 
       <trans-unit id="page.description">

@@ -8,7 +8,6 @@ Unreleased
 
 * Updated `tt_content` override
 * Updated TCA configurations
-* Updated dependencies
 * Updated translations
 * Updated Travis CI and AppVeyor configuration
 * Updated dependencies

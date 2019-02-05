@@ -16,6 +16,10 @@
         <source>Overview Navigation</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.overviewNavigationContentElement.label">
+        <source>Overview Navigation Content Element</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.overviewNavigationContentElement.description">
         <source>Overview Navigation Content Element</source>
       </trans-unit>
@@ -26,6 +30,10 @@
         <source>Quick Navigation</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.quickNavigationContentElement.label">
+        <source>Quick Navigation Content Element</source>
+      </trans-unit>
+
       <trans-unit id="contentElements.quickNavigationContentElement.description">
         <source>Quick Navigation Content Element</source>
       </trans-unit>
@@ -34,6 +42,10 @@
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.title">
         <source>Subpages Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.subpagesNavigationContentElement.label">
+        <source>Subpages Navigation Content Element</source>
       </trans-unit>
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.description">
