@@ -6,20 +6,20 @@
 
 plugin {
   tx_t3vnavigations {
-    default {
+    defaults {
       contentElements {
         overviewNavigationContentElement {
-          # cat=plugin/tx_t3vnavigations/default/contentElements/overviewNavigationContentElement; type=string; label=The content element's container
+          # cat=plugin/tx_t3vnavigations/defaults/contentElements/overviewNavigationContentElement; type=string; label=The content element's container
           container = none
         }
 
         quickNavigationContentElement {
-          # cat=plugin/tx_t3vnavigations/default/contentElements/quickNavigationContentElement; type=string; label=The content element's container
+          # cat=plugin/tx_t3vnavigations/defaults/contentElements/quickNavigationContentElement; type=string; label=The content element's container
           container = none
         }
 
         subpagesNavigationContentElement {
-          # cat=plugin/tx_t3vnavigations/default/contentElements/subpagesNavigationContentElement; type=string; label=The content element's container
+          # cat=plugin/tx_t3vnavigations/defaults/contentElements/subpagesNavigationContentElement; type=string; label=The content element's container
           container = none
         }
       }
