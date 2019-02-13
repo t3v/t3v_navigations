@@ -7,15 +7,12 @@ mod {
         contentElements {
           elements {
             t3vNavigationsSubpagesNavigation {
-              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.title
-
-              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.description
-
+              title          = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.title
+              description    = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.description
               iconIdentifier = t3v_navigations-subpages_navigation_content_element
 
               tt_content_defValues {
-                CType = list
-
+                CType     = list
                 list_type = t3vnavigations_subpagesnavigation
               }
             }
