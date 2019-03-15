@@ -65,13 +65,13 @@
                     <info>1</info>
                     <new>1</new>
                     <dragdrop>1</dragdrop>
-                    <sort>0</sort>
+                    <sort>1</sort>
                     <hide>1</hide>
                     <delete>1</delete>
                     <localize>1</localize>
                   </enabledControls>
                   <collapseAll>1</collapseAll>
-                  <expandSingle>0</expandSingle>
+                  <expandSingle>1</expandSingle>
                   <levelLinksPosition>top</levelLinksPosition>
                   <showAllLocalizationLink>0</showAllLocalizationLink>
                   <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>

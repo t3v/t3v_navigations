@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Improved `Quick Navigation` Content Element FlexForm
 * Updated TypoScript configuration / structure
 * Increased TYPO3 9.x compatibility
 * Updated `tt_content` override
