@@ -6,11 +6,6 @@
     <body>
       <!-- === Content Elements === -->
 
-      <trans-unit id="mod.wizards.newContentElement.wizardItems.contentElements.header">
-        <source>Content Elements</source>
-        <target>Content Elements</target>
-      </trans-unit>
-
       <!-- Overview Navigation Content Element -->
 
       <trans-unit id="contentElements.overviewNavigationContentElement.title">
@@ -20,12 +15,12 @@
 
       <trans-unit id="contentElements.overviewNavigationContentElement.label">
         <source>Overview Navigation Content Element</source>
-        <target>Übersicht-Navigation Content Element</target>
+        <target>Übersicht-Navigation-Content-Element</target>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.description">
-        <source>Overview Navigation Content Element</source>
-        <target>Übersicht-Navigation Content Element</target>
+        <source>An Overview Navigation Content Element.</source>
+        <target>Ein Übersicht-Navigation-Content-Element.</target>
       </trans-unit>
 
       <!-- Quick Navigation Content Element -->
@@ -37,12 +32,12 @@
 
       <trans-unit id="contentElements.quickNavigationContentElement.label">
         <source>Quick Navigation Content Element</source>
-        <target>Schnell-Navigation Content Element</target>
+        <target>Schnell-Navigation-Content-Element</target>
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.description">
-        <source>Quick Navigation Content Element</source>
-        <target>Schnell-Navigation Content Element</target>
+        <source>A Quick Navigation Content Element.</source>
+        <target>Ein Schnell-Navigation-Content-Element.</target>
       </trans-unit>
 
       <!-- Subpages Navigation Content Element -->
@@ -54,12 +49,12 @@
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.label">
         <source>Subpages Navigation Content Element</source>
-        <target>Unterseiten-Navigation Content Element</target>
+        <target>Unterseiten-Navigation-Content-Element</target>
       </trans-unit>
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.description">
-        <source>Subpages Navigation Content Element</source>
-        <target>Unterseiten-Navigation Content Element</target>
+        <source>A Subpages Navigation Content Element.</source>
+        <target>Ein Unterseiten-Navigation-Content-Element.</target>
       </trans-unit>
     </body>
   </file>

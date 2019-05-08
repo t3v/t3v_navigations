@@ -1,10 +1,12 @@
-# === Subpages Navigation Content Element Wizard Configuration ===
+# ------------------------------------------------------------
+# | Subpages Navigation Content Element Wizard Configuration |
+# ------------------------------------------------------------
 
 mod {
   wizards {
     newContentElement {
       wizardItems {
-        contentElements {
+        custom {
           elements {
             t3vNavigationsSubpagesNavigation {
               title          = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.subpagesNavigationContentElement.title
