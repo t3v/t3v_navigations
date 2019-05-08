@@ -14,13 +14,13 @@
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.label">
-        <source>Overview Navigation Content Element</source>
-        <target>Übersicht-Navigation-Content-Element</target>
+        <source>Overview Navigation</source>
+        <target>Übersicht-Navigation</target>
       </trans-unit>
 
       <trans-unit id="contentElements.overviewNavigationContentElement.description">
         <source>An Overview Navigation Content Element.</source>
-        <target>Ein Übersicht-Navigation-Content-Element.</target>
+        <target>Ein Übersicht-Navigation-Inhaltselement.</target>
       </trans-unit>
 
       <!-- Quick Navigation Content Element -->
@@ -31,13 +31,13 @@
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.label">
-        <source>Quick Navigation Content Element</source>
-        <target>Schnell-Navigation-Content-Element</target>
+        <source>Quick Navigation</source>
+        <target>Schnell-Navigation</target>
       </trans-unit>
 
       <trans-unit id="contentElements.quickNavigationContentElement.description">
         <source>A Quick Navigation Content Element.</source>
-        <target>Ein Schnell-Navigation-Content-Element.</target>
+        <target>Ein Schnell-Navigation-Inhaltselement.</target>
       </trans-unit>
 
       <!-- Subpages Navigation Content Element -->
@@ -48,13 +48,13 @@
       </trans-unit>
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.label">
-        <source>Subpages Navigation Content Element</source>
-        <target>Unterseiten-Navigation-Content-Element</target>
+        <source>Subpages Navigation</source>
+        <target>Unterseiten-Navigation</target>
       </trans-unit>
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.description">
         <source>A Subpages Navigation Content Element.</source>
-        <target>Ein Unterseiten-Navigation-Content-Element.</target>
+        <target>Ein Unterseiten-Navigation-Inhaltselement.</target>
       </trans-unit>
     </body>
   </file>
