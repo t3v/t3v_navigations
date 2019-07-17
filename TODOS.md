@@ -1,4 +1,2 @@
 TODOS
 =====
-
-- [ ] Implement `Social` Navigation

@@ -8,7 +8,7 @@
 Dependencies
 ------------
 
-* TYPO3 CMS 8.7 or greater
+* TYPO3 CMS 8.7
 * VHS extension
 * T3v Core extension
 * T3v DataMapper extension
