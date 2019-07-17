@@ -31,9 +31,9 @@
     "php": ">= 7.0 < 7.3",
     "typo3/cms-core": "^7.6",
     "fluidtypo3/vhs": "^4.4",
-    "t3v/t3v_core": "dev-7-0",
-    "t3v/t3v_datamapper": "dev-7-0",
-    "t3v/t3v_content": "dev-7-0"
+    "t3v/t3v_core": "dev-7-x",
+    "t3v/t3v_datamapper": "dev-7-x",
+    "t3v/t3v_content": "dev-7-x"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.6",
