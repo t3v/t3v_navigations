@@ -47,8 +47,7 @@
         <v:tag name="div" class="t3v-navigations-overview-navigation__item__more" hideIfEmpty="true">
           <v:condition.string.contains haystack="{item.link}" needle="_blank">
             <f:then>
-              <f:link.typolink parameter="{item.link}" class="link--more link" title="{item.label}"
-                      additionalAttributes="{rel: 'noopener'}">
+              <f:link.typolink parameter="{item.link}" class="link--more link" title="{item.label}" additionalAttributes="{rel: 'noopener'}">
                 {f:translate(key: 'contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label', default: 'More')}
               </f:link.typolink>
             </f:then>
