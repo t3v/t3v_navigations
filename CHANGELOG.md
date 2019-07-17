@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.7.0
+-----
 
 * Improved `Quick Navigation` Content Element FlexForm
 * Updated TypoScript configuration / structure
