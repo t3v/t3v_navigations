@@ -5,8 +5,8 @@ defined('TYPO3_MODE') or die();
 
 $namespace           = 'T3v';
 $extensionKey        = 't3v_navigations';
-$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::extensionIdentifier($extensionKey);
-$extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::extensionSignature($namespace, $extensionKey);
+$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::identifier($extensionKey);
+$extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
 $flexFormsFolder     = \T3v\T3vCore\Utility\ExtensionUtility::flexFormsFolder($extensionKey);
 $lll                 = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_ttc.xlf');
 
@@ -16,8 +16,8 @@ $lll                 = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey,
 
 $contentElementKey        = 'Overview Navigation';
 $contentElementLabel      = $lll . 'contentElements.overviewNavigationContentElement.label';
-$contentElementIdentifier = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
-$contentElementSignature  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
+$contentElementIdentifier = \T3v\T3vCore\Utility\ContentElementUtility::identifier($contentElementKey);
+$contentElementSignature  = \T3v\T3vCore\Utility\ContentElementUtility::signature($extensionIdentifier, $contentElementIdentifier);
 
 // Register the Content Element
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
@@ -33,8 +33,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
 
 $contentElementKey        = 'Quick Navigation';
 $contentElementLabel      = $lll . 'contentElements.quickNavigationContentElement.label';
-$contentElementIdentifier = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
-$contentElementSignature  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
+$contentElementIdentifier = \T3v\T3vCore\Utility\ContentElementUtility::identifier($contentElementKey);
+$contentElementSignature  = \T3v\T3vCore\Utility\ContentElementUtility::signature($extensionIdentifier, $contentElementIdentifier);
 
 // Register the Content Element
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
@@ -50,8 +50,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
 
 $contentElementKey        = 'Subpages Navigation';
 $contentElementLabel      = $lll . 'contentElements.subpagesNavigationContentElement.label';
-$contentElementIdentifier = \T3v\T3vContent\Utility\ContentElementUtility::contentElementIdentifier($contentElementKey);
-$contentElementSignature  = \T3v\T3vContent\Utility\ContentElementUtility::contentElementSignature($extensionIdentifier, $contentElementIdentifier);
+$contentElementIdentifier = \T3v\T3vCore\Utility\ContentElementUtility::identifier($contentElementKey);
+$contentElementSignature  = \T3v\T3vCore\Utility\ContentElementUtility::signature($extensionIdentifier, $contentElementIdentifier);
 
 // Register the Content Element
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
