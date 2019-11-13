@@ -29,7 +29,7 @@ class OverviewNavigationItem extends AbstractModel {
   /**
    * Constructs a new overview navigation item.
    */
-  public function __construct() {
+  public function __construct(): void {
     parent::__construct();
 
     $this->thumbnails = new ObjectStorage();
@@ -40,7 +40,7 @@ class OverviewNavigationItem extends AbstractModel {
    *
    * @return string The overview navigation item's abstract
    */
-  public function getAbstract() {
+  public function getAbstract(): string {
     return $this->abstract;
   }
 
@@ -49,7 +49,7 @@ class OverviewNavigationItem extends AbstractModel {
    *
    * @param string $abstract The overview navigation item's abstract
    */
-  public function setAbstract($abstract) {
+  public function setAbstract(string $abstract): void {
     $this->abstract = $abstract;
   }
 
@@ -67,7 +67,7 @@ class OverviewNavigationItem extends AbstractModel {
    *
    * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
    */
-  public function addThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+  public function addThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail): void {
     $this->thumbnails->attach($thumbnail);
   }
 
@@ -76,14 +76,14 @@ class OverviewNavigationItem extends AbstractModel {
    *
    * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
    */
-  public function removeThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+  public function removeThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail): void {
     $this->thumbnails->detach($thumbnail);
   }
 
   /**
    * Removes all thumbnails from the overview navigation item.
    */
-  public function removeAllThumbnails() {
+  public function removeAllThumbnails(): void {
     $this->thumbnails = new ObjectStorage();
   }
 }
