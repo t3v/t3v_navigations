@@ -39,13 +39,13 @@
     }
   ],
   "require": {
-    "php": ">= 7.2 < 7.4",
-    "typo3/cms-core": "^9.5 || dev-master",
-    "fluidtypo3/vhs": "^5.1",
-    "t3v/t3v_core": "*",
-    "t3v/t3v_datamapper": "*",
-    "t3v/t3v_content": "*",
-    "t3v/t3v_translations": "*"
+    "php": ">= 7.2 < 8.0",
+    "typo3/cms-core": "^9.5 || ^10.4",
+    "fluidtypo3/vhs": "^6.0",
+    "t3v/t3v_core": "dev-develop",
+    "t3v/t3v_datamapper": "dev-develop",
+    "t3v/t3v_content": "dev-develop",
+    "t3v/t3v_translations": "dev-develop"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.6",
