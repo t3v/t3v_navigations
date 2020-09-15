@@ -1,23 +1,24 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
       data-namespace-typo3-fluid="true">
-  <v:variable.set name="container" value="{f:cObject(typoscriptObjectPath: 'lib.plugin.tx_t3vnavigations.contentElements.quickNavigationContentElement.container')}" />
-  <v:variable.set name="layout" value="{settings.layout}" />
+  <v:variable.set name="contentElement" value="t3v-navigations-quick-navigation-content-element" />
+  <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
+  <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="container" value="{v:variable.convert(value: settings.container, type: 'string', default: 'none')}" />
+  <v:variable.set name="textAlign" value="{v:variable.convert(value: data.flexform_textAlign, type: 'string', default: 'default')}" />
 
-  <f:if condition="{settings.container}">
-    <v:variable.set name="container" value="{settings.container}" />
-  </f:if>
-
-  <div id="c{data.uid}" class="ce--t3v-navigations-quick-navigation ce--{layout} ce">
+  <v:tag name="{contentElement}" id="c{uid}" class="{contentElement} content-element"
+         additionalAttributes="{type: type, layout: layout, text-align: textAlign}" hideIfEmpty="false">
     <f:if condition="{container} != 'none'">
       <f:then>
-        <v:tag name="div" class="ce__container container--{container} container" hideIfEmpty="true">
-          <f:render section="ContentElement" arguments="{primaryItems: primaryItems, secondaryItems: secondaryItems, settings: settings}" />
+        <v:tag name="div" class="{contentElement}__container container" data="{type: container}" hideIfEmpty="true">
+          <f:render section="ContentElement" arguments="{_all}" />
         </v:tag>
       </f:then>
 
       <f:else>
-        <f:render section="ContentElement" arguments="{primaryItems: primaryItems, secondaryItems: secondaryItems, settings: settings}" />
+        <f:render section="ContentElement" arguments="{_all}" />
       </f:else>
     </f:if>
-  </div>
+  </v:tag>
 </html>

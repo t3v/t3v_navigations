@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <v:variable.set name="contentObject" value="t3v-navigations-flyout-navigation" />
+
+  <v:tag name="nav" class="{contentObject} navigation component" data="{type: settings.type, layout: settings.layout}" hideIfEmpty="true">
+    <v:tag name="ul" class="{contentObject}__entries navigation__entries" hideIfEmpty="true">
+      <f:render section="Entries" arguments="{_all}" />
+    </v:tag>
+  </v:tag>
+
+  <f:section name="Entries">
+    <f:if condition="{settings.items}">
+      <f:for each="{settings.items}" as="item" iteration="i">
+        <f:render section="Entry" arguments="{_all}" />
+
+        <f:if condition="{i.isLast}">
+          <f:else>
+            <f:render section="Divider" arguments="{_all}" />
+          </f:else>
+        </f:if>
+      </f:for>
+    </f:if>
+  </f:section>
+
+  <f:section name="Entry">
+    <v:variable.set name="layout" value="{v:format.replace(content: item.layout, substring: ',', replacement: ' ')}" />
+
+    <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
+      <v:tag name="span" class="{contentObject}__item navigation__item" data="{type: item.type, layout: layout}" hideIfEmpty="true">
+        {item.name}
+      </v:tag>
+
+      <v:tag name="div" class="{contentObject}__content navigation__content" hideIfEmpty="true">
+        <f:format.raw>{item.content}</f:format.raw>
+      </v:tag>
+    </v:tag>
+  </f:section>
+
+  <f:section name="Divider">
+    <f:if condition="{settings.divider}">
+      <li class="{contentObject}__divider navigation__divider">{settings.divider}</li>
+    </f:if>
+  </f:section>
+</html>

@@ -1,0 +1,55 @@
+# -------------------------
+# | Extbase Configuration |
+# -------------------------
+
+config {
+  tx_extbase {
+    persistence {
+      classes {
+        T3v\T3vNavigations\Domain\Model\FlyoutNavigationItem {
+          mapping {
+            tableName = tx_t3vnavigations_domain_model_flyout_navigation_item
+
+            # columns {
+            #   foo.mapOnProperty = foo
+            #   bar.mapOnProperty = bar
+            # }
+          }
+        }
+
+        T3v\T3vNavigations\Domain\Model\OverviewNavigationItem {
+          mapping {
+            tableName = tx_t3vnavigations_domain_model_overview_navigation_item
+
+            # columns {
+            #   foo.mapOnProperty = foo
+            #   bar.mapOnProperty = bar
+            # }
+          }
+        }
+
+        T3v\T3vNavigations\Domain\Model\QuickNavigationItem {
+          mapping {
+            tableName = tx_t3vnavigations_domain_model_quick_navigation_item
+
+            # columns {
+            #   foo.mapOnProperty = foo
+            #   bar.mapOnProperty = bar
+            # }
+          }
+        }
+
+        T3v\T3vNavigations\Domain\Model\VendorNavigationItem {
+          mapping {
+            tableName = tx_t3vnavigations_domain_model_vendor_navigation_item
+
+            # columns {
+            #   foo.mapOnProperty = foo
+            #   bar.mapOnProperty = bar
+            # }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,16 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
   <f:layout name="ContentElements/SubpagesNavigationContentElement" />
 
   <f:section name="ContentElement">
-    <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
+    <f:render partial="ContentElements/Shared/Header" arguments="{contentElement: contentElement, data: data}" />
 
-    <v:tag name="div" class="ce__main" hideIfEmpty="true">
-      <f:render section="Main" arguments="{settings: settings}" />
+    <v:tag name="div" class="{contentElement}__content content-element__content" hideIfEmpty="true">
+      <f:render section="Content" arguments="{settings: settings}" />
     </v:tag>
   </f:section>
 
-  <f:section name="Main">
-    <f:render partial="ContentElements/SubpagesNavigationContentElement/SubpagesNavigation" arguments="{settings: settings}" />
+  <f:section name="Content">
+    <f:render partial="ContentObjects/SubpagesNavigation" arguments="{_all}" />
   </f:section>
 </html>

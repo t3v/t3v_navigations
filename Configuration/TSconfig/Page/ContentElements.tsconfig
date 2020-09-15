@@ -1,0 +1,15 @@
+# --------------------
+# | Content Elements |
+# --------------------
+
+# === Imports ===
+
+@import './ContentElements/HeaderNavigationContentElement.tsconfig'
+@import './ContentElements/MainNavigationContentElement.tsconfig'
+@import './ContentElements/FooterNavigationContentElement.tsconfig'
+
+@import './ContentElements/OverviewNavigationContentElement.tsconfig'
+@import './ContentElements/QuickNavigationContentElement.tsconfig'
+@import './ContentElements/SubpagesNavigationContentElement.tsconfig'
+@import './ContentElements/FlyoutNavigationContentElement.tsconfig'
+@import './ContentElements/VendorNavigationContentElement.tsconfig'

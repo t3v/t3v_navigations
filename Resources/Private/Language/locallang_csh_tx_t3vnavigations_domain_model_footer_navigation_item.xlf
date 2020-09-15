@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_navigations" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="name.description">
+        <source>The name of the footer navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>The label of the footer navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the footer navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the footer navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="page.description">
+        <source>The page of the footer navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="link.description">
+        <source>The link of the footer navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="layout.description">
+        <source>The layout of the footer navigation item.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

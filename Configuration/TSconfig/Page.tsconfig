@@ -1,0 +1,7 @@
+# ---------------------------------
+# | T3v Navigations Page TSconfig |
+# ---------------------------------
+
+# === Imports ===
+
+@import './Page/ContentElements.tsconfig'

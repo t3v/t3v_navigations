@@ -6,23 +6,6 @@
 
 plugin {
   tx_t3vnavigations {
-    contentElements {
-      overviewNavigationContentElement {
-        # cat=plugin/tx_t3vnavigations/contentElements/overviewNavigationContentElement; type=string; label=The content element's container.
-        container = none
-      }
-
-      quickNavigationContentElement {
-        # cat=plugin/tx_t3vnavigations/contentElements/quickNavigationContentElement; type=string; label=The content element's container.
-        container = none
-      }
-
-      subpagesNavigationContentElement {
-        # cat=plugin/tx_t3vnavigations/contentElements/subpagesNavigationContentElement; type=string; label=The content element's container.
-        container = none
-      }
-    }
-
     persistence {
       # cat=plugin/tx_t3vnavigations/persistence; type=boolean; label=Enables the automatic cache clearing when changing data sets.
       enableAutomaticCacheClearing = 1
@@ -54,6 +37,6 @@ plugin {
   }
 }
 
-# === Includes ===
+# === Imports ===
 
-<INCLUDE_TYPOSCRIPT: source="FILE: ./Library/constants.typoscript">
+@import './Extensions/constants.typoscript'

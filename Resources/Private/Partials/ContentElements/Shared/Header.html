@@ -1,10 +1,29 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vContent/ViewHelpers"
-      data-namespace-typo3-fluid="true">
-  <f:if condition="{data.header} && {data.header_layout} != 0 && {data.header_layout} != 100">
-    <div class="ce__header">
-      <f:format.html parseFuncTSPath="lib.parseFunc">
-        {t3v:headline(content: data.header, layout: data.header_layout, cssClass: 'ce__title')}
-      </f:format.html>
-    </div>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{data.header} || {data.subheader} || {data.date}">
+    <f:if condition="{data.header_layout} != 0 && {data.header_layout} != 100">
+      <v:variable.set name="title" value="{data.header}" />
+      <v:variable.set name="subtitle" value="{data.subheader}" />
+      <v:variable.set name="link" value="{data.header_link}" />
+      <v:variable.set name="date" value="{data.date}" />
+      <v:variable.set name="layout" value="{data.header_layout}" />
+      <v:variable.set name="position" value="{f:if(condition: data.header_position, then: '{data.header_position}', else: 'default')}" />
+
+      <v:tag name="div" class="{contentElement}__header content-element__header" data="{position: position}" hideIfEmpty="true">
+        <f:render partial="ContentElements/Shared/Header/Title" arguments="{
+          contentElement: contentElement,
+          title: data.header,
+          link: data.header_link,
+          layout: data.header_layout}" />
+
+        <f:render partial="ContentElements/Shared/Header/Subtitle" arguments="{
+          contentElement: contentElement,
+          subtitle: data.subheader,
+          layout: data.header_layout}" />
+
+        <f:render partial="ContentElements/Shared/Header/Date" arguments="{
+          contentElement: contentElement,
+          date: data.date}" />
+      </v:tag>
+    </f:if>
   </f:if>
 </html>

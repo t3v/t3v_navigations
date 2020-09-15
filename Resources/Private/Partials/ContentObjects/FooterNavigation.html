@@ -1,0 +1,134 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <v:variable.set name="contentObject" value="t3v-navigations-footer-navigation" />
+
+  <v:tag name="nav" class="{contentObject} navigation component" data="{type: settings.type, layout: settings.layout}" hideIfEmpty="true">
+    <v:tag name="ul" class="{contentObject}__entries navigation__entries" hideIfEmpty="true">
+      <f:switch expression="{settings.sorting}">
+        <f:case value="pages-first">
+          <f:render section="Pages" arguments="{_all}" />
+
+          <f:render section="Entries" arguments="{_all}" />
+        </f:case>
+
+        <f:case value="pages-last">
+          <f:render section="Entries" arguments="{_all}" />
+
+          <f:render section="Pages" arguments="{_all}" />
+        </f:case>
+
+        <f:defaultCase>
+          <f:render section="Pages" arguments="{_all}" />
+
+          <f:render section="Entries" arguments="{_all}" />
+        </f:defaultCase>
+      </f:switch>
+    </v:tag>
+  </v:tag>
+
+  <f:section name="Pages">
+    <f:if condition="{settings.pages}">
+      <v:menu.list pages="{settings.pages}" as="pages">
+        <f:for each="{pages}" as="page" iteration="i">
+          <f:if condition="{page.active}">
+            <f:then>
+              <v:tag name="li" class="{contentObject}__entry navigation__entry" data="{state: 'active'}" hideIfEmpty="true">
+                <f:link.page pageUid="{page.uid}" class="{contentObject}__item navigation__item" title="{page.title}"
+                             data="{type: 'page', layout: 'default'}">
+                  {page.linktext}
+                </f:link.page>
+              </v:tag>
+            </f:then>
+
+            <f:else>
+              <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
+                <f:link.page pageUid="{page.uid}" class="{contentObject}__item navigation__item" title="{page.title}"
+                             data="{type: 'page', layout: 'default'}">
+                  {page.linktext}
+                </f:link.page>
+              </v:tag>
+            </f:else>
+          </f:if>
+
+          <f:if condition="{i.isLast}">
+            <f:else>
+              <f:render section="Divider" arguments="{_all}" />
+            </f:else>
+          </f:if>
+        </f:for>
+      </v:menu.list>
+    </f:if>
+  </f:section>
+
+  <f:section name="Entries">
+    <f:if condition="{settings.items}">
+      <f:for each="{settings.items}" as="item" iteration="i">
+        <f:if condition="{item.page}">
+          <f:render section="PageEntry" arguments="{_all}" />
+        </f:if>
+
+        <f:if condition="{item.link}">
+          <f:render section="LinkEntry" arguments="{_all}" />
+        </f:if>
+
+        <f:if condition="{i.isLast}">
+          <f:else>
+            <f:render section="Divider" arguments="{_all}" />
+          </f:else>
+        </f:if>
+      </f:for>
+    </f:if>
+  </f:section>
+
+  <f:section name="PageEntry">
+    <v:variable.set name="layout" value="{v:format.replace(content: item.layout, substring: ',', replacement: ' ')}" />
+
+    <f:if condition="{v:page.info(field: 'uid')} == {item.page}">
+      <f:then>
+        <v:tag name="li" class="{contentObject}__entry navigation__entry" data="{state: 'active'}" hideIfEmpty="true">
+          <f:link.page pageUid="{item.page}" class="{contentObject}__item navigation__item" title="{item.title}"
+                       data="{type: 'page', layout: layout}">
+            {item.name}
+          </f:link.page>
+        </v:tag>
+      </f:then>
+
+      <f:else>
+        <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
+          <f:link.page pageUid="{item.page}" class="{contentObject}__item navigation__item" title="{item.title}"
+                       data="{type: 'page', layout: layout}">
+            {item.name}
+          </f:link.page>
+        </v:tag>
+      </f:else>
+    </f:if>
+  </f:section>
+
+  <f:section name="LinkEntry">
+    <v:variable.set name="layout" value="{v:format.replace(content: item.layout, substring: ',', replacement: ' ')}" />
+
+    <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
+      <v:condition.string.contains haystack="{item.link}" needle="blank">
+        <f:then>
+          <f:link.typolink parameter="{item.link}" class="{contentObject}__item navigation__item" title="{item.title}"
+                           additionalAttributes="{rel: 'noopener', data-type: 'link', data-layout: layout}">
+            {item.name}
+          </f:link.typolink>
+        </f:then>
+
+        <f:else>
+          <f:link.typolink parameter="{item.link}" class="{contentObject}__item navigation__item" title="{item.title}"
+                           additionalAttributes="{data-type: 'link', data-layout: layout}">
+            {item.name}
+          </f:link.typolink>
+        </f:else>
+      </v:condition.string.contains>
+    </v:tag>
+  </f:section>
+
+  <f:section name="Divider">
+    <f:if condition="{settings.divider}">
+      <li class="{contentObject}__divider navigation__divider">{settings.divider}</li>
+    </f:if>
+  </f:section>
+</html>

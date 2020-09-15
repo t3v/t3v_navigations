@@ -1,10 +1,104 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+<xliff version="1.0">
   <file product-name="t3v_navigations" source-language="en" datatype="plaintext" original="messages">
     <header />
 
     <body>
+      <!-- _XXX_CE_CREATOR_XXX_ -->
+
       <!-- === Models === -->
+
+      <!-- Flyout Navigation Item Model -->
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item">
+        <source>Flyout Navigation Item</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.name">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.type">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.type.default">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.type.email">
+        <source>Email</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.type.phone">
+        <source>Phone</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.type.whatsapp">
+        <source>WhatsApp</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.handle">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.content">
+        <source>Content</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.layout">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_flyout_navigation_item.layout.default">
+        <source>Default</source>
+      </trans-unit>
+
+      <!-- Footer Navigation Item Model -->
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item">
+        <source>Footer Navigation Item</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.name">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.type">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.type.default">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.handle">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.page">
+        <source>Page</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.link">
+        <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.layout">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_footer_navigation_item.layout.default">
+        <source>Default</source>
+      </trans-unit>
 
       <!-- Overview Navigation Item Model -->
 
@@ -12,8 +106,8 @@
         <source>Overview Navigation Item</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.title">
-        <source>Title</source>
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.name">
+        <source>Name</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.label">
@@ -26,6 +120,10 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.type.default">
         <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.handle">
+        <source>Handle</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.abstract">
@@ -48,10 +146,26 @@
         <source>Link</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.layout">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_overview_navigation_item.layout.default">
+        <source>Default</source>
+      </trans-unit>
+
       <!-- Quick Navigation Item Model -->
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item">
         <source>Quick Navigation Item</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.name">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.label">
+        <source>Label</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.type">
@@ -62,12 +176,8 @@
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.title">
-        <source>Title</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.label">
-        <source>Label</source>
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.handle">
+        <source>Handle</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.page">
@@ -76,6 +186,88 @@
 
       <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.link">
         <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.layout">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.layout.default">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.layout.button">
+        <source>Button</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_quick_navigation_item.layout.block">
+        <source>Block</source>
+      </trans-unit>
+
+      <!-- Vendor Navigation Item Model -->
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item">
+        <source>Vendor Navigation Item</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.name">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.default">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.facebook">
+        <source>Facebook</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.instagram">
+        <source>Instagram</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.linkedin">
+        <source>LinkedIn</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.twitter">
+        <source>Twitter</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.whatsapp">
+        <source>WhatsApp</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.type.youtube">
+        <source>YouTube</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.handle">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.page">
+        <source>Page</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.link">
+        <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.layout">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.layout.default">
+        <source>Default</source>
       </trans-unit>
     </body>
   </file>

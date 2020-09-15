@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+<xliff version="1.0">
   <file product-name="t3v_navigations" source-language="en" datatype="plaintext" original="messages">
     <header />
 
     <body>
-      <trans-unit id="title.description">
-        <source>Title</source>
+      <trans-unit id="name.description">
+        <source>The name of the overview navigation item.</source>
       </trans-unit>
 
       <trans-unit id="label.description">
-        <source>Label</source>
+        <source>The label of the overview navigation item.</source>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
+        <source>The type of the overview navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the overview navigation item.</source>
       </trans-unit>
 
       <trans-unit id="abstract.description">
-        <source>Abstract</source>
+        <source>The abstract of the overview navigation item.</source>
       </trans-unit>
 
       <trans-unit id="thumbnails.description">
-        <source>Thumbnails</source>
+        <source>The thumbnails of the overview navigation item.</source>
       </trans-unit>
 
       <trans-unit id="page.description">
-        <source>Page</source>
+        <source>The page of the overview navigation item.</source>
       </trans-unit>
 
       <trans-unit id="link.description">
-        <source>Link</source>
+        <source>The link of the overview navigation item.</source>
+      </trans-unit>
+
+      <trans-unit id="layout.description">
+        <source>The layout of the overview navigation item.</source>
       </trans-unit>
     </body>
   </file>

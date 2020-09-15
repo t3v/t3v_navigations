@@ -1,0 +1,28 @@
+# ----------------------------------------------------------
+# | Header Navigation Content Element Wizard Configuration |
+# ----------------------------------------------------------
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          elements {
+            t3vNavigationsHeaderNavigation {
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.headerNavigationContentElement.title
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.headerNavigationContentElement.description
+              iconIdentifier = t3v_navigations-header_navigation_content_element
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vnavigations_headernavigation
+              }
+            }
+          }
+
+          show := addToList(t3vNavigationsHeaderNavigation)
+        }
+      }
+    }
+  }
+}

@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+<xliff version="1.0">
   <file product-name="t3v_navigations" source-language="en" target-language="de" datatype="plaintext" original="messages">
     <header />
 
     <body>
-      <trans-unit id="title.description">
-        <source>Title</source>
-        <target>Titel</target>
+      <trans-unit id="name.description">
+        <source>The name of the quick navigation item.</source>
+        <target>Der Name des Schnell-Navigationspunkts.</target>
       </trans-unit>
 
       <trans-unit id="label.description">
-        <source>Label</source>
-        <target>Beschriftung</target>
+        <source>The label of the quick navigation item.</source>
+        <target>Die Beschriftung des Schnell-Navigationspunkts.</target>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
-        <target>Typ</target>
+        <source>The type of the quick navigation item.</source>
+        <target>Der Typ des Schnell-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the quick navigation item.</source>
+        <target>Der Kurzname des Schnell-Navigationspunkts.</target>
       </trans-unit>
 
       <trans-unit id="page.description">
-        <source>Page</source>
-        <target>Seite</target>
+        <source>The page of the quick navigation item.</source>
+        <target>Die Seite des Schnell-Navigationspunkts.</target>
       </trans-unit>
 
       <trans-unit id="link.description">
-        <source>Link</source>
-        <target>Link</target>
+        <source>The link of the quick navigation item.</source>
+        <target>Der Link des Schnell-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="layout.description">
+        <source>The layout of the quick navigation item.</source>
+        <target>Das Layout des Schnell-Navigationspunkts.</target>
       </trans-unit>
     </body>
   </file>

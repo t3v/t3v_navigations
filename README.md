@@ -1,5 +1,5 @@
 [T3v Navigations]
-===========
+=================
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 
@@ -13,6 +13,7 @@ Dependencies
 * T3v Core extension
 * T3v DataMapper extension
 * T3v Content extension
+* T3v Translations extension
 
 Installation
 ------------
@@ -24,15 +25,23 @@ Installation
 Models
 ------
 
+* Flyout Navigation Item
+* Footer Navigation Item
 * Overview Navigation Item
 * Quick Navigation Item
+* Vendor Navigation Item
 
 Content Elements
 ----------------
 
-* Overview Navigation Content Element
+* Header Navigation Content Element
+* Main Navigation Content Element (*)
+* Footer Navigation Content Element
+* Overview Navigation Content Element (*)
 * Quick Navigation Content Element
-* Subpages Navigation Content Element
+* Subpages Navigation Content Element (*)
+* Flyout Navigation Content Element
+* Vendor Navigation Content Element
 
 Development
 -----------
@@ -58,27 +67,27 @@ $ ./Scripts/Tests/Functional.sh
 Bug Reports
 -----------
 
-GitHub Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems [here].
+GitHub Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues and submit new
+problems [here].
 
 Versioning
 ----------
 
-This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs.
-Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
-immediately yanked and / or a new version should be immediately released that restores compatibility.
+This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs. Specifically, if a minor
+or patch version is released that breaks backward compatibility, that version should be immediately yanked and / or a new version should be
+immediately released that restores compatibility.
 
 Credits
 -------
 
 ### Icons
 
-* [Browser free icon (1)]
-* [Browser free icon (2)]
-* [Links free icon]
-* [List free icon]
+* [Browser icon (1)]
+* [Browser icon (2)]
+* [Links icon]
+* [List icon]
 
-Icons made by [Freepik] and [Smashicons] from [Flaticon] is licensed by [CC 3.0 BY].
+Icons used made by [Freepik] and [Smashicons] from [Flaticon].
 
 License
 -------
@@ -87,17 +96,16 @@ T3v Navigations is released under the [MIT License (MIT)], see [LICENSE].
 
 [Acceptance testing TYPO3]: https://wiki.typo3.org/Acceptance_testing "Acceptance testing TYPO3"
 [Automated testing TYPO3]: https://wiki.typo3.org/Automated_testing "Automated testing TYPO3"
-[Browser free icon (1)]: https://www.flaticon.com/free-icon/browser_140800 "Browser free icon (1)"
-[Browser free icon (2)]: https://www.flaticon.com/free-icon/browser_140808 "Browser free icon (2)"
-[CC 3.0 BY]: http://creativecommons.org/licenses/by/3.0/ "Creative Commons BY 3.0"
+[Browser icon (1)]: https://www.flaticon.com/free-icon/browser_140800 "Browser icon (1)"
+[Browser icon (2)]: https://www.flaticon.com/free-icon/browser_140808 "Browser icon (2)"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
 [Flaticon]: https://www.flaticon.com "Flaticon"
 [Freepik]: https://www.flaticon.com/authors/freepik "Freepik"
 [Functional testing TYPO3]: https://wiki.typo3.org/Functional_testing "Functional testing TYPO3"
 [here]: https://github.com/t3v/t3v_navigations/issues "GitHub Issue Tracker"
 [LICENSE]: https://raw.githubusercontent.com/t3v/t3v_navigations/master/LICENSE "License"
-[Links free icon]: https://www.flaticon.com/free-icon/links_358937 "Links free icon"
-[List free icon]: https://www.flaticon.com/free-icon/list_140881 "List free icon"
+[Links icon]: https://www.flaticon.com/free-icon/links_358937 "Links icon"
+[List icon]: https://www.flaticon.com/free-icon/list_140881 "List icon"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Smashicons]: https://www.flaticon.com/authors/smashicons "Smashicons"

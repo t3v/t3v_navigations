@@ -1,9 +1,0 @@
-# -----------------------------
-# | Content Elements TSconfig |
-# -----------------------------
-
-# === Includes ===
-
-<INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/OverviewNavigationContentElement.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/QuickNavigationContentElement.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/SubpagesNavigationContentElement.tsconfig">

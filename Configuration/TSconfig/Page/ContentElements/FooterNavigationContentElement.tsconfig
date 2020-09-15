@@ -1,0 +1,28 @@
+# ----------------------------------------------------------
+# | Footer Navigation Content Element Wizard Configuration |
+# ----------------------------------------------------------
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          elements {
+            t3vNavigationsFooterNavigation {
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.footerNavigationContentElement.title
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.footerNavigationContentElement.description
+              iconIdentifier = t3v_navigations-footer_navigation_content_element
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vnavigations_footernavigation
+              }
+            }
+          }
+
+          show := addToList(t3vNavigationsFooterNavigation)
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_navigations" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="name.description">
+        <source>The name of the flyout navigation item.</source>
+        <target>Der Name des Flyout-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>The label of the flyout navigation item.</source>
+        <target>Die Beschriftung des Flyout-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the flyout navigation item.</source>
+        <target>Der Typ des Flyout-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the flyout navigation item.</source>
+        <target>Der Kurzname des Flyout-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="content.description">
+        <source>The content of the flyout navigation item.</source>
+        <target>Der Inhalt des Flyout-Navigationspunkts.</target>
+      </trans-unit>
+
+      <trans-unit id="layout.description">
+        <source>The layout of the flyout navigation item.</source>
+        <target>Das Layout des Flyout-Navigationspunkts.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

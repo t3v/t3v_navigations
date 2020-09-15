@@ -1,0 +1,28 @@
+# ----------------------------------------------------------
+# | Vendor Navigation Content Element Wizard Configuration |
+# ----------------------------------------------------------
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          elements {
+            t3vNavigationsVendorNavigation {
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.vendorNavigationContentElement.title
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.vendorNavigationContentElement.description
+              iconIdentifier = t3v_navigations-vendor_navigation_content_element
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vnavigations_vendornavigation
+              }
+            }
+          }
+
+          show := addToList(t3vNavigationsVendorNavigation)
+        }
+      }
+    }
+  }
+}

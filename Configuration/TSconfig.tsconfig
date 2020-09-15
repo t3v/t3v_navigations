@@ -1,7 +1,0 @@
-# ----------------------------
-# | T3v Navigations TSconfig |
-# ----------------------------
-
-# === Includes ===
-
-<INCLUDE_TYPOSCRIPT: source="FILE: ./TSconfig/ContentElements.tsconfig">

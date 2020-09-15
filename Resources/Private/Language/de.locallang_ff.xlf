@@ -1,252 +1,326 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+<xliff version="1.0">
   <file product-name="t3v_navigations" source-language="en" target-language="de" datatype="plaintext" original="messages">
     <header />
 
     <body>
-      <!-- === Content Elements === -->
+      <!-- _XXX_CE_CREATOR_XXX_ -->
 
-      <!-- Overview Navigation Content Element -->
+      <!-- === Settings === -->
 
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.items.label">
-        <source>Navigation Items</source>
-        <target>Navigationspunkte</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.label">
-        <source>Layout</source>
-        <target>Layout</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.3Columns.label">
-        <source>3 Columns</source>
-        <target>3 Spalten</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.4Columns.label">
-        <source>4 Columns</source>
-        <target>4 Spalten</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.overviewNavigationContentElement.settings.layout.custom.label">
-        <source>Custom</source>
-        <target>Benutzerdefiniert</target>
-      </trans-unit>
-
-      <!-- Quick Navigation Content Element -->
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.primaryItems.label">
-        <source>Primary Navigation Items</source>
-        <target>Primäre Navigationspunkte</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.secondaryItems.label">
-        <source>Secondary Navigation Items</source>
-        <target>Sekundäre Navigationspunkte</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.label">
-        <source>Layout</source>
-        <target>Layout</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.one.label">
-        <source>Layout 1</source>
-        <target>Layout 1</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.two.label">
-        <source>Layout 2</source>
-        <target>Layout 2</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.three.label">
-        <source>Layout 3</source>
-        <target>Layout 3</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.quickNavigationContentElement.settings.layout.custom.label">
-        <source>Custom</source>
-        <target>Benutzerdefiniert</target>
-      </trans-unit>
-
-      <!-- Subpages Navigation Content Element -->
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.entryPage.label">
-        <source>Entry Page</source>
-        <target>Einstiegsseite</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.levels.label">
-        <source>Levels</source>
-        <target>Ebenen</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.label">
-        <source>Layout</source>
-        <target>Layout</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.one.label">
-        <source>Layout 1</source>
-        <target>Layout 1</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.two.label">
-        <source>Layout 2</source>
-        <target>Layout 2</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.three.label">
-        <source>Layout 3</source>
-        <target>Layout 3</target>
-      </trans-unit>
-
-      <trans-unit id="contentElements.subpagesNavigationContentElement.settings.layout.custom.label">
-        <source>Custom</source>
-        <target>Benutzerdefiniert</target>
-      </trans-unit>
-
-      <!-- === Shared === -->
-
-      <trans-unit id="shared.settings.backgroundSize.label">
+      <trans-unit id="settings.backgroundSize.label">
         <source>Background Size</source>
         <target>Hintergrundbild Abmessungen</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.backgroundSize.cover.label">
+      <trans-unit id="settings.backgroundSize.cover.label">
         <source>Cover</source>
         <target>Abdeckend</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.backgroundSize.contain.label">
+      <trans-unit id="settings.backgroundSize.contain.label">
         <source>Contain</source>
         <target>Beibehaltend</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.label">
+      <trans-unit id="settings.container.label">
         <source>Container</source>
         <target>Container</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.none.label">
+      <trans-unit id="settings.container.none.label">
         <source>None</source>
         <target>Ohne</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.default.label">
+      <trans-unit id="settings.container.default.label">
         <source>Default</source>
         <target>Standard</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.small.label">
+      <trans-unit id="settings.container.small.label">
         <source>Small</source>
         <target>Klein</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.moderate.label">
+      <trans-unit id="settings.container.moderate.label">
         <source>Moderate</source>
         <target>Moderat</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.medium.label">
+      <trans-unit id="settings.container.medium.label">
         <source>Medium</source>
         <target>Medium</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.large.label">
+      <trans-unit id="settings.container.large.label">
         <source>Large</source>
         <target>Groß</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.big.label">
+      <trans-unit id="settings.container.big.label">
         <source>Big</source>
         <target>Beträchtlich</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.great.label">
+      <trans-unit id="settings.container.great.label">
         <source>Great</source>
         <target>Riesig</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.container.custom.label">
+      <trans-unit id="settings.container.custom.label">
         <source>Custom</source>
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.title">
+      <trans-unit id="settings.divider.label">
+        <source>Divider</source>
+        <target>Trenner</target>
+      </trans-unit>
+
+      <trans-unit id="settings.divider.hyphen.label">
+        <source>Hyphen</source>
+        <target>Bindestrich</target>
+      </trans-unit>
+
+      <trans-unit id="settings.divider.pipe.label">
+        <source>Pipe</source>
+        <target>Flöte</target>
+      </trans-unit>
+
+      <trans-unit id="settings.entryPage.label">
+        <source>Entry Page</source>
+        <target>Einstiegsseite</target>
+      </trans-unit>
+
+      <trans-unit id="settings.handle.label">
+        <source>Handle</source>
+        <target>Kurzname</target>
+      </trans-unit>
+
+      <trans-unit id="settings.image.label">
+        <source>Image</source>
+        <target>Bild</target>
+      </trans-unit>
+
+      <trans-unit id="settings.items.label">
+        <source>Items</source>
+        <target>Elemente</target>
+      </trans-unit>
+
+      <trans-unit id="settings.moreItems.label">
+        <source>More Items</source>
+        <target>Weitere Elemente</target>
+      </trans-unit>
+
+      <trans-unit id="settings.moreItems.newRecord.link.title">
+        <source>Add item</source>
+        <target>Element hinzufügen</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.label">
+        <source>Layout</source>
+        <target>Layout</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.3Columns.label">
+        <source>3 Columns</source>
+        <target>3 Spalten</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.4Columns.label">
+        <source>4 Columns</source>
+        <target>4 Spalten</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.one.label">
+        <source>Layout 1</source>
+        <target>Layout 1</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.two.label">
+        <source>Layout 2</source>
+        <target>Layout 2</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.three.label">
+        <source>Layout 3</source>
+        <target>Layout 3</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.block.label">
+        <source>Block</source>
+        <target>Block</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.stacked.label">
+        <source>Stacked</source>
+        <target>Gestapelt</target>
+      </trans-unit>
+
+      <trans-unit id="settings.levels.label">
+        <source>Levels</source>
+        <target>Ebenen</target>
+      </trans-unit>
+
+      <trans-unit id="settings.pages.label">
+        <source>Pages</source>
+        <target>Seiten</target>
+      </trans-unit>
+
+      <trans-unit id="settings.sorting.label">
+        <source>Sorting</source>
+        <target>Sortierung</target>
+      </trans-unit>
+
+      <trans-unit id="settings.sorting.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="settings.sorting.pagesFirst.label">
+        <source>Pages first</source>
+        <target>Seiten zuerst</target>
+      </trans-unit>
+
+      <trans-unit id="settings.sorting.pagesLast.label">
+        <source>Pages last</source>
+        <target>Seiten zuletzt</target>
+      </trans-unit>
+
+      <trans-unit id="settings.styles.label">
+        <source>Styles</source>
+        <target>Stile</target>
+      </trans-unit>
+
+      <trans-unit id="settings.moreStyles.label">
+        <source>More Styles</source>
+        <target>Weitere Stile</target>
+      </trans-unit>
+
+      <trans-unit id="settings.moreStyles.label">
+        <source>More Styles</source>
+        <target>Weitere Stile</target>
+      </trans-unit>
+
+      <trans-unit id="settings.moreStyles.newRecord.link.title">
+        <source>Add style</source>
+        <target>Stil hinzufügen</target>
+      </trans-unit>
+
+      <trans-unit id="settings.responsive.title">
         <source>Responsive</source>
         <target>Responsive</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.title">
+      <trans-unit id="settings.responsive.breakpoint.title">
         <source>Breakpoint</source>
         <target>Breakpoint</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.minWidth.label">
+      <trans-unit id="settings.responsive.breakpoint.minWidth.label">
         <source>Minimum Width in px</source>
         <target>Mindestbreite in px</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.imageHeight.label">
+      <trans-unit id="settings.responsive.breakpoint.imageHeight.label">
         <source>Image Height in px</source>
         <target>Bildhöhe in px</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.imageWidth.label">
+      <trans-unit id="settings.responsive.breakpoint.imageWidth.label">
         <source>Image Width in px</source>
         <target>Bildbreite in px</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.label">
+      <trans-unit id="settings.responsive.breakpoint.retinaDisplay.label">
         <source>Retina Display</source>
         <target>Hochauflösendes Display</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.none.label">
+      <trans-unit id="settings.responsive.breakpoint.retinaDisplay.none.label">
         <source>Non-Retina</source>
         <target>Nicht-Retina</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.2x.label">
+      <trans-unit id="settings.responsive.breakpoint.retinaDisplay.2x.label">
         <source>2X</source>
         <target>2X</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.3x.label">
+      <trans-unit id="settings.responsive.breakpoint.retinaDisplay.3x.label">
         <source>3X</source>
         <target>3X</target>
       </trans-unit>
 
-      <trans-unit id="shared.settings.responsive.breakpoint.retinaDisplay.4x.label">
+      <trans-unit id="settings.responsive.breakpoint.retinaDisplay.4x.label">
         <source>4X</source>
         <target>4X</target>
       </trans-unit>
 
-      <trans-unit id="shared.sheets.general.title">
-        <source>General</source>
-        <target>Allgemein</target>
+      <trans-unit id="settings.text.label">
+        <source>Text</source>
+        <target>Text</target>
       </trans-unit>
 
-      <trans-unit id="shared.sheets.appearance.title">
-        <source>Appearance</source>
-        <target>Erscheinungsbild</target>
+      <trans-unit id="settings.textAlign.label">
+        <source>Text align</source>
+        <target>Texte ausrichten</target>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.center.label">
+        <source>Center</source>
+        <target>Zentriert</target>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.right.label">
+        <source>Right</source>
+        <target>Rechtsbündig</target>
+      </trans-unit>
+
+      <trans-unit id="settings.theme.label">
+        <source>Theme</source>
+        <target>Thema</target>
+      </trans-unit>
+
+      <trans-unit id="settings.theme.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="settings.type.label">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="settings.type.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="settings.type.items.label">
+        <source>Items</source>
+        <target>Elemente</target>
+      </trans-unit>
+
+      <trans-unit id="settings.type.pages.label">
+        <source>Pages</source>
+        <target>Seiten</target>
       </trans-unit>
     </body>
   </file>

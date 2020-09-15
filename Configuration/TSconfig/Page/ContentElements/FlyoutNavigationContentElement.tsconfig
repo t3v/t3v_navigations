@@ -1,0 +1,28 @@
+# ----------------------------------------------------------
+# | Flyout Navigation Content Element Wizard Configuration |
+# ----------------------------------------------------------
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          elements {
+            t3vNavigationsFlyoutNavigation {
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.flyoutNavigationContentElement.title
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.flyoutNavigationContentElement.description
+              iconIdentifier = t3v_navigations-flyout_navigation_content_element
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vnavigations_flyoutnavigation
+              }
+            }
+          }
+
+          show := addToList(t3vNavigationsFlyoutNavigation)
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+<xliff version="1.0">
   <file product-name="t3v_navigations" source-language="en" datatype="plaintext" original="messages">
     <header />
 
     <body>
+      <!-- _XXX_CE_CREATOR_XXX_ -->
+
       <!-- === Content Elements === -->
+
+      <!-- Flyout Navigation Content Element -->
+
+      <trans-unit id="contentElements.flyoutNavigationContentElement.title">
+        <source>Flyout Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.flyoutNavigationContentElement.label">
+        <source>Flyout Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.flyoutNavigationContentElement.description">
+        <source>A Flyout Navigation Content Element.</source>
+      </trans-unit>
+
+      <!-- Footer Navigation Content Element -->
+
+      <trans-unit id="contentElements.footerNavigationContentElement.title">
+        <source>Footer Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.footerNavigationContentElement.label">
+        <source>Footer Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.footerNavigationContentElement.description">
+        <source>A Footer Navigation Content Element.</source>
+      </trans-unit>
+
+      <!-- Header Navigation Content Element -->
+
+      <trans-unit id="contentElements.headerNavigationContentElement.title">
+        <source>Header Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.headerNavigationContentElement.label">
+        <source>Header Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.headerNavigationContentElement.description">
+        <source>A Header Navigation Content Element.</source>
+      </trans-unit>
+
+      <!-- Main Navigation Content Element -->
+
+      <trans-unit id="contentElements.mainNavigationContentElement.title">
+        <source>Main Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.mainNavigationContentElement.label">
+        <source>Main Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.mainNavigationContentElement.description">
+        <source>A Main Navigation Content Element.</source>
+      </trans-unit>
 
       <!-- Overview Navigation Content Element -->
 
@@ -46,6 +104,20 @@
 
       <trans-unit id="contentElements.subpagesNavigationContentElement.description">
         <source>A Subpages Navigation Content Element.</source>
+      </trans-unit>
+
+      <!-- Vendor Navigation Content Element -->
+
+      <trans-unit id="contentElements.vendorNavigationContentElement.title">
+        <source>Vendor Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.vendorNavigationContentElement.label">
+        <source>Vendor Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.vendorNavigationContentElement.description">
+        <source>A Vendor Navigation Content Element.</source>
       </trans-unit>
     </body>
   </file>
