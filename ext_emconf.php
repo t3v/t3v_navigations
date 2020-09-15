@@ -3,7 +3,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'T3v Navigations',
-    'description' => 'The navigations extension of TYPO3 voilà.',
+    'description' => 'The navigations extension of TYPO3voilà.',
     'author' => 'Maik Kempe',
     'author_email' => 'mkempe@bitaculous.com',
     'author_company' => 'Bitaculous - It\'s all about the bits, baby!',
