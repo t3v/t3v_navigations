@@ -18,8 +18,7 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '9.5.0-10.4.99',
             'vhs' => '',
             't3v_core' => '',
-            't3v_datamapper' => '',
-            't3v_content' => '',
+            't3v_base' => '',
             't3v_translations' => ''
         ],
         'conflicts' => [
