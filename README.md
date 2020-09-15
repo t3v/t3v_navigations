@@ -3,7 +3,7 @@
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 
-**The navigations extension of TYPO3Voila.**
+**The navigations extension of TYPO3 voilà.**
 
 Dependencies
 ------------
@@ -109,8 +109,8 @@ T3v Navigations is released under the [MIT License (MIT)], see [LICENSE].
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Smashicons]: https://www.flaticon.com/authors/smashicons "Smashicons"
-[T3v Navigations]: https://t3v.github.io/t3v_navigations/ "The navigations extension of TYPO3Voila."
+[T3v Navigations]: https://t3v.github.io/t3v_navigations/ "The navigations extension of TYPO3 voilà."
 [Travis CI]: https://travis-ci.org/t3v/t3v_navigations "T3v Navigations at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/t3v/t3v_navigations.svg?style=flat "Travis CI Status"
-[TYPO3voila]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
+[TYPO3 voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"
