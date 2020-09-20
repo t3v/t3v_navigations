@@ -11,13 +11,13 @@ $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespac
 $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
 $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
+/** _XXX_T3V_CREATOR_XXX_ **/
+
 // === TSconfig ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     "<INCLUDE_TYPOSCRIPT: source=\"{$tsConfigFolder}/Page.tsconfig\">"
 );
-
-/* _XXX_CE_CREATOR_XXX_ */
 
 // === Content Elements ===
 

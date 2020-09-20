@@ -10,9 +10,9 @@ $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespac
 $flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::flexFormsFolder($extensionKey);
 $lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_ttc.xlf');
 
-// === Content Elements ===
+/** _XXX_T3V_CREATOR_XXX_ **/
 
-/* _XXX_CE_CREATOR_XXX_ */
+// === Content Elements ===
 
 // --- Flyout Navigation Content Element ---
 

@@ -1,2 +1,67 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <v:variable.set name="contentObject" value="t3v-navigations-main-navigation" />
+
+  <v:tag name="nav" class="{contentObject} navigation component" data="{type: settings.type, layout: settings.layout}" hideIfEmpty="true">
+    <f:render section="Entries" arguments="{_all}" />
+  </v:tag>
+
+  <f:section name="Entries">
+    <v:tag name="ul" class="{contentObject}__entries navigation__entries" hideIfEmpty="true">
+      <f:if condition="{settings.entryPage}">
+        <v:variable.set name="entryPage" value="{v:variable.convert(value: settings.entryPage, type: 'integer', default: 0)}" />
+      </f:if>
+
+      <v:variable.set name="entryLevel" value="{v:variable.convert(value: settings.entryLevel, type: 'integer', default: 0)}" />
+      <v:variable.set name="levels" value="{v:variable.convert(value: settings.levels, type: 'integer', default: 0)}" />
+
+      <v:page.menu pageUid="{entryPage}" entryLevel="{entryLevel}" levels="{levels}" includeSpacers="false" useShortcutData="false"
+                   as="pages">
+        <v:variable.set name="number" value="0" />
+
+        <f:for each="{pages}" as="page" iteration="i">
+          <f:render section="Entry" arguments="{_all}" />
+
+          <f:if condition="{i.isLast}">
+            <f:else>
+              <f:render section="Divider" arguments="{_all}" />
+            </f:else>
+          </f:if>
+        </f:for>
+      </v:page.menu>
+    </v:tag>
+  </f:section>
+
+  <f:section name="Entry">
+    <v:variable.set name="number" value="{number + 1}" />
+    <v:variable.set name="state" value="{f:if(condition: page.active, then: 'active', else: 'default')}" />
+
+    <v:tag name="li" class="{contentObject}__entry navigation__entry" data="{number: number, state: state}" hideIfEmpty="true">
+      <f:link.page pageUid="{page.uid}" class="{contentObject}__item navigation__item" title="{page.title}">
+        {page.linktext}
+      </f:link.page>
+
+      <f:if condition="{page.hasSubPages}">
+        <v:tag name="ul" class="{contentObject}__subentries navigation__subentries" hideIfEmpty="true">
+          <v:page.menu pageUid="{page.uid}" includeSpacers="false" useShortcutData="false" as="subpages">
+            <f:for each="{subpages}" as="subpage">
+              <v:variable.set name="state2" value="{f:if(condition: subpage.active, then: 'active', else: 'default')}" />
+
+              <v:tag name="li" class="{contentObject}__subentry navigation__subentry" data="{state: state}" hideIfEmpty="true">
+                <f:link.page pageUid="{subpage.uid}" class="{contentObject}__subitem navigation__subitem" title="{subpage.title}">
+                  {subpage.linktext}
+                </f:link.page>
+              </v:tag>
+            </f:for>
+          </v:page.menu>
+        </v:tag>
+      </f:if>
+    </v:tag>
+  </f:section>
+
+  <f:section name="Divider">
+    <f:if condition="{settings.divider}">
+      <li class="{contentObject}__divider navigation__divider">{settings.divider}</li>
+    </f:if>
+  </f:section>
 </html>

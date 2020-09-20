@@ -4,7 +4,7 @@
     <header />
 
     <body>
-      <!-- _XXX_CE_CREATOR_XXX_ -->
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
 
       <!-- === Settings === -->
 
@@ -88,8 +88,13 @@
         <target>Flöte</target>
       </trans-unit>
 
+      <trans-unit id="settings.entryLevel.label">
+        <source>Entry level</source>
+        <target>Einstiegsebene</target>
+      </trans-unit>
+
       <trans-unit id="settings.entryPage.label">
-        <source>Entry Page</source>
+        <source>Entry page</source>
         <target>Einstiegsseite</target>
       </trans-unit>
 
