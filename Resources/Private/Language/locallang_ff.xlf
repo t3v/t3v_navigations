@@ -216,22 +216,6 @@
         <source>Text</source>
       </trans-unit>
 
-      <trans-unit id="settings.textAlign.label">
-        <source>Text align</source>
-      </trans-unit>
-
-      <trans-unit id="settings.textAlign.default.label">
-        <source>Default</source>
-      </trans-unit>
-
-      <trans-unit id="settings.textAlign.center.label">
-        <source>Center</source>
-      </trans-unit>
-
-      <trans-unit id="settings.textAlign.right.label">
-        <source>Right</source>
-      </trans-unit>
-
       <trans-unit id="settings.theme.label">
         <source>Theme</source>
       </trans-unit>
