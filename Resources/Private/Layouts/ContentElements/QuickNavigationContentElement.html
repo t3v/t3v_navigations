@@ -6,8 +6,8 @@
   <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
   <v:variable.set name="container" value="{v:variable.convert(value: settings.container, type: 'string', default: 'none')}" />
 
-  <v:tag name="{contentElement}" id="c{uid}" class="{contentElement} content-element"
-         additionalAttributes="{type: type, layout: layout}" hideIfEmpty="false">
+  <v:tag name="{contentElement}" id="c{uid}" class="{contentElement} content-element" additionalAttributes="{type: type, layout: layout}"
+         hideIfEmpty="false">
     <f:if condition="{container} != 'none'">
       <f:then>
         <v:tag name="div" class="{contentElement}__container container" data="{type: container}" hideIfEmpty="true">
