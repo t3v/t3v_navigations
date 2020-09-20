@@ -77,7 +77,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
 // --- L10n Navigation Content Element ---
 
 $contentElementKey = 'L10n Navigation';
-$contentElementLabel = $lll . 'contentElements.headerNavigationContentElement.label';
+$contentElementLabel = $lll . 'contentElements.l10nNavigationContentElement.label';
 $contentElementIdentifier = \T3v\T3vCore\Utility\ContentElementUtility::identifier($contentElementKey);
 $contentElementSignature = \T3v\T3vCore\Utility\ContentElementUtility::signature($extensionIdentifier, $contentElementIdentifier);
 
