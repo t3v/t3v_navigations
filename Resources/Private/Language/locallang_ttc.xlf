@@ -50,6 +50,20 @@
         <source>A Header Navigation Content Element.</source>
       </trans-unit>
 
+      <!-- L10n Navigation Content Element -->
+
+      <trans-unit id="contentElements.l10nNavigationContentElement.title">
+        <source>Localization Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.l10nNavigationContentElement.label">
+        <source>Localization Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.l10nNavigationContentElement.description">
+        <source>A Localization Navigation Content Element.</source>
+      </trans-unit>
+
       <!-- Main Navigation Content Element -->
 
       <trans-unit id="contentElements.mainNavigationContentElement.title">

@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <v:variable.set name="contentObject" value="t3v-navigations-l10n-navigation" />
+
+  <v:tag name="nav" class="{contentObject} navigation component" data="{type: settings.type, layout: settings.layout}" hideIfEmpty="true">
+    <f:render section="Entries" arguments="{_all}" />
+  </v:tag>
+
+  <f:section name="Entries">
+  </f:section>
+
+  <f:section name="Entry">
+  </f:section>
+
+  <f:section name="Divider">
+    <f:if condition="{settings.divider}">
+      <li class="{contentObject}__divider navigation__divider">{settings.divider}</li>
+    </f:if>
+  </f:section>
+</html>

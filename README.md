@@ -34,13 +34,16 @@ Models
 Content Elements
 ----------------
 
+* Mobile Navigation Content Element (*)
 * Header Navigation Content Element
-* Main Navigation Content Element (*)
+* Main Navigation Content Element
+* Side Navigation Content Element (*)
 * Footer Navigation Content Element
-* Overview Navigation Content Element (*)
+
 * Quick Navigation Content Element
-* Subpages Navigation Content Element (*)
+* Overview Navigation Content Element (*)
 * Flyout Navigation Content Element
+* L10n Navigation Content Element (*)
 * Vendor Navigation Content Element
 
 Development

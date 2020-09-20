@@ -6,12 +6,13 @@
 
 @import './ContentElements/HeaderNavigationContentElement.tsconfig'
 @import './ContentElements/MainNavigationContentElement.tsconfig'
+@import './ContentElements/SubpagesNavigationContentElement.tsconfig'
 @import './ContentElements/FooterNavigationContentElement.tsconfig'
 
-@import './ContentElements/OverviewNavigationContentElement.tsconfig'
 @import './ContentElements/QuickNavigationContentElement.tsconfig'
-@import './ContentElements/SubpagesNavigationContentElement.tsconfig'
+@import './ContentElements/OverviewNavigationContentElement.tsconfig'
 @import './ContentElements/FlyoutNavigationContentElement.tsconfig'
+@import './ContentElements/L10nNavigationContentElement.tsconfig'
 @import './ContentElements/VendorNavigationContentElement.tsconfig'
 
 # _XXX_T3V_CREATOR_XXX_

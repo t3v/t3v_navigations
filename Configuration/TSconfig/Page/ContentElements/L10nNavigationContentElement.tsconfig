@@ -1,0 +1,28 @@
+# --------------------------------------------------------
+# | L10n Navigation Content Element Wizard Configuration |
+# --------------------------------------------------------
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          elements {
+            t3vNavigationsL10nNavigation {
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.l10nNavigationContentElement.title
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.l10nNavigationContentElement.description
+              iconIdentifier = t3v_navigations-l10n_navigation_content_element
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vnavigations_l10nnavigation
+              }
+            }
+          }
+
+          show := addToList(t3vNavigationsL10nNavigation)
+        }
+      }
+    }
+  }
+}

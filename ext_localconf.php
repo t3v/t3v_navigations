@@ -81,6 +81,26 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
+// --- L10n Navigation Content Element ---
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $extensionSignature,
+
+    // The unique name of the Content Element in upper camel case
+    'L10nNavigation',
+
+    // The array holding the controller-action-combinations that are accessible
+    [
+        // The first controller and its first action will be the default
+        'ContentElements\L10nNavigationContentElement' => 'index'
+    ],
+
+    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    [
+        // 'ContentElements\L10nNavigationContentElement' => 'index'
+    ]
+);
+
 // --- Main Navigation Content Element ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
@@ -192,6 +212,7 @@ if (TYPO3_MODE === 'BE') {
         'Flyout Navigation Content Element' => "{$iconsFolder}/ContentElements/FlyoutNavigationContentElement.svg",
         'Footer Navigation Content Element' => "{$iconsFolder}/ContentElements/FooterNavigationContentElement.svg",
         'Header Navigation Content Element' => "{$iconsFolder}/ContentElements/HeaderNavigationContentElement.svg",
+        'L10n Navigation Content Element' => "{$iconsFolder}/ContentElements/L10nNavigationContentElement.svg",
         'Main Navigation Content Element' => "{$iconsFolder}/ContentElements/MainNavigationContentElement.svg",
         'Overview Navigation Content Element' => "{$iconsFolder}/ContentElements/OverviewNavigationContentElement.svg",
         'Quick Navigation Content Element' => "{$iconsFolder}/ContentElements/QuickNavigationContentElement.svg",
