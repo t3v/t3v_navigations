@@ -24,9 +24,10 @@
 
   <f:section name="Entry">
     <v:variable.set name="layout" value="{v:format.replace(content: item.layout, substring: ',', replacement: ' ')}" />
+    <v:variable.set name="type" value="{item.type}" />
 
     <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
-      <v:tag name="span" class="{contentObject}__item navigation__item" data="{type: item.type, layout: layout}" hideIfEmpty="true">
+      <v:tag name="span" class="{contentObject}__item navigation__item" data="{type: type, layout: layout}" hideIfEmpty="true">
         {item.name}
       </v:tag>
 
