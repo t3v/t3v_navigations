@@ -2,7 +2,8 @@
       data-namespace-typo3-fluid="true">
   <v:variable.set name="contentObject" value="t3v-navigations-l10n-navigation" />
 
-  <v:tag name="nav" class="{contentObject} navigation component" data="{type: settings.type, layout: settings.layout}" hideIfEmpty="true">
+  <v:tag name="nav" class="{contentObject} navigation content-object" data="{type: settings.type, layout: settings.layout}"
+         hideIfEmpty="true">
     <f:render section="Entries" arguments="{_all}" />
   </v:tag>
 
