@@ -61,16 +61,17 @@
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0"></numIndex>
+                    <numIndex index="1"></numIndex>
                   </numIndex>
 
                   <numIndex index="1" type="array">
                     <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:settings.divider.pipe.label</numIndex>
-                    <numIndex index="1">|</numIndex>
+                    <numIndex index="1">pipe</numIndex>
                   </numIndex>
 
                   <numIndex index="2" type="array">
                     <numIndex index="0">LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ff.xlf:settings.divider.hyphen.label</numIndex>
-                    <numIndex index="1">-</numIndex>
+                    <numIndex index="1">hyphen</numIndex>
                   </numIndex>
                 </items>
                 <minitems>1</minitems>

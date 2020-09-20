@@ -129,7 +129,13 @@
 
   <f:section name="Divider">
     <f:if condition="{settings.divider}">
-      <li class="{contentObject}__divider navigation__divider">{settings.divider}</li>
+      <li class="{contentObject}__divider navigation__divider">
+        <f:switch expression="{settings.divider}">
+           <f:case value="pipe">|</f:case>
+           <f:case value="hyphen">-</f:case>
+           <f:defaultCase>|</f:defaultCase>
+        </f:switch>
+      </li>
     </f:if>
   </f:section>
 </html>

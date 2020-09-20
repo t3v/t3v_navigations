@@ -2,20 +2,46 @@
       data-namespace-typo3-fluid="true">
   <v:variable.set name="contentObject" value="t3v-navigations-l10n-navigation" />
 
-  <v:tag name="nav" class="{contentObject} navigation content-object" data="{type: settings.type, layout: settings.layout}"
-         hideIfEmpty="true">
-    <f:render section="Entries" arguments="{_all}" />
-  </v:tag>
+  <v:page.languageMenu defaultIsoFlag="en" defaultLanguageLabel="EN" hideNotTranslated="1" order="0, 1" as="languages">
+    <f:if condition="{languages -> f:count()} > 1">
+      <v:tag name="nav" class="{contentObject} navigation content-object" data="{type: settings.type, layout: settings.layout}"
+             hideIfEmpty="true">
+        <f:render section="Entries" arguments="{_all}" />
+      </v:tag>
+    </f:if>
+  </v:page.languageMenu>
 
   <f:section name="Entries">
+    <v:tag name="ul" class="{contentObject}__entries navigation__entries" hideIfEmpty="true">
+      <f:for each="{languages}" as="language" iteration="i">
+        <f:render section="Entry" arguments="{_all}" />
+
+        <f:if condition="{i.isLast}">
+          <f:else>
+            <f:render section="Divider" arguments="{_all}" />
+          </f:else>
+        </f:if>
+      </f:for>
+    </v:tag>
   </f:section>
 
   <f:section name="Entry">
+    <v:variable.set name="state" value="{f:if(condition: language.current, then: 'active', else: 'default')}" />
+
+    <v:tag name="li" class="{contentObject}__entry navigation__entry" data="{state: state}" hideIfEmpty="true">
+      <a class="{contentObject}__item navigation__item" href="{language.url}" title="{language.label}">{language.label}</a>
+    </v:tag>
   </f:section>
 
   <f:section name="Divider">
     <f:if condition="{settings.divider}">
-      <li class="{contentObject}__divider navigation__divider">{settings.divider}</li>
+      <li class="{contentObject}__divider navigation__divider">
+        <f:switch expression="{settings.divider}">
+           <f:case value="pipe">|</f:case>
+           <f:case value="hyphen">-</f:case>
+           <f:defaultCase>|</f:defaultCase>
+        </f:switch>
+      </li>
     </f:if>
   </f:section>
 </html>
