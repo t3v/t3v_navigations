@@ -114,6 +114,26 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
     "{$flexFormsFolder}/ContentElements/MainNavigationContentElement.xml"
 );
 
+// --- Mobile Navigation Content Element ---
+
+$contentElementKey = 'Mobile Navigation';
+$contentElementLabel = $lll . 'contentElements.mobileNavigationContentElement.label';
+$contentElementIdentifier = \T3v\T3vCore\Utility\ContentElementUtility::identifier($contentElementKey);
+$contentElementSignature = \T3v\T3vCore\Utility\ContentElementUtility::signature($extensionIdentifier, $contentElementIdentifier);
+
+// Register the Content Element
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentElementIdentifier, $contentElementLabel);
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,pages,select_key,recursive';
+
+// Activate the display of the `flexform` field and set the FlexForm definition
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    $contentElementSignature,
+    "{$flexFormsFolder}/ContentElements/MobileNavigationContentElement.xml"
+);
+
 // --- Overview Navigation Content Element ---
 
 $contentElementKey = 'Overview Navigation';

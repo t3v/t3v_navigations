@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Settings === -->
 
       <trans-unit id="settings.backgroundSize.label">
@@ -307,6 +305,8 @@
         <source>Pages</source>
         <target>Seiten</target>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

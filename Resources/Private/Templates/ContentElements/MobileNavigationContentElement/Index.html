@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <f:layout name="ContentElements/MobileNavigationContentElement" />
+
+  <f:section name="ContentElement">
+    <f:render partial="ContentElements/Shared/Header" arguments="{contentElement: contentElement, data: data}" />
+
+    <v:tag name="div" class="{contentElement}__content content-element__content" hideIfEmpty="true">
+      <f:render section="Content" arguments="{items: items, data: data, settings: settings}" />
+    </v:tag>
+  </f:section>
+
+  <f:section name="Content">
+    <f:render partial="ContentObjects/MobileNavigation" arguments="{_all}" />
+  </f:section>
+</html>

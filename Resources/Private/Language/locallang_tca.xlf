@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Models === -->
 
       <!-- Flyout Navigation Item Model -->
@@ -269,6 +267,8 @@
       <trans-unit id="tx_t3vnavigations_domain_model_vendor_navigation_item.layout.default">
         <source>Default</source>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

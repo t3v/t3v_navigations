@@ -1,6 +1,8 @@
-# --------------------------------------------------------
-# | L10n Navigation Content Element Wizard Configuration |
-# --------------------------------------------------------
+# --------------------------------------------
+# | L10n Navigation Content Element TSconfig |
+# --------------------------------------------
+
+# === Wizard Configuration ===
 
 mod {
   wizards {

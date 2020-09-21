@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Content Elements === -->
 
       <!-- Overview Navigation Content Element -->
@@ -13,6 +11,8 @@
       <trans-unit id="contentElements.overviewNavigationContentElement.overviewNavigation.item.more.label">
         <source>More</source>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

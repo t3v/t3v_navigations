@@ -1,6 +1,8 @@
-# ----------------------------------------------------------
-# | Flyout Navigation Content Element Wizard Configuration |
-# ----------------------------------------------------------
+# ----------------------------------------------
+# | Flyout Navigation Content Element TSconfig |
+# ----------------------------------------------
+
+# === Wizard Configuration ===
 
 mod {
   wizards {

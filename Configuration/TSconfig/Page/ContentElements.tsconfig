@@ -1,9 +1,10 @@
-# --------------------
-# | Content Elements |
-# --------------------
+# -----------------------------
+# | Content Elements TSconfig |
+# -----------------------------
 
 # === Imports ===
 
+@import './ContentElements/MobileNavigationContentElement.tsconfig'
 @import './ContentElements/HeaderNavigationContentElement.tsconfig'
 @import './ContentElements/MainNavigationContentElement.tsconfig'
 @import './ContentElements/SubpagesNavigationContentElement.tsconfig'

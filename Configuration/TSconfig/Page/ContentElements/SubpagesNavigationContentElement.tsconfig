@@ -1,6 +1,8 @@
-# ------------------------------------------------------------
-# | Subpages Navigation Content Element Wizard Configuration |
-# ------------------------------------------------------------
+# ------------------------------------------------
+# | Subpages Navigation Content Element TSconfig |
+# ------------------------------------------------
+
+# === Wizard Configuration ===
 
 mod {
   wizards {

@@ -1,0 +1,30 @@
+# ----------------------------------------------
+# | Mobile Navigation Content Element TSconfig |
+# ----------------------------------------------
+
+# === Wizard Configuration ===
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          elements {
+            t3vNavigationsMobileNavigation {
+              title = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.mobileNavigationContentElement.title
+              description = LLL:EXT:t3v_navigations/Resources/Private/Language/locallang_ttc.xlf:contentElements.mobileNavigationContentElement.description
+              iconIdentifier = t3v_navigations-mobile_navigation_content_element
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vnavigations_mobilenavigation
+              }
+            }
+          }
+
+          show := addToList(t3vNavigationsMobileNavigation)
+        }
+      }
+    }
+  }
+}

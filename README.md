@@ -34,16 +34,20 @@ Models
 Content Elements
 ----------------
 
-* Mobile Navigation Content Element (*)
+### Body Content Elements
+
+* Mobile Navigation Content Element
 * Header Navigation Content Element
 * Main Navigation Content Element
 * Side Navigation Content Element (*)
 * Footer Navigation Content Element
 
+### Other Content Elements
+
 * Quick Navigation Content Element
 * Overview Navigation Content Element (*)
 * Flyout Navigation Content Element
-* L10n Navigation Content Element (*)
+* L10n Navigation Content Element
 * Vendor Navigation Content Element
 
 Development

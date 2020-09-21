@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Content Elements === -->
 
       <!-- Flyout Navigation Content Element -->
@@ -78,6 +76,20 @@
         <source>A Main Navigation Content Element.</source>
       </trans-unit>
 
+      <!-- Mobile Navigation Content Element -->
+
+      <trans-unit id="contentElements.mobileNavigationContentElement.title">
+        <source>Mobile Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.mobileNavigationContentElement.label">
+        <source>Mobile Navigation</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.mobileNavigationContentElement.description">
+        <source>A Mobile Navigation Content Element.</source>
+      </trans-unit>
+
       <!-- Overview Navigation Content Element -->
 
       <trans-unit id="contentElements.overviewNavigationContentElement.title">
@@ -133,6 +145,8 @@
       <trans-unit id="contentElements.vendorNavigationContentElement.description">
         <source>A Vendor Navigation Content Element.</source>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

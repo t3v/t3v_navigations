@@ -1,6 +1,8 @@
-# --------------------------------------------------------
-# | Main Navigation Content Element Wizard Configuration |
-# --------------------------------------------------------
+# --------------------------------------------
+# | Main Navigation Content Element TSconfig |
+# --------------------------------------------
+
+# === Wizard Configuration ===
 
 mod {
   wizards {

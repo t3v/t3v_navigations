@@ -1,6 +1,8 @@
-# ----------------------------------------------------------
-# | Footer Navigation Content Element Wizard Configuration |
-# ----------------------------------------------------------
+# ----------------------------------------------
+# | Footer Navigation Content Element TSconfig |
+# ----------------------------------------------
+
+# === Wizard Configuration ===
 
 mod {
   wizards {

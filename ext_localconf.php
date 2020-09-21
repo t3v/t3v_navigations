@@ -11,8 +11,6 @@ $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespac
 $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
 $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
-/** _XXX_T3V_CREATOR_XXX_ **/
-
 // === TSconfig ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
@@ -121,6 +119,26 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
+// --- Mobile Navigation Content Element ---
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $extensionSignature,
+
+    // The unique name of the Content Element in upper camel case
+    'MobileNavigation',
+
+    // The array holding the controller-action-combinations that are accessible
+    [
+        // The first controller and its first action will be the default
+        'ContentElements\MobileNavigationContentElement' => 'index'
+    ],
+
+    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    [
+        // 'ContentElements\MobileNavigationContentElement' => 'index'
+    ]
+);
+
 // --- Overview Navigation Content Element ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
@@ -214,6 +232,7 @@ if (TYPO3_MODE === 'BE') {
         'Header Navigation Content Element' => "{$iconsFolder}/ContentElements/HeaderNavigationContentElement.svg",
         'L10n Navigation Content Element' => "{$iconsFolder}/ContentElements/L10nNavigationContentElement.svg",
         'Main Navigation Content Element' => "{$iconsFolder}/ContentElements/MainNavigationContentElement.svg",
+        'Mobile Navigation Content Element' => "{$iconsFolder}/ContentElements/MobileNavigationContentElement.svg",
         'Overview Navigation Content Element' => "{$iconsFolder}/ContentElements/OverviewNavigationContentElement.svg",
         'Quick Navigation Content Element' => "{$iconsFolder}/ContentElements/QuickNavigationContentElement.svg",
         'Subpages Navigation Content Element' => "{$iconsFolder}/ContentElements/SubpagesNavigationContentElement.svg",
@@ -231,3 +250,5 @@ if (TYPO3_MODE === 'BE') {
         );
     }
 }
+
+/** _XXX_T3V_CREATOR_XXX_ **/

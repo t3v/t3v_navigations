@@ -1,5 +1,3 @@
--- _XXX_T3V_CREATOR_XXX_ --
-
 # Table structure for table `tx_t3vnavigations_domain_model_flyout_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_flyout_navigation_item (
   name varchar(255) DEFAULT '' NOT NULL,
@@ -55,3 +53,5 @@ CREATE TABLE tx_t3vnavigations_domain_model_vendor_navigation_item (
   link varchar(255) DEFAULT '' NOT NULL,
   layout varchar(32) DEFAULT 'default' NOT NULL
 );
+
+-- _XXX_T3V_CREATOR_XXX_ --

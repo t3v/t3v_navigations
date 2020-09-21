@@ -1,6 +1,8 @@
-# ----------------------------------------------------------
-# | Vendor Navigation Content Element Wizard Configuration |
-# ----------------------------------------------------------
+# ----------------------------------------------
+# | Vendor Navigation Content Element TSconfig |
+# ----------------------------------------------
+
+# === Wizard Configuration ===
 
 mod {
   wizards {
