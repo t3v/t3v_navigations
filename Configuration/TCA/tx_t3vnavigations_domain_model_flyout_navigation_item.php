@@ -356,6 +356,7 @@ return [
                 name, --linebreak--,
                 label, --linebreak--,
                 type, --linebreak--,
+                handle, --linebreak--,
                 content
             ',
             'canNotCollapse' => true

@@ -431,6 +431,7 @@ return [
                 name, --linebreak--,
                 label, --linebreak--,
                 type, --linebreak--,
+                handle, --linebreak--,
                 abstract, --linebreak--,
                 thumbnails, --linebreak--,
                 page, --linebreak--,
