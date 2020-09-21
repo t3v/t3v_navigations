@@ -84,7 +84,7 @@
   <f:section name="PageEntry">
     <v:variable.set name="type" value="{v:variable.convert(value: item.type, type: 'string', default: 'default')}" />
     <v:variable.set name="handle" value="{v:variable.convert(value: item.handle, type: 'string', default: 'default')}" />
-    <v:variable.set name="layout" value="{v:variable.convert(value: item.layoutt, type: 'string', default: 'default')}" />
+    <v:variable.set name="layout" value="{v:variable.convert(value: item.layout, type: 'string', default: 'default')}" />
     <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
 
     <f:if condition="{handle}">
@@ -115,7 +115,7 @@
   <f:section name="LinkEntry">
     <v:variable.set name="type" value="{v:variable.convert(value: item.type, type: 'string', default: 'default')}" />
     <v:variable.set name="handle" value="{v:variable.convert(value: item.handle, type: 'string', default: 'default')}" />
-    <v:variable.set name="layout" value="{v:variable.convert(value: item.layoutt, type: 'string', default: 'default')}" />
+    <v:variable.set name="layout" value="{v:variable.convert(value: item.layout, type: 'string', default: 'default')}" />
     <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
 
     <f:if condition="{handle}">
