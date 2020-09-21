@@ -1,5 +1,5 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
-      data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:variable.set name="contentObject" value="t3v-navigations-vendor-navigation" />
 
   <v:tag name="nav" class="{contentObject} navigation content-object" data="{type: settings.type, layout: settings.layout}"
@@ -30,13 +30,19 @@
   </f:section>
 
   <f:section name="PageEntry">
+    <v:variable.set name="type" value="{v:variable.convert(value: item.type, type: 'string', default: 'default')}" />
+    <v:variable.set name="handle" value="{v:variable.convert(value: item.handle, type: 'string', default: 'default')}" />
     <v:variable.set name="layout" value="{v:format.replace(content: item.layout, substring: ',', replacement: ' ')}" />
+
+    <f:if condition="{handle}">
+      <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
+    </f:if>
 
     <f:if condition="{v:page.info(field: 'uid')} == {item.page}">
       <f:then>
         <v:tag name="li" class="{contentObject}__entry navigation__entry" data="{state: 'active'}" hideIfEmpty="true">
           <f:link.page pageUid="{item.page}" class="{contentObject}__item navigation__item" title="{item.title}"
-                       data="{type: item.type, layout: layout}">
+                       data="{type: type, handle: handle, layout: layout}">
             {item.name}
           </f:link.page>
         </v:tag>
@@ -45,7 +51,7 @@
       <f:else>
         <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
           <f:link.page pageUid="{item.page}" class="{contentObject}__item navigation__item" title="{item.title}"
-                       data="{type: item.type, layout: layout}">
+                       data="{type: type, handle: handle, layout: layout}">
             {item.name}
           </f:link.page>
         </v:tag>
@@ -54,20 +60,26 @@
   </f:section>
 
   <f:section name="LinkEntry">
+    <v:variable.set name="type" value="{v:variable.convert(value: item.type, type: 'string', default: 'default')}" />
+    <v:variable.set name="handle" value="{v:variable.convert(value: item.handle, type: 'string', default: 'default')}" />
     <v:variable.set name="layout" value="{v:format.replace(content: item.layout, substring: ',', replacement: ' ')}" />
+
+    <f:if condition="{handle}">
+      <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
+    </f:if>
 
     <v:tag name="li" class="{contentObject}__entry navigation__entry" hideIfEmpty="true">
       <v:condition.string.contains haystack="{item.link}" needle="blank">
         <f:then>
           <f:link.typolink parameter="{item.link}" class="{contentObject}__item navigation__item" title="{item.title}"
-                           additionalAttributes="{rel: 'noopener', data-type: item.type, data-layout: layout}">
+                           additionalAttributes="{rel: 'noopener', data-type: type, data-handle: handle, data-layout: layout}">
             {item.name}
           </f:link.typolink>
         </f:then>
 
         <f:else>
           <f:link.typolink parameter="{item.link}" class="{contentObject}__item navigation__item" title="{item.title}"
-                           additionalAttributes="{data-type: item.type, data-layout: layout}">
+                           additionalAttributes="{data-type: type, data-handle: handle, data-layout: layout}">
             {item.name}
           </f:link.typolink>
         </f:else>
