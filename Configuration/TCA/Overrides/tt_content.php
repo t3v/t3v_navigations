@@ -10,8 +10,6 @@ $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespac
 $flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::flexFormsFolder($extensionKey);
 $lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_ttc.xlf');
 
-/** _XXX_T3V_CREATOR_XXX_ **/
-
 // === Content Elements ===
 
 // --- Flyout Navigation Content Element ---
@@ -234,3 +232,5 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
     $contentElementSignature,
     "{$flexFormsFolder}/ContentElements/VendorNavigationContentElement.xml"
 );
+
+/** _XXX_T3V_CREATOR_XXX_ **/

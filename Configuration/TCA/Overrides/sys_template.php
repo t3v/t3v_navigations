@@ -13,3 +13,5 @@ $extensionTitle = 'T3v Navigations';
     'Configuration/TypoScript',
     $extensionTitle
 );
+
+/** _XXX_T3V_CREATOR_XXX_ **/
