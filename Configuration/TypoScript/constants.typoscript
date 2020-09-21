@@ -40,3 +40,5 @@ plugin {
 # === Imports ===
 
 @import './Extensions/constants.typoscript'
+
+# _XXX_T3V_CREATOR_XXX_
