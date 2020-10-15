@@ -1,12 +1,16 @@
 <?php
+/**
+ * The local extension configuration.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===
 
-/** @var string $_EXTKEY */
-
 $namespace = 'T3v';
-$extensionKey = $_EXTKEY;
+$extensionKey = 't3v_navigations';
 $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
 $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
 $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);

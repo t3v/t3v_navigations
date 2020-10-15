@@ -1,11 +1,15 @@
 <?php
+/**
+ * The extension tables configuration.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===
 
-/** @var string $_EXTKEY */
-
-$extensionKey = $_EXTKEY;
+$extensionKey = 't3v_navigations';
 $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::languageFolder($extensionKey);
 
 // === Models ===
