@@ -10,7 +10,7 @@ defined('TYPO3_MODE') or die();
 // === Variables ===
 
 $extensionKey = 't3v_navigations';
-$languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::languageFolder($extensionKey);
+$languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($extensionKey);
 
 // === Models ===
 
@@ -59,4 +59,4 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::languageFolder($extensi
     "${languageFolder}/locallang_csh_tx_t3vnavigations_domain_model_vendor_navigation_item.xlf"
 );
 
-/** _XXX_T3V_CREATOR_XXX_ **/
+/** _XXX_T3V_CREATOR_XXX_ */

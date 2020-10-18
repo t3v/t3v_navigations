@@ -11,9 +11,9 @@ defined('TYPO3_MODE') or die();
 
 $namespace = 'T3v';
 $extensionKey = 't3v_navigations';
-$extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
-$tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
-$iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
+$extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
+$tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::getTSConfigFolder($extensionKey);
+$iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getIconsFolder($extensionKey);
 
 // === TSconfig ===
 
@@ -37,7 +37,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\FlyoutNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\FlyoutNavigationContentElement' => 'index'
     ]
@@ -57,7 +57,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\FooterNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\FooterNavigationContentElement' => 'index'
     ]
@@ -77,7 +77,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\HeaderNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\HeaderNavigationContentElement' => 'index'
     ]
@@ -97,7 +97,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\L10nNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\L10nNavigationContentElement' => 'index'
     ]
@@ -117,7 +117,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\MainNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\MainNavigationContentElement' => 'index'
     ]
@@ -137,7 +137,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\MobileNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\MobileNavigationContentElement' => 'index'
     ]
@@ -157,7 +157,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\OverviewNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\OverviewNavigationContentElement' => 'index'
     ]
@@ -177,7 +177,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\QuickNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\QuickNavigationContentElement' => 'index'
     ]
@@ -197,7 +197,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\SubpagesNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\SubpagesNavigationContentElement' => 'index'
     ]
@@ -217,7 +217,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentElements\VendorNavigationContentElement' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentElements\VendorNavigationContentElement' => 'index'
     ]
@@ -244,8 +244,8 @@ if (TYPO3_MODE === 'BE') {
     ];
 
     foreach ($icons as $name => $source) {
-        $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::identifier($name);
-        $iconSignature = \T3v\T3vCore\Utility\IconUtility::signature($extensionKey, $iconIdentifier);
+        $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::getIdentifier($name);
+        $iconSignature = \T3v\T3vCore\Utility\IconUtility::getSignature($extensionKey, $iconIdentifier);
 
         $iconRegistry->registerIcon(
             $iconSignature,
@@ -255,4 +255,4 @@ if (TYPO3_MODE === 'BE') {
     }
 }
 
-/** _XXX_T3V_CREATOR_XXX_ **/
+/** _XXX_T3V_CREATOR_XXX_ */

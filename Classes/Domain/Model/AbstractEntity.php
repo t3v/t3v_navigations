@@ -41,9 +41,9 @@ abstract class AbstractEntity extends T3vCoreAbstractEntity
     /**
      * Returns the entity's name.
      *
-     * @return string The entity's name
+     * @return string|null The entity's name
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -61,9 +61,9 @@ abstract class AbstractEntity extends T3vCoreAbstractEntity
     /**
      * Returns the entity's label.
      *
-     * @return string The entity's label
+     * @return string|null The entity's label
      */
-    public function getLabel(): string
+    public function getLabel(): ?string
     {
         return $this->label;
     }
@@ -81,9 +81,9 @@ abstract class AbstractEntity extends T3vCoreAbstractEntity
     /**
      * Returns the entity's title.
      *
-     * @return string The entity's title
+     * @return string|null The entity's title
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->label ?? $this->name;
     }
@@ -91,9 +91,9 @@ abstract class AbstractEntity extends T3vCoreAbstractEntity
     /**
      * Returns the entity's layout.
      *
-     * @return string The entity's layout
+     * @return string|null The entity's layout
      */
-    public function getLayout(): string
+    public function getLayout(): ?string
     {
         return $this->layout;
     }

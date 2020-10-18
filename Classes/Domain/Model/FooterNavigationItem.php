@@ -11,13 +11,6 @@ namespace T3v\T3vNavigations\Domain\Model;
 class FooterNavigationItem extends AbstractEntity
 {
     /**
-     * The footer navigation item's link (typolink).
-     *
-     * @var string
-     */
-    protected $link;
-
-    /**
      * The footer navigation item's page (UID).
      *
      * @var int
@@ -25,11 +18,18 @@ class FooterNavigationItem extends AbstractEntity
     protected $page;
 
     /**
+     * The footer navigation item's link (typolink).
+     *
+     * @var string
+     */
+    protected $link;
+
+    /**
      * Returns the footer navigation item's page (UID).
      *
-     * @return int The footer navigation item's page (UID)
+     * @return int|null The footer navigation item's page (UID)
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -47,9 +47,9 @@ class FooterNavigationItem extends AbstractEntity
     /**
      * Returns the footer navigation item's link (typolink).
      *
-     * @return string The footer navigation item's link (typolink)
+     * @return string|null The footer navigation item's link (typolink)
      */
-    public function getLink(): string
+    public function getLink(): ?string
     {
         return $this->link;
     }

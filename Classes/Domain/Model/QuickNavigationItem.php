@@ -11,13 +11,6 @@ namespace T3v\T3vNavigations\Domain\Model;
 class QuickNavigationItem extends AbstractEntity
 {
     /**
-     * The quick navigation item's link (typolink).
-     *
-     * @var string
-     */
-    protected $link;
-
-    /**
      * The quick navigation item's page (UID).
      *
      * @var int
@@ -25,11 +18,18 @@ class QuickNavigationItem extends AbstractEntity
     protected $page;
 
     /**
+     * The quick navigation item's link (typolink).
+     *
+     * @var string
+     */
+    protected $link;
+
+    /**
      * Returns the quick navigation item's page (UID).
      *
-     * @return int The quick navigation item's page (UID)
+     * @return int|null The quick navigation item's page (UID)
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -47,9 +47,9 @@ class QuickNavigationItem extends AbstractEntity
     /**
      * Returns the quick navigation item's link (typolink).
      *
-     * @return string The quick navigation item's link (typolink)
+     * @return string|null The quick navigation item's link (typolink)
      */
-    public function getLink(): string
+    public function getLink(): ?string
     {
         return $this->link;
     }

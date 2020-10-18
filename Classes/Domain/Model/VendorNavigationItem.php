@@ -11,13 +11,6 @@ namespace T3v\T3vNavigations\Domain\Model;
 class VendorNavigationItem extends AbstractEntity
 {
     /**
-     * The vendor navigation item's link (typolink).
-     *
-     * @var string
-     */
-    protected $link;
-
-    /**
      * The vendor navigation item's page (UID).
      *
      * @var int
@@ -25,11 +18,18 @@ class VendorNavigationItem extends AbstractEntity
     protected $page;
 
     /**
+     * The vendor navigation item's link (typolink).
+     *
+     * @var string
+     */
+    protected $link;
+
+    /**
      * Returns the vendor navigation item's page (UID).
      *
-     * @return int The vendor navigation item's page (UID)
+     * @return int|null The vendor navigation item's page (UID)
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -47,9 +47,9 @@ class VendorNavigationItem extends AbstractEntity
     /**
      * Returns the vendor navigation item's link (typolink).
      *
-     * @return string The vendor navigation item's link (typolink)
+     * @return string|null The vendor navigation item's link (typolink)
      */
-    public function getLink(): string
+    public function getLink(): ?string
     {
         return $this->link;
     }

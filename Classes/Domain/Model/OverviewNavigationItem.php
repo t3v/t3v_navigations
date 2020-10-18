@@ -26,7 +26,7 @@ class OverviewNavigationItem extends AbstractEntity
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
      * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
      * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $thumbnails;
 
@@ -55,9 +55,9 @@ class OverviewNavigationItem extends AbstractEntity
     /**
      * Returns the overview navigation item's abstract.
      *
-     * @return string The overview navigation item's abstract
+     * @return string|null The overview navigation item's abstract
      */
-    public function getAbstract(): string
+    public function getAbstract(): ?string
     {
         return $this->abstract;
     }
@@ -75,10 +75,10 @@ class OverviewNavigationItem extends AbstractEntity
     /**
      * Returns all thumbnails belonging to the overview navigation item.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> The overview navigation item's thumbnails
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>|null The overview navigation item's thumbnails
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
-    public function getThumbnails()
+    public function getThumbnails(): ?ObjectStorage
     {
         return $this->thumbnails;
     }
@@ -87,20 +87,26 @@ class OverviewNavigationItem extends AbstractEntity
      * Gets the first thumbnail from the overview navigation item.
      *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference|object|null The first thumbnail or null if no thumbnail was found
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function getFirstThumbnail(): ?FileReference
     {
-        return $this->getThumbnails()->current();
+        $thumbnails = $this->getThumbnails();
+
+        if ($thumbnails) {
+            return $thumbnails->current();
+        }
+
+        return null;
     }
 
     /**
      * Sets the overview navigation item's thumbnails.
      *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $thumbnails The overview navigation item's thumbnails
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
-    public function setThumbnails($thumbnails): void
+    public function setThumbnails(ObjectStorage $thumbnails): void
     {
         $this->thumbnails = $thumbnails;
     }
@@ -109,7 +115,7 @@ class OverviewNavigationItem extends AbstractEntity
      * Adds a thumbnail to the overview navigation item.
      *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function addThumbnail(FileReference $thumbnail): void
     {
@@ -120,7 +126,7 @@ class OverviewNavigationItem extends AbstractEntity
      * Removes a thumbnail from the overview navigation item.
      *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function removeThumbnail(FileReference $thumbnail): void
     {
@@ -138,9 +144,9 @@ class OverviewNavigationItem extends AbstractEntity
     /**
      * Returns the overview navigation item's page (UID).
      *
-     * @return int The overview navigation item's page (UID)
+     * @return int|null The overview navigation item's page (UID)
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -158,9 +164,9 @@ class OverviewNavigationItem extends AbstractEntity
     /**
      * Returns the overview navigation item's link (typolink).
      *
-     * @return string The overview navigation item's link (typolink)
+     * @return string|null The overview navigation item's link (typolink)
      */
-    public function getLink(): string
+    public function getLink(): ?string
     {
         return $this->link;
     }

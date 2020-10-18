@@ -20,9 +20,9 @@ class FlyoutNavigationItem extends AbstractEntity
     /**
      * Returns the flyout navigation item's content.
      *
-     * @return string The flyout navigation item's content
+     * @return string|null The flyout navigation item's content
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }

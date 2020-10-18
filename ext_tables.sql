@@ -1,4 +1,4 @@
-# Table structure for table `tx_t3vnavigations_domain_model_flyout_navigation_item`
+-- Table structure for table `tx_t3vnavigations_domain_model_flyout_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_flyout_navigation_item (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_flyout_navigation_item (
   layout varchar(32) DEFAULT 'default' NOT NULL
 );
 
-# Table structure for table `tx_t3vnavigations_domain_model_footer_navigation_item`
+-- Table structure for table `tx_t3vnavigations_domain_model_footer_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_footer_navigation_item (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_footer_navigation_item (
   layout varchar(32) DEFAULT 'default' NOT NULL
 );
 
-# Table structure for table `tx_t3vnavigations_domain_model_overview_navigation_item`
+-- Table structure for table `tx_t3vnavigations_domain_model_overview_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_overview_navigation_item (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_overview_navigation_item (
   layout varchar(32) DEFAULT 'default' NOT NULL
 );
 
-# Table structure for table `tx_t3vnavigations_domain_model_quick_navigation_item`
+-- Table structure for table `tx_t3vnavigations_domain_model_quick_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_quick_navigation_item (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE tx_t3vnavigations_domain_model_quick_navigation_item (
   layout varchar(32) DEFAULT 'default' NOT NULL
 );
 
-# Table structure for table `tx_t3vnavigations_domain_model_vendor_navigation_item`
+-- Table structure for table `tx_t3vnavigations_domain_model_vendor_navigation_item`
 CREATE TABLE tx_t3vnavigations_domain_model_vendor_navigation_item (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
