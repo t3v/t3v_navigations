@@ -12,4 +12,13 @@ use T3v\T3vCore\Domain\Repository\AbstractRepository as T3vCoreAbstractRepositor
  */
 abstract class AbstractRepository extends T3vCoreAbstractRepository
 {
+    /**
+     * The default orderings.
+     *
+     * @var array
+     */
+    protected $defaultOrderings = [
+        'name' => QueryInterface::ORDER_ASCENDING,
+        'sorting' => QueryInterface::ORDER_ASCENDING
+    ];
 }
