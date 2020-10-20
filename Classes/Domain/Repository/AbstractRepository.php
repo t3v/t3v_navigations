@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace T3v\T3vNavigations\Domain\Repository;
 
 use T3v\T3vCore\Domain\Repository\AbstractRepository as T3vCoreAbstractRepository;
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 /**
  * The abstract repository class.
