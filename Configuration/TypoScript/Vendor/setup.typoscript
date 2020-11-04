@@ -5,3 +5,5 @@
 # === Imports ===
 
 @import './Extbase/setup.typoscript'
+
+# _XXX_T3V_GENERATOR_XXX_
