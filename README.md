@@ -5,6 +5,35 @@
 
 **The navigations extension of TYPO3voilà.**
 
+Overview
+--------
+
+### Content Elements
+
+#### Body
+
+* Mobile Navigation Content Element
+* Header Navigation Content Element
+* Main Navigation Content Element
+* Side Navigation Content Element (*)
+* Footer Navigation Content Element
+
+#### Misc
+
+* Overview Navigation Content Element (*)
+* Quick Navigation Content Element
+* Flyout Navigation Content Element
+* L10n Navigation Content Element
+* Vendor Navigation Content Element
+
+### Models
+
+* Flyout Navigation Item
+* Footer Navigation Item
+* Overview Navigation Item
+* Quick Navigation Item
+* Vendor Navigation Item
+
 Dependencies
 ------------
 
@@ -21,34 +50,6 @@ Installation
 1. Add T3v Navigations as dependency to the [Composer] configuration
 2. Run `composer install` or `composer update` to install all dependencies with Composer
 3. Include the TypoScript for T3v Navigations
-
-Models
-------
-
-* Flyout Navigation Item
-* Footer Navigation Item
-* Overview Navigation Item
-* Quick Navigation Item
-* Vendor Navigation Item
-
-Content Elements
-----------------
-
-### Body Content Elements
-
-* Mobile Navigation Content Element
-* Header Navigation Content Element
-* Main Navigation Content Element
-* Side Navigation Content Element (*)
-* Footer Navigation Content Element
-
-### Other Content Elements
-
-* Quick Navigation Content Element
-* Overview Navigation Content Element (*)
-* Flyout Navigation Content Element
-* L10n Navigation Content Element
-* Vendor Navigation Content Element
 
 Development
 -----------
@@ -80,9 +81,9 @@ problems [here].
 Versioning
 ----------
 
-This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs. Specifically, if a minor
-or patch version is released that breaks backward compatibility, that version should be immediately yanked and / or a new version should be
-immediately released that restores compatibility.
+This project aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs. Specifically, if a minor
+or patch version is being released that breaks backward compatibility, that version should be immediately yanked and / or a new version
+should be immediately released that restores compatibility.
 
 Credits
 -------

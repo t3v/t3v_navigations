@@ -1,0 +1,7 @@
+# ----------------
+# | Vendor Setup |
+# ----------------
+
+# === Imports ===
+
+@import './Extbase/setup.typoscript'

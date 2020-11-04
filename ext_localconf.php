@@ -255,4 +255,4 @@ if (TYPO3_MODE === 'BE') {
     }
 }
 
-/** _XXX_T3V_CREATOR_XXX_ */
+/** _XXX_T3V_GENERATOR_XXX_ */

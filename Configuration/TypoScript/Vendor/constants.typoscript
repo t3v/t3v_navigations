@@ -1,0 +1,7 @@
+# --------------------
+# | Vendor Constants |
+# --------------------
+
+# === Imports ===
+
+@import './Extbase/constants.typoscript'

@@ -20,4 +20,4 @@ $extensionTitle = 'T3v Navigations';
     $extensionTitle
 );
 
-/** _XXX_T3V_CREATOR_XXX_ **/
+/** _XXX_T3V_GENERATOR_XXX_ */

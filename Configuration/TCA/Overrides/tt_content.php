@@ -11,10 +11,10 @@ defined('TYPO3_MODE') or die();
 
 $namespace = 'T3v';
 $extensionKey = 't3v_navigations';
-$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::identifier($extensionKey);
-$extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
-$flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::flexFormsFolder($extensionKey);
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_ttc.xlf');
+$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::getIdentifier($extensionKey);
+$extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
+$flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getFlexFormsFolder($extensionKey);
+$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_ttc.xlf');
 
 // === Content Elements ===
 
@@ -239,4 +239,4 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentEleme
     "{$flexFormsFolder}/ContentElements/VendorNavigationContentElement.xml"
 );
 
-/** _XXX_T3V_CREATOR_XXX_ **/
+/** _XXX_T3V_GENERATOR_XXX_ */

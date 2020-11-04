@@ -59,4 +59,4 @@ CREATE TABLE tx_t3vnavigations_domain_model_vendor_navigation_item (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- _XXX_T3V_CREATOR_XXX_ --
+-- _XXX_T3V_GENERATOR_XXX_ --

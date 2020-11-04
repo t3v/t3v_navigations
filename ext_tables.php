@@ -59,4 +59,4 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
     "${languageFolder}/locallang_csh_tx_t3vnavigations_domain_model_vendor_navigation_item.xlf"
 );
 
-/** _XXX_T3V_CREATOR_XXX_ */
+/** _XXX_T3V_GENERATOR_XXX_ */
