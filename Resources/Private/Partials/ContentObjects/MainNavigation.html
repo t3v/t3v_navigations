@@ -38,7 +38,7 @@
     <v:variable.set name="state" value="{f:if(condition: page.active, then: 'active', else: 'default')}" />
 
     <v:tag name="li" class="{contentObject}__entry navigation__entry" data="{number: number, state: state}" hideIfEmpty="true">
-      <f:link.page pageUid="{page.uid}" class="{contentObject}__item navigation__item" title="{page.title}">
+      <f:link.page pageUid="{page.uid}" class="{contentObject}__item navigation__item" title="{page.title}" target="{page.target}">
         {page.linktext}
       </f:link.page>
 
@@ -62,7 +62,7 @@
     <v:variable.set name="state" value="{f:if(condition: subpage.active, then: 'active', else: 'default')}" />
 
     <v:tag name="li" class="{contentObject}__subentry navigation__subentry" data="{state: state}" hideIfEmpty="true">
-      <f:link.page pageUid="{subpage.uid}" class="{contentObject}__subitem navigation__subitem" title="{subpage.title}">
+      <f:link.page pageUid="{subpage.uid}" class="{contentObject}__subitem navigation__subitem" title="{subpage.title}" target="{subpage.target}">
         {subpage.linktext}
       </f:link.page>
     </v:tag>
