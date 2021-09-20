@@ -1,8 +1,6 @@
 [T3v Navigations]
 =================
 
-[![Travis CI Status][Travis CI Status]][Travis CI]
-
 **The navigations extension of TYPO3voilà.**
 
 Overview
@@ -15,12 +13,12 @@ Overview
 * Mobile Navigation Content Element
 * Header Navigation Content Element
 * Main Navigation Content Element
-* Side Navigation Content Element (*)
+* Side Navigation Content Element *
 * Footer Navigation Content Element
 
 #### Misc
 
-* Overview Navigation Content Element (*)
+* Overview Navigation Content Element *
 * Quick Navigation Content Element
 * Flyout Navigation Content Element
 * L10n Navigation Content Element
@@ -56,20 +54,19 @@ Development
 
 ### Setup
 
-```
-$ ./Scripts/Setup.sh
+```sh
+git clone https://github.com/t3v/t3v_navigations.git && cd t3v_navigations
+
+./Scripts/Setup.sh
 ```
 
-### Run Unit Tests
+### Testing
 
-```
-$ ./Scripts/Tests/Unit.sh
-```
-
-### Run Functional Tests
-
-```
-$ ./Scripts/Tests/Functional.sh
+```sh
+./Scripts/Tests.sh
+./Scripts/Tests/Unit.sh
+./Scripts/Tests/Functional.sh
+./Scripts/Tests/Migrate.sh
 ```
 
 Bug Reports
@@ -118,7 +115,5 @@ T3v Navigations is released under the [MIT License (MIT)], see [LICENSE].
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Smashicons]: https://www.flaticon.com/authors/smashicons "Smashicons"
 [T3v Navigations]: https://t3v.github.io/t3v_navigations/ "The navigations extension of TYPO3voilà."
-[Travis CI]: https://travis-ci.org/t3v/t3v_navigations "T3v Navigations at Travis CI"
-[Travis CI Status]: https://img.shields.io/travis/t3v/t3v_navigations.svg?style=flat "Travis CI Status"
 [TYPO3voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"
